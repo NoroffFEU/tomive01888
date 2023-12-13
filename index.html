@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Arena</title>
+    <meta
+      name="description"
+      content="Find and purchase games across many genres, pre-order new games or experience older classics on a higher quality! Come find a new game to explore!"
+    />
+    <meta
+      name="keywords"
+      content="video games, games, buy games, buy video games, The Arena"
+    />
     <link rel="stylesheet" href="src/css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,36 +32,224 @@
           src="assets/images/thearena-Logo.png"
           alt="The Arena The Universe of Games"
         />
+
+        <button class="member-join" id="member">Become a member</button>
       </div>
       <nav>
-        <ul>
-          <a href=""><i class="fa-solid fa-bars fa-lg"></i></a>
-          <a href=""
+        <ul id="hamburger-navbar">
+          <input type="checkbox" id="hamburger" />
+          <label for="hamburger" id="ham-size">
+            <i class="fa-solid fa-bars fa-lg"></i
+          ></label>
+          <div class="hamburger-open">
+            <div>
+              <section>
+                <input type="checkbox" name="login" id="login" />
+                <label for="login"> </label>
+                <img
+                  id="log-in"
+                  src="assets/images/ta-login-logo.png"
+                  alt="The Arena tiny profile logo"
+                />
+                <h4 id="not-signed">Not logged in</h4>
+
+                <img
+                  id="log-off"
+                  src="assets/images/ta-logged.png"
+                  alt="The Arena tiny profile logo"
+                />
+                <h4 id="is-signed">Jaguar092</h4>
+                <p id="sign-up">or<u> Sign up </u></p>
+              </section>
+
+              <ul>
+                <li>
+                  <a href="#News"><i class="fa-solid fa-newspaper"></i>News</a>
+                </li>
+                <li>
+                  <a href="#Coupon-codes"
+                    ><i class="fa-solid fa-ticket"></i>Coupon codes</a
+                  >
+                </li>
+                <li>
+                  <a href="about.html"
+                    ><i class="fa-solid fa-user"></i>About us</a
+                  >
+                </li>
+                <li>
+                  <a href="contact.html"
+                    ><i class="fa-solid fa-envelope-open-text"></i>Contact us</a
+                  >
+                </li>
+                <li>
+                  <a href="#Accessibility"
+                    ><i class="fa-solid fa-eye-low-vision"></i>Accessibility</a
+                  >
+                </li>
+              </ul>
+
+              <a class="member-join" href="#joinmember">Become a member</a>
+            </div>
+          </div>
+
+          <a href="html/store.html"
             ><i class="fa-solid fa-gamepad fa-lg"></i><span>STORE</span></a
           >
-          <a href=""
+
+          <a href="html/purchase.html"
             ><i class="fa-solid fa-cart-shopping fa-lg"></i><span>CART</span></a
           >
+
           <a href=""
             ><i class="fa-solid fa-magnifying-glass fa-lg"></i
             ><span>SEARCH</span></a
           >
         </ul>
+
+        <div id="desktop-navbar">
+          <div>
+            <a href="">Home</a>
+            <a href="">Store</a>
+            <a href="">News</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+            <a href="">Profile</a>
+          </div>
+
+          <span>
+            <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+            <a href="html/purchase.html"
+              ><i class="fa-solid fa-cart-shopping fa-lg"></i
+            ></a>
+          </span>
+        </div>
       </nav>
     </header>
 
+    <!-- /* ====================== INDEX ======================== */ -->
+    <!-- /* ====================== INDEX ======================== */ -->
+
     <main>
       <section class="first-box">
-        <div class="content-flex">
+        <div class="hero-images">
           <img src="assets/images/intro-pic1.png" alt="Conquer" />
           <img src="assets/images/intro-pic2.png" alt="Survive" />
           <img src="assets/images/intro-pic3.png" alt="Explore" />
           <img src="assets/images/intro-pic4.png" alt="Outplay" />
         </div>
-        <p>Head into our store now! It's time for another session!</p>
-        <span>
-          <button>STORE</button>
-        </span>
+        <div class="enter-now">
+          <h1>Head into our store now! It's time for another session!</h1>
+          <span>
+            <a href="html/store.html">STORE</a>
+          </span>
+        </div>
+      </section>
+
+      <section class="game-content">
+        <h1>New releases this month:</h1>
+        <div class="game-flexbox">
+          <div class="game-card">
+            <h4>Marathon Istoria</h4>
+            <img
+              src="../../assets/gamecovers/Marathon.png"
+              alt="Marathon Istoria game cover"
+            />
+            <div>
+              <span>
+                <i class="fa-brands fa-xbox"></i>
+                <i class="fa-brands fa-playstation"></i>
+                <i class="fa-solid fa-desktop"></i>
+              </span>
+              <p>$ 39.98</p>
+            </div>
+            <button>Quick add</button>
+          </div>
+
+          <div class="game-card">
+            <h4>Cyberpunk 2077</h4>
+            <img
+              src="../../assets/gamecovers/cyberpunk-2077.png"
+              alt="Cyberpunk 2077 game cover"
+            />
+            <div>
+              <span
+                ><i class="fa-brands fa-xbox"></i>
+                <i class="fa-brands fa-playstation"></i>
+                <i class="fa-solid fa-desktop"></i>
+              </span>
+              <p>$ 39.98</p>
+            </div>
+            <button>Quick add</button>
+          </div>
+
+          <div class="game-card">
+            <h4>Stellar Blade</h4>
+            <img
+              src="../../assets/gamecovers/stellar-blade.png"
+              alt="Stellar Blade game cover"
+            />
+            <div>
+              <span
+                ><i class="fa-brands fa-xbox"></i>
+                <i class="fa-brands fa-playstation"></i>
+                <i class="fa-solid fa-desktop"></i>
+              </span>
+              <p>$ 39.98</p>
+            </div>
+            <button>Quick add</button>
+          </div>
+
+          <div class="game-card">
+            <h4>Dawntrail FFXIV</h4>
+            <img
+              src="../../assets/gamecovers/dawntrail-ffXIV.png"
+              alt="Dawntrail FFXIV game cover"
+            />
+            <div>
+              <span
+                ><i class="fa-brands fa-xbox"></i>
+                <i class="fa-brands fa-playstation"></i>
+                <i class="fa-solid fa-desktop"></i>
+              </span>
+              <p>$ 39.98</p>
+            </div>
+            <button>Quick add</button>
+          </div>
+
+          <div class="game-card">
+            <h4>Tekken 8</h4>
+            <img
+              src="../../assets/gamecovers/tekken-8.png"
+              alt="Tekken 8 game cover"
+            />
+            <div>
+              <span
+                ><i class="fa-brands fa-xbox"></i>
+                <i class="fa-brands fa-playstation"></i>
+                <i class="fa-solid fa-desktop"></i>
+              </span>
+              <p>$ 39.98</p>
+            </div>
+            <button>Quick add</button>
+          </div>
+
+          <div class="game-card">
+            <h4>The First Descendant</h4>
+            <img
+              src="../../assets/gamecovers/the-first-descendant.png"
+              alt="The First Descendant game cover"
+            />
+            <div>
+              <span
+                ><i class="fa-brands fa-xbox"></i>
+                <i class="fa-brands fa-playstation"></i>
+                <i class="fa-solid fa-desktop"></i>
+              </span>
+              <p>$ 39.98</p>
+            </div>
+            <button>Quick add</button>
+          </div>
+        </div>
       </section>
 
       <section class="third-box">
@@ -74,17 +270,19 @@
       </section>
     </main>
 
+    <!-- /* ====================== INDEX ======================== */ -->
+    <!-- /* ====================== INDEX ======================== */ -->
     <footer>
       <div class="info-row">
         <ul>
-          <li><a href="#Home">About</a></li>
-          <li><a href="#Store">Accessibility</a></li>
-          <li><a href="#News">Feedback</a></li>
+          <li><a href="html/about.html">About</a></li>
+          <li><a href="#Accessibility">Accessibility</a></li>
+          <li><a href="html/contact.html">Feedback</a></li>
         </ul>
         <ul>
-          <li><a href="#Home">Privacy policy</a></li>
-          <li><a href="#Store">Return policy</a></li>
-          <li><a href="#News">Contact us</a></li>
+          <li><a href="#Privacy">Privacy policy</a></li>
+          <li><a href="#Returns">Return policy</a></li>
+          <li><a href="html/contact.html">Contact us</a></li>
         </ul>
       </div>
       <div>
@@ -97,7 +295,9 @@
         </div>
       </div>
       <div class="logo-footer">
-        <img src="assets/images/ta-logo-bw.png" alt="The Arena Logo" />
+        <a href="index.html"
+          ><img src="assets/images/ta-logo-bw.png" alt="The Arena Logo" />
+        </a>
       </div>
     </footer>
   </body>

@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Arena</title>
+    <meta
+      name="description"
+      content="Details of [game], it's game features and system requirements"
+    />
+    <meta
+      name="keywords"
+      content="video games, games, buy games, buy video games, The Arena"
+    />
     <link rel="stylesheet" href="../src/css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -44,32 +52,33 @@
     <!-- /* ====================== PRODUCT ======================== */ -->
     <!-- /* ====================== PRODUCT ======================== */ -->
     <main>
+      <h1>Marathon Istoria</h1>
       <section class="product">
-        <h1>Marathon Istoria</h1>
-        <div class="game-product">
+        <div class="game-image">
           <img src="../../assets\gamecovers\Marathon.png" alt="" />
           <p>
-            Rating:
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star-half-stroke"></i>
+              Rating:
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
           </p>
         </div>
-
-        <div class="add-cart">
+        
+        <div class="overview">   
+          <div class="add-cart">
           <div>
             <p>DIGITAL PURCHASE</p>
           </div>
           <div>
             <p>Price:</p>
-            <p>$ 39.98</p>
+            <h1>$ 39.98</h1>
           </div>
           <button>Add to cart</button>
-        </div>
+          </div>
 
-        <div class="game-about">
+          <div class="game-about">
           <div>
             <i class="fa-brands fa-xbox"></i>
             <i class="fa-brands fa-playstation"></i>
@@ -77,7 +86,7 @@
             <p>Pre order</p>
           </div>
           <div>
-            <h3>Games about:</h3>
+            <h3>Game's about:</h3>
             <article>
               Marathon: Istoria is an RPG scenario set in the Marathon universe
               and designed for the Aleph One engine. It pushes the engine to its
@@ -105,10 +114,53 @@
               <li>Multiplayer, Co-Op, Singleplayer, Online</li>
             </ul>
           </div>
-          <div class="drop-down">
-            <h1>Marathon Istoria</h1>
           </div>
+        </div>      
+      </section> 
+      
+      <section class="drop-buttons">
+        <div class="drop-down">
+          <input type="checkbox" id="dropdown" />
+          <label for="dropdown">Game features <i class="fa-solid fa-chevron-down"></i></label>
+          <div class="drop-content">
+            <p>
+              A PvP-focused extraction shooter set on the mysterious planet of
+              Tau Ceti IV, Marathon will see players inhabit the bodies of
+              Runners, cybernetic mercenaries who have been designed to survive
+              the planet's harsh environments, exploring the lost colony that
+              once inhabited Tau Ceti's surface. Players will engage solo or in
+              crews of three, searching for mysterious alien artifacts, as well
+              as for valuable loot and new weapons and gear that they can add to
+              their collection.
+            </p>
+          </div>          
         </div>
+
+        <div class="drop-down">
+          <input type="checkbox" id="dropdown2" />
+          <label for="dropdown2">System requirements <i class="fa-solid fa-chevron-down"></i></label>
+          <div class="drop-content">
+            <ul>
+              <span>Minimum:</span>
+              <li>Demands a 64-biters processor og operative system</li>
+              <li>OS: Windows® 7 / Windows® 8.1 / Windows® 10 64-bit (latest Service Pack)</li>
+              <li>Processor: Intel® Core™ i3 3250 3.5 GHz or Intel Pentium G4560 3.5 GHz / AMD FX-4350 4.2 GHz</li>
+              <li>Memory: 6 GB RAM</li>
+              <li>Graphic: NVIDIA® GeForce® GTX 660 2GB or GTX 1050 2GB / AMD Radeon HD 7850 2GB</li>
+              <li>Network: Broadband connection</li>
+              <li>Storage: 105 GB available space</li>
+            </ul>
+            <ul>
+              <span>Recommended:</span>
+              <li>Demands a 64-biters processor og operative system</li>
+              <li>OS: System Windows® 7 / Windows® 8.1 / Windows® 10 64-bit (latest Service Pack)</li>
+              <li>Processor: Processor Intel® Core™ i5 2400 3.4 GHz or i5 7400 3.5 GHz / AMD Ryzen R5 1600X 3.6 GHz</li>
+              <li>Memory: 8 GB RAM</li>
+              <li>Graphic: NVIDIA® GeForce® GTX 970 4GB or GTX 1060 6GB / AMD R9 390 8GB Memory 8 GB RAM</li>
+              <li>Network: Broadband connection</li>
+              <li>Storage: 105 GB available space</li>
+            </ul>
+          </div>
       </section>
     </main>
     <!-- /* ^^^^^^^^^^^^^^^^^^^^^^ PRODUCT ^^^^^^^^^^^^^^^^^^^^^^^^ */ -->
@@ -116,14 +168,14 @@
     <footer>
       <div class="info-row">
         <ul>
-          <li><a href="#Home">About</a></li>
-          <li><a href="#Store">Accessibility</a></li>
-          <li><a href="#News">Feedback</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#Accessibility">Accessibility</a></li>
+          <li><a href="contact.html">Feedback</a></li>
         </ul>
         <ul>
-          <li><a href="#Home">Privacy policy</a></li>
-          <li><a href="#Store">Return policy</a></li>
-          <li><a href="#News">Contact us</a></li>
+          <li><a href="#Privacy">Privacy policy</a></li>
+          <li><a href="#Returns">Return policy</a></li>
+          <li><a href="contact.html">Contact us</a></li>
         </ul>
       </div>
       <div>
@@ -136,7 +188,9 @@
         </div>
       </div>
       <div class="logo-footer">
-        <img src="../../assets/images/ta-logo-bw.png" alt="The Arena Logo" />
+        <a href="../index.html"
+          ><img src="../assets/images/ta-logo-bw.png" alt="The Arena Logo"
+        /></a>
       </div>
     </footer>
   </body>
