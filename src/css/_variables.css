@@ -8,8 +8,12 @@
 
   --font-shrinker: clamp(0.5rem, 1vw + 1rem, 5rem);
 
-  --p-font-shrink: clamp(0.8rem, 0.5vw + 0.6rem, 1.1rem);
+  --p-font-shrink: clamp(0.85rem, 1vw + 0.6rem, 1.1rem);
 
   --li-font-shrink: clamp(0.8rem, 0.5vw + 0.6rem, 1rem);
+
+  --h-contact-shrink: clamp(1rem, 2vw + 1rem, 2.6rem);
+
+  --h-about-shrink: clamp(1.1rem, 1vw + 1rem, 2rem);
 
 }

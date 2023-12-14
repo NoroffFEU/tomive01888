@@ -32,28 +32,104 @@
           src="../assets/images/thearena-Logo.png"
           alt="The Arena The Universe of Games"
         />
+
+        <button class="member-join" id="member">Become a member</button>
       </div>
       <nav>
-        <ul>
-          <a href=""><i class="fa-solid fa-bars fa-lg"></i></a>
-          <a href=""
+        <ul id="hamburger-navbar">
+          <input type="checkbox" id="hamburger" />
+          <label for="hamburger" id="ham-size">
+            <i class="fa-solid fa-bars fa-lg"></i
+          ></label>
+          <div class="hamburger-open">
+            <div>
+              <section>
+                <input type="checkbox" name="login" id="login" />
+                <label for="login"> </label>
+                <img
+                  id="log-in"
+                  src="assets/images/ta-login-logo.png"
+                  alt="The Arena tiny profile logo"
+                />
+                <h4 id="not-signed">Not logged in</h4>
+
+                <img
+                  id="log-off"
+                  src="assets/images/ta-logged.png"
+                  alt="The Arena tiny profile logo"
+                />
+                <h4 id="is-signed">Jaguar092</h4>
+                <p id="sign-up">or<u> Sign up </u></p>
+              </section>
+
+              <ul>
+                <li>
+                  <a href="#News"><i class="fa-solid fa-newspaper"></i>News</a>
+                </li>
+                <li>
+                  <a href="#Coupon-codes"
+                    ><i class="fa-solid fa-ticket"></i>Coupon codes</a
+                  >
+                </li>
+                <li>
+                  <a href="about.html"
+                    ><i class="fa-solid fa-user"></i>About us</a
+                  >
+                </li>
+                <li>
+                  <a href="contact.html"
+                    ><i class="fa-solid fa-envelope-open-text"></i>Contact us</a
+                  >
+                </li>
+                <li>
+                  <a href="#Accessibility"
+                    ><i class="fa-solid fa-eye-low-vision"></i>Accessibility</a
+                  >
+                </li>
+              </ul>
+
+              <a class="member-join" href="#joinmember">Become a member</a>
+            </div>
+          </div>
+
+          <a href="html/store.html"
             ><i class="fa-solid fa-gamepad fa-lg"></i><span>STORE</span></a
           >
-          <a href=""
+
+          <a href="html/purchase.html"
             ><i class="fa-solid fa-cart-shopping fa-lg"></i><span>CART</span></a
           >
+
           <a href=""
             ><i class="fa-solid fa-magnifying-glass fa-lg"></i
             ><span>SEARCH</span></a
           >
         </ul>
+
+        <div id="desktop-navbar">
+          <div>
+            <a href="">Home</a>
+            <a href="">Store</a>
+            <a href="">News</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+            <a href="">Profile</a>
+          </div>
+
+          <span>
+            <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+            <a href="html/purchase.html"
+              ><i class="fa-solid fa-cart-shopping fa-lg"></i
+            ></a>
+          </span>
+        </div>
       </nav>
     </header>
     <!-- /* ====================== CONTACT US ======================== */ -->
     <!-- /* ====================== CONTACT US ======================== */ -->
     <main class="contact" id="contact">
-      <section class="contact-body">
-        <div class="contact-1stbox">
+      <div class="contact-body">
+        <section class="contact-1stbox container-size">
           <div class="box1">
             <h2>Contact us</h2>
             <p>
@@ -75,9 +151,9 @@
           <div class="discord-frame">
             <p>Join our Discord</p>
           </div>
-        </div>
+        </section>
 
-        <div class="contact-2ndbox">
+        <section class="contact-2ndbox container-size">
           <div class="webform-textguide">
             <h2>Use our webform</h2>
             <p>We will get in touch within 2-3 workdays!</p>
@@ -106,17 +182,13 @@
                 <label for="topic">Topic:</label>
                 <input type="text" id="topic" placeholder="Topic..." required />
                 <label for="message">Message:</label>
-                <input
-                  type="text"
+                <textarea
                   id="message"
-                  size="1000px"
                   placeholder="Your message..."
                   required
-                  maxlength="1000"
-                />
+                ></textarea>
+
                 <p>Max 1000 words</p>
-                <br />
-                <!-- <input type="submit" value="SUBMIT" /> -->
                 <input
                   type="button"
                   onclick="alert('Thank you for your message')"
@@ -125,51 +197,55 @@
               </form>
             </div>
           </div>
-        </div>
+        </section>
 
         <!-- FACEBOOK -->
-        <div class="facebook-box">
-          <div>
-            <h2>Reach us in other ways!</h2>
-            <h3>Facebook <br />@TheArena</h3>
+        <section class="container-size" id="facebook-box">
+          <div class="textbox-padding">
+            <h2>Reach us</h2>
+            <h2>in other ways!</h2>
+            <br />
+            <h3>Facebook</h3>
+            <h3>@TheArena</h3>
           </div>
-          <div>
-            <img
-              src="../../assets/images/facebook-img.png"
-              alt="facebook logo"
-            />
-          </div>
-        </div>
+          <img
+            class="social-image"
+            src="../../assets/images/facebook-img.png"
+            alt="facebook logo"
+          />
+        </section>
+
         <!-- INSTAGRAM -->
-        <div class="instagram-box">
-          <div>
-            <h3>Instagram <br />@TheArena</h3>
+        <section id="instagram-box">
+          <div class="textbox-padding">
+            <h3>Instagram</h3>
+            <h3>@TheArena</h3>
           </div>
-          <div>
-            <img
-              src="../../assets/images/instagram-img.png"
-              alt="instagram logo"
-            />
-          </div>
-        </div>
+          <img
+            class="social-image"
+            src="../../assets/images/instagram-img.png"
+            alt="instagram logo"
+          />
+        </section>
+
         <!-- TWITTER -X -->
-        <div class="twitx-box">
-          <div>
-            <h3>Twitter X <br />@TheArena</h3>
+        <section class="container-size" id="twitx-box">
+          <div class="textbox-padding">
+            <h3>Twitter X</h3>
+            <h3>@TheArena</h3>
           </div>
-          <div>
-            <img
-              src="../../assets/images/twitter-x-img.png"
-              alt="facebook logo"
-            />
-          </div>
-        </div>
-      </section>
+          <img
+            class="social-image"
+            src="../../assets/images/twitter-x-img.png"
+            alt="facebook logo"
+          />
+        </section>
+      </div>
     </main>
     <!-- /* ^^^^^^^^^^^^^^^^^^^^^^ CONTACT US ^^^^^^^^^^^^^^^^^^^^^^^^ */ -->
     <!-- /* ====================== CONTACT US ======================== */ -->
     <footer>
-      <div class="info-row">
+      <section class="info-row">
         <ul>
           <li><a href="about.html">About</a></li>
           <li><a href="#Accessibility">Accessibility</a></li>
@@ -180,19 +256,22 @@
           <li><a href="#Returns">Return policy</a></li>
           <li><a href="contact.html">Contact us</a></li>
         </ul>
-      </div>
-      <div>
-        <span class="border-bg">Stay in touch!</span>
+      </section>
+      <section id="social-links">
+        <span id="in-touch">Stay in touch!</span>
         <div>
           <i class="fa-brands fa-x-twitter"></i>
           <i class="fa-brands fa-discord"></i>
           <i class="fa-brands fa-instagram"></i>
           <i class="fa-brands fa-facebook-f"></i>
         </div>
-      </div>
-      <div class="logo-footer">
+      </section>
+      <div>
         <a href="../index.html"
-          ><img src="../assets/images/ta-logo-bw.png" alt="The Arena Logo"
+          ><img
+            id="logo-footer"
+            src="../assets/images/ta-logo-bw.png"
+            alt="The Arena Logo"
         /></a>
       </div>
     </footer>
