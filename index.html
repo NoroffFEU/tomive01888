@@ -41,7 +41,7 @@
           <label for="hamburger" id="ham-size">
             <i class="fa-solid fa-bars fa-lg"></i
           ></label>
-          <div class="hamburger-open">
+          <section class="hamburger-open">
             <div>
               <section>
                 <input type="checkbox" name="login" id="login" />
@@ -59,38 +59,36 @@
                   alt="The Arena tiny profile logo"
                 />
                 <h4 id="is-signed">Jaguar092</h4>
-                <p id="sign-up">or<u> Sign up </u></p>
+                <p id="sign-up"><a href="#Sign-up">Sign up</a>or</p>
+
+                <a class="navlist hidden" href="#Jaguar092"
+                  ><i class="fa-solid fa-user-ninja"></i>Profile</a
+                >
+                <a class="navlist hidden" href="#Game-library"
+                  ><i class="fa-solid fa-gamepad"></i>Game library</a
+                >
+                <a class="navlist hidden" href="#User-settings"
+                  ><i class="fa-solid fa-gear"></i>User settings</a
+                >
+                <a class="navlist" href="#News"
+                  ><i class="fa-solid fa-newspaper"></i> News</a
+                >
+                <a class="navlist" href="#Coupon-codes"
+                  ><i class="fa-solid fa-ticket"></i>Coupon codes</a
+                >
+                <a class="navlist" href="html/about.html"
+                  ><i class="fa-solid fa-user"></i>About us</a
+                >
+                <a class="navlist" href="html/contact.html"
+                  ><i class="fa-solid fa-envelope-open-text"></i>Contact us</a
+                >
+                <a class="navlist" href="#Accessibility"
+                  ><i class="fa-solid fa-eye-low-vision"></i>Accessibility</a
+                >
               </section>
-
-              <ul>
-                <li>
-                  <a href="#News"><i class="fa-solid fa-newspaper"></i>News</a>
-                </li>
-                <li>
-                  <a href="#Coupon-codes"
-                    ><i class="fa-solid fa-ticket"></i>Coupon codes</a
-                  >
-                </li>
-                <li>
-                  <a href="about.html"
-                    ><i class="fa-solid fa-user"></i>About us</a
-                  >
-                </li>
-                <li>
-                  <a href="contact.html"
-                    ><i class="fa-solid fa-envelope-open-text"></i>Contact us</a
-                  >
-                </li>
-                <li>
-                  <a href="#Accessibility"
-                    ><i class="fa-solid fa-eye-low-vision"></i>Accessibility</a
-                  >
-                </li>
-              </ul>
-
               <a class="member-join" href="#joinmember">Become a member</a>
             </div>
-          </div>
+          </section>
 
           <a href="html/store.html"
             ><i class="fa-solid fa-gamepad fa-lg"></i><span>STORE</span></a
@@ -256,7 +254,7 @@
         <div class="image-container">
           <img src="assets/images/girl-fingerpoint.webp" alt="Conquer" />
         </div>
-        <div class="frame1">
+        <div class="border-boxing">
           <h1>Become a member</h1>
           <p>
             Get discount codes, news, points on all purchases and discounted
@@ -264,7 +262,7 @@
             Membership that only gives and takes nothing in return!
           </p>
           <span>
-            <button>Become a member</button>
+            <a href="#member-join">Become a member</a>
           </span>
         </div>
       </section>
@@ -273,7 +271,7 @@
     <!-- /* ====================== INDEX ======================== */ -->
     <!-- /* ====================== INDEX ======================== */ -->
     <footer>
-      <div class="info-row">
+      <div id="info-row">
         <ul>
           <li><a href="html/about.html">About</a></li>
           <li><a href="#Accessibility">Accessibility</a></li>
@@ -285,7 +283,8 @@
           <li><a href="html/contact.html">Contact us</a></li>
         </ul>
       </div>
-      <div>
+
+      <div id="social-connect">
         <span class="border-bg">Stay in touch!</span>
         <div>
           <i class="fa-brands fa-x-twitter"></i>
@@ -294,9 +293,10 @@
           <i class="fa-brands fa-facebook-f"></i>
         </div>
       </div>
-      <div class="logo-footer">
+
+      <div id="logo-footer">
         <a href="index.html"
-          ><img src="assets/images/ta-logo-bw.png" alt="The Arena Logo" />
+          ><img src="../assets/images/ta-logo-bw.png" alt="The Arena Logo" />
         </a>
       </div>
     </footer>

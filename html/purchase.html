@@ -54,156 +54,256 @@
 
     <main id="purchase">
       <h1 class="header-style1">Checkout:</h1>
-      <section>
-        <div class="purchase">
-          <div class="in-cart">
-            <div>
-              <p>Items in cart: ( 1)</p>
-            </div>
-            <div>
-              <img
-                src="../assets\gamecovers\Marathon.png"
-                alt="Marathon Istoria game cover"
-              />
-              <div class="content-column">
-                <div class="content-split">
-                  <h5>Marathon Istoria</h5>
-                  <i class="fa-solid fa-x" style="color: #cc0000"></i>
-                </div>
-                <div class="content-split">
-                  <p>Price:</p>
-                  <p class="bold-price">39.98$</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="buy-container">
-            <div>
-              <form action="">
-                <label for="enter code" id="g-or-c"
-                  >Gift-Card or Coupon-Code:</label
-                >
-                <input
-                  type="text"
-                  id="code"
-                  placeholder="Enter code"
-                  onsubmit="alert('Code added')"
-                  onforminput="alert('Code added')"
-                />
-              </form>
-            </div>
-            <div>
-              <p>
-                You can access the game(s) in your Library for download. We wish
-                you the best adventure, and good luck out there! GG!
-              </p>
-              <p>
-                You can access the game(s) in your Library for download. We wish
-                you the best adventure, and good luck out there! GG!
-              </p>
-            </div>
-
-            <a href="../html/success.html">BUY</a>
-
-            <a href="../html/success.html"
-              ><i
-                class="fa-brands fa-lg fa-cc-paypal"
-                style="color: #000000"
-              ></i>
-              Fast</a
-            >
-          </div>
-        </div>
-
-        <div class="payment-billing">
-          <div>
-            <h3>Credit Card</h3>
+      <section class="main-content">
+        <div class="payment-options">
+          <h3>Credit Card</h3>
+          <span>
             <i class="fa-brands fa-cc-visa"></i>
             <i class="fa-brands fa-cc-mastercard"></i>
             <i class="fa-brands fa-cc-paypal"></i>
+          </span>
+        </div>
+
+        <section id="credit-card-inputs">
+          <label class="option-1-1" for="this-card">Current card</label>
+          <input
+            class="option-1-2"
+            type="radio"
+            id="this-card"
+            name="cc-card"
+            checked="checked"
+          />
+
+          <label class="option-2-1" for="new-card">New card</label>
+          <input class="option-2-2" type="radio" id="new-card" name="cc-card" />
+
+          <label class="option-3-1" for="fullname">Name on card:</label>
+          <input
+            class="option-3-2"
+            type="text"
+            id="fullname"
+            placeholder="Ola Nordmann"
+            readonly
+          />
+
+          <label class="option-4-1" for="creditcard">Credit card:</label>
+          <input
+            class="option-4-2"
+            type="text"
+            id="creditcard"
+            placeholder="XXXX-XXXX-XXXX-1234"
+            readonly
+          />
+
+          <label class="option-5-1" for="expiredate">Expire date:</label>
+          <input
+            class="option-5-2"
+            type="text"
+            id="date"
+            placeholder="2025 07"
+            size="6"
+            readonly
+          />
+
+          <label class="option-6-1" for="CVV/CVC">CVV/CVC:</label>
+          <input
+            class="option-6-2"
+            type="text"
+            id="CVV"
+            size="5"
+            placeholder="CVV/CVC"
+            readonly
+            maxlength="8"
+          />
+        </section>
+
+        <!-- <section id="credit-card-inputs">
+
+          <div>
+            <span>
+              <label for="this-card">Current card</label>
+              <input type="radio" id="this-card" name="cc-card" checked="checked" />
+            </span>
+
+            <span
+              ><label for="this-card">New card:</label>
+              <input type="radio" id="this-card" name="thiscard"
+            /></span>
           </div>
-          <div class="filled-cc">
-            <fieldset>
-              <div>
-                <div>
-                  <label for="this-card">Current card</label>
-                  <input type="radio" id="this-card" />
-                </div>
-                <div>
-                  <label for="this-card">New card</label>
-                  <input type="radio" id="that-card" />
-                </div>
-              </div>
 
-              <form action="" id="this">
-                <li>
-                  <label for="fullname">Name on card:</label>
-                  <input
-                    type="text"
-                    id="fullname"
-                    placeholder="Ola Nordmann"
-                    readonly
-                  />
-                </li>
-                <li>
-                  <label for="creditcard">Credit card:</label>
-                  <input
-                    type="text"
-                    id="creditcard"
-                    placeholder="XXXX-XXXX-XXXX-1234"
-                    readonly
-                  />
-                </li>
-                <li>
-                  <label for="expiredate">Expire date:</label>
-                  <input type="text" id="date" placeholder="2025 07" size="6" />
+          <div class="">
+            <form action="" id="filled-cc-readonly">
+              <li>
+                <label for="fullname">Name on card:</label>
+                <input type="text" id="fullname" placeholder="Ola Nordmann" readonly />
+              </li>
+              <li>
+                <label for="creditcard">Credit card:</label>
+                <input
+                  type="text"
+                  id="creditcard"
+                  placeholder="XXXX-XXXX-XXXX-1234"
+                  readonly
+                />
+              </li>
+              <li>
+                <label for="expiredate">Expire date:</label>
+                <input
+                  type="text"
+                  id="date"
+                  placeholder="2025 07"
+                  size="6"
+                  readonly
+                />
 
-                  <label for="CVV/CVC">CVV/CVC</label>
-                  <input
-                    type="text"
-                    id="CVV"
-                    size="5"
-                    placeholder="CVV/CVC"
-                    readonly
-                    maxlength="8"
-                  />
-                </li>
-              </form>
-            </fieldset>
+                <label for="CVV/CVC">CVV/CVC</label>
+                <input
+                  type="text"
+                  id="CVV"
+                  size="5"
+                  placeholder="CVV/CVC"
+                  readonly
+                  maxlength="8"
+                />
+              </li>
+            </form>
+
+            <form action="" id="new-cc-add">
+              <li>
+                <label for="fullname">Name on card:</label>
+                <input type="text" id="fullname" placeholder="Ola Nordmann" />
+              </li>
+              <li>
+                <label for="creditcard">Credit card</label>
+                <input
+                  type="text"
+                  id="creditcard"
+                  placeholder="XXXX-XXXX-XXXX-1234"
+                />
+              </li>
+              <li>
+                <label for="date">Expire date:</label>
+                <input
+                  type="text"
+                  id="date"
+                  placeholder="mm/yyyy"
+                  size="6"
+                  maxlength="7"
+                  minlength="7"
+                />
+
+                <label for="CVV">CVV/CVC</label>
+                <input
+                  type="text"
+                  id="CVV"
+                  size="5"
+                  placeholder="CVV/CVC"
+                  maxlength="3"
+                />
+              </li>
+            </form>
           </div>
-          <br />
+        </section> -->
 
-          <form action="">
-            <fieldset>
-              <legend>Personalia:</legend>
-              <label for="fname"></label>
-              <input type="text" id="fname" name="fname" value="John" /><br />
-            </fieldset>
+        <!-- <section id="personal-info-inputs">
+          <form action="" id="filled-cc-readonly">
+            <li>
+              <label for="this-card">Current card</label>
+              <input type="radio" id="this-card" />
+            </li>
+            <li>
+              <label for="fullname">Name on card:</label>
+              <input
+                type="text"
+                id="fullname"
+                placeholder="Ola Nordmann"
+                readonly
+              />
+            </li>
+            <li>
+              <label for="creditcard">Credit card:</label>
+              <input
+                type="text"
+                id="creditcard"
+                placeholder="XXXX-XXXX-XXXX-1234"
+                readonly
+              />
+            </li>
+            <li>
+              <label for="expiredate">Expire date:</label>
+              <input type="text" id="date" placeholder="2025 07" size="6" />
+
+              <label for="CVV/CVC">CVV/CVC</label>
+              <input
+                type="text"
+                id="CVV"
+                size="5"
+                placeholder="CVV/CVC"
+                readonly
+                maxlength="8"
+              />
+            </li>
           </form>
 
-          <div></div>
-          <div></div>
-        </div>
+          <form action="" id="new-cc-add">
+            <li>
+              <label for="this-card">Current card</label>
+              <input type="radio" id="this-card" />
+            </li>
+            <li>
+              <label for="fullname">Name on card:</label>
+              <input
+                type="text"
+                id="fullname"
+                placeholder="Ola Nordmann"
+                readonly
+              />
+            </li>
+            <li>
+              <label for="creditcard">Credit card:</label>
+              <input
+                type="text"
+                id="creditcard"
+                placeholder="XXXX-XXXX-XXXX-1234"
+                readonly
+              />
+            </li>
+            <li>
+              <label for="expiredate">Expire date:</label>
+              <input type="text" id="date" placeholder="2025 07" size="6" />
+
+              <label for="CVV/CVC">CVV/CVC</label>
+              <input
+                type="text"
+                id="CVV"
+                size="5"
+                placeholder="CVV/CVC"
+                readonly
+                maxlength="8"
+              />
+            </li>
+          </form>
+        </section> -->
       </section>
     </main>
 
     <!-- /* ====================== PURCHASE PROCESS ======================== */ -->
     <!-- /* ====================== PURCHASE PROCESS ======================== */ -->
     <footer>
-      <div class="info-row">
+      <div id="info-row">
         <ul>
-          <li><a href="about.html">About</a></li>
+          <li><a href="html/about.html">About</a></li>
           <li><a href="#Accessibility">Accessibility</a></li>
-          <li><a href="contact.html">Feedback</a></li>
+          <li><a href="html/contact.html">Feedback</a></li>
         </ul>
         <ul>
           <li><a href="#Privacy">Privacy policy</a></li>
           <li><a href="#Returns">Return policy</a></li>
-          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="html/contact.html">Contact us</a></li>
         </ul>
       </div>
-      <div>
+
+      <div id="social-connect">
         <span class="border-bg">Stay in touch!</span>
         <div>
           <i class="fa-brands fa-x-twitter"></i>
@@ -212,11 +312,65 @@
           <i class="fa-brands fa-facebook-f"></i>
         </div>
       </div>
-      <div class="logo-footer">
-        <a href="../index.html"
-          ><img src="../assets/images/ta-logo-bw.png" alt="The Arena Logo"
-        /></a>
+
+      <div id="logo-footer">
+        <a href="index.html"
+          ><img src="../assets/images/ta-logo-bw.png" alt="The Arena Logo" />
+        </a>
       </div>
     </footer>
   </body>
 </html>
+
+<div class="in-cart">
+  <div>
+    <p>Items in cart: ( 1)</p>
+  </div>
+  <div>
+    <img
+      src="../assets\gamecovers\Marathon.png"
+      alt="Marathon Istoria game cover"
+    />
+    <div class="content-column">
+      <div class="content-split">
+        <h5>Marathon Istoria</h5>
+        <i class="fa-solid fa-x" style="color: #cc0000"></i>
+      </div>
+      <div class="content-split">
+        <p>Price:</p>
+        <p class="bold-price">39.98$</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="buy-container">
+  <div>
+    <form action="">
+      <label for="enter code" id="g-or-c">Gift-Card or Coupon-Code:</label>
+      <input
+        type="text"
+        id="code"
+        placeholder="Enter code"
+        onsubmit="alert('Code added')"
+        onforminput="alert('Code added')"
+      />
+    </form>
+  </div>
+  <div>
+    <p>
+      You can access the game(s) in your Library for download. We wish you the
+      best adventure, and good luck out there! GG!
+    </p>
+    <p>
+      You can access the game(s) in your Library for download. We wish you the
+      best adventure, and good luck out there! GG!
+    </p>
+  </div>
+
+  <a href="../html/success.html">BUY</a>
+
+  <a href="../html/success.html"
+    ><i class="fa-brands fa-lg fa-cc-paypal" style="color: #000000"></i> Fast</a
+  >
+</div>
