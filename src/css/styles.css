@@ -2125,7 +2125,7 @@ main {
     >#credit-card-inputs {
       display: grid;
       grid-template-columns: repeat(8, 20px);
-      width: max-content;
+      width: min-content;
       height: auto;
       gap: 5px;
       border: 1px solid black;
@@ -2135,7 +2135,7 @@ main {
 
       >.option-1-1 {
         grid-row: 1;
-        grid-column: 2 /span 5;
+        grid-column: 2 /span 4;
 
       }
 
@@ -2148,7 +2148,7 @@ main {
 
       >.option-2-1 {
         grid-row: 1;
-        grid-column: 8/span 10;
+        grid-column: 8/span 4;
         align-self: center;
       }
 
@@ -2181,30 +2181,29 @@ main {
 
       >.option-4-2 {
         grid-row: 6;
-        grid-column: 1 /span 12;
+        grid-column: 1 /span 8;
         padding: 0.2rem;
       }
 
       >.option-5-1 {
         grid-row: 7;
         grid-column: 1 /span 4;
-        adasd
       }
 
       >.option-5-2 {
         grid-row: 8;
-        grid-column: 1 /span 3;
+        grid-column: 1 /span 4;
         padding: 0.2rem;
       }
 
       >.option-6-1 {
         grid-row: 7;
-        grid-column: 9 /span 4;
+        grid-column: 6 /span 4;
       }
 
       >.option-6-2 {
         grid-row: 8;
-        grid-column: 13 /span 4;
+        grid-column: 6 /span 4;
         padding: 0.2rem;
       }
     }
