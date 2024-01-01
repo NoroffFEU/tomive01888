@@ -32,21 +32,95 @@
           src="../assets/images/thearena-Logo.png"
           alt="The Arena The Universe of Games"
         />
+
+        <button class="member-join" id="member">Become a member</button>
       </div>
       <nav>
-        <ul>
-          <a href=""><i class="fa-solid fa-bars fa-lg"></i></a>
-          <a href=""
+        <ul id="hamburger-navbar">
+          <input type="checkbox" id="hamburger" />
+          <label for="hamburger" id="ham-size">
+            <i class="fa-solid fa-bars fa-lg"></i
+          ></label>
+          <section class="hamburger-open">
+            <div>
+              <section>
+                <input type="checkbox" name="login" id="login" />
+                <label for="login"> </label>
+                <img
+                  id="log-in"
+                  src="assets/images/ta-login-logo.png"
+                  alt="The Arena tiny profile logo"
+                />
+                <h4 id="not-signed">Not logged in</h4>
+
+                <img
+                  id="log-off"
+                  src="assets/images/ta-logged.png"
+                  alt="The Arena tiny profile logo"
+                />
+                <h4 id="is-signed">Jaguar092</h4>
+                <p id="sign-up"><a href="#Sign-up">Sign up</a>or</p>
+
+                <a class="navlist hidden" href="#Jaguar092"
+                  ><i class="fa-solid fa-user-ninja"></i>Profile</a
+                >
+                <a class="navlist hidden" href="#Game-library"
+                  ><i class="fa-solid fa-gamepad"></i>Game library</a
+                >
+                <a class="navlist hidden" href="#User-settings"
+                  ><i class="fa-solid fa-gear"></i>User settings</a
+                >
+                <a class="navlist" href="#News"
+                  ><i class="fa-solid fa-newspaper"></i> News</a
+                >
+                <a class="navlist" href="#Coupon-codes"
+                  ><i class="fa-solid fa-ticket"></i>Coupon codes</a
+                >
+                <a class="navlist" href="html/about.html"
+                  ><i class="fa-solid fa-user"></i>About us</a
+                >
+                <a class="navlist" href="html/contact.html"
+                  ><i class="fa-solid fa-envelope-open-text"></i>Contact us</a
+                >
+                <a class="navlist" href="#Accessibility"
+                  ><i class="fa-solid fa-eye-low-vision"></i>Accessibility</a
+                >
+              </section>
+              <a class="member-join" href="#joinmember">Become a member</a>
+            </div>
+          </section>
+
+          <a href="html/store.html"
             ><i class="fa-solid fa-gamepad fa-lg"></i><span>STORE</span></a
           >
-          <a href=""
+
+          <a href="html/purchase.html"
             ><i class="fa-solid fa-cart-shopping fa-lg"></i><span>CART</span></a
           >
+
           <a href=""
             ><i class="fa-solid fa-magnifying-glass fa-lg"></i
             ><span>SEARCH</span></a
           >
         </ul>
+
+        <div id="desktop-navbar">
+          <div>
+            <a href="">Home</a>
+            <a href="">Store</a>
+            <a href="">News</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+            <a href="">Profile</a>
+          </div>
+
+          <span>
+            <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+            <a href="html/purchase.html"
+              ><i class="fa-solid fa-cart-shopping fa-lg"></i
+            ></a>
+          </span>
+        </div>
       </nav>
     </header>
     <!-- /* ====================== PURCHASE PROCESS ======================== */ -->
@@ -54,236 +128,281 @@
 
     <main id="purchase">
       <h1 class="header-style1">Checkout:</h1>
-      <section class="main-content">
-        <div class="payment-options">
-          <h3>Credit Card</h3>
-          <span>
-            <i class="fa-brands fa-cc-visa"></i>
-            <i class="fa-brands fa-cc-mastercard"></i>
-            <i class="fa-brands fa-cc-paypal"></i>
-          </span>
-        </div>
-
-        <section id="credit-card-inputs">
-          <label class="option-1-1" for="this-card">Current card</label>
-          <input
-            class="option-1-2"
-            type="radio"
-            id="this-card"
-            name="cc-card"
-            checked="checked"
-          />
-
-          <label class="option-2-1" for="new-card">New card</label>
-          <input class="option-2-2" type="radio" id="new-card" name="cc-card" />
-
-          <label class="option-3-1" for="fullname">Name on card:</label>
-          <input
-            class="option-3-2"
-            type="text"
-            id="fullname"
-            placeholder="Ola Nordmann"
-            readonly
-          />
-
-          <label class="option-4-1" for="creditcard">Credit card:</label>
-          <input
-            class="option-4-2"
-            type="text"
-            id="creditcard"
-            placeholder="XXXX-XXXX-XXXX-1234"
-            readonly
-          />
-
-          <label class="option-5-1" for="expiredate">Expire date:</label>
-          <input
-            class="option-5-2"
-            type="text"
-            id="date"
-            placeholder="2025 07"
-            size="6"
-            readonly
-          />
-
-          <label class="option-6-1" for="CVV/CVC">CVV/CVC:</label>
-          <input
-            class="option-6-2"
-            type="text"
-            id="CVV"
-            size="5"
-            placeholder="CVV/CVC"
-            readonly
-            maxlength="8"
-          />
-        </section>
-
-        <!-- <section id="credit-card-inputs">
-
-          <div>
-            <span>
-              <label for="this-card">Current card</label>
-              <input type="radio" id="this-card" name="cc-card" checked="checked" />
-            </span>
-
-            <span
-              ><label for="this-card">New card:</label>
-              <input type="radio" id="this-card" name="thiscard"
-            /></span>
-          </div>
-
-          <div class="">
-            <form action="" id="filled-cc-readonly">
-              <li>
-                <label for="fullname">Name on card:</label>
-                <input type="text" id="fullname" placeholder="Ola Nordmann" readonly />
-              </li>
-              <li>
-                <label for="creditcard">Credit card:</label>
-                <input
-                  type="text"
-                  id="creditcard"
-                  placeholder="XXXX-XXXX-XXXX-1234"
-                  readonly
-                />
-              </li>
-              <li>
-                <label for="expiredate">Expire date:</label>
-                <input
-                  type="text"
-                  id="date"
-                  placeholder="2025 07"
-                  size="6"
-                  readonly
-                />
-
-                <label for="CVV/CVC">CVV/CVC</label>
-                <input
-                  type="text"
-                  id="CVV"
-                  size="5"
-                  placeholder="CVV/CVC"
-                  readonly
-                  maxlength="8"
-                />
-              </li>
+      <section class="column-row-adjuster">
+        <div>
+          <div class="buy-container">
+            <form action="">
+              <label for="enter-code"> Gift-Card or Coupon-Code:</label>
+              <input
+                type="text"
+                id="enter-code"
+                placeholder="Enter code"
+                onsubmit="alert('Code added')"
+                onforminput="alert('Code added')"
+              />
             </form>
 
-            <form action="" id="new-cc-add">
-              <li>
-                <label for="fullname">Name on card:</label>
-                <input type="text" id="fullname" placeholder="Ola Nordmann" />
-              </li>
-              <li>
-                <label for="creditcard">Credit card</label>
+            <div id="buy-text-split">
+              <span>
+                <p>subtotal:</p>
+                <p>discount:</p>
+                <b>total:</b>
+              </span>
+              <span>
+                <p class="buy-underline">39.98$</p>
+                <p class="buy-underline">-%</p>
+                <b>39.98$</b>
+              </span>
+            </div>
+
+            <a href="../html/success.html">BUY</a>
+
+            <a href="../html/success.html"
+              ><i
+                class="fa-brands fa-lg fa-cc-paypal"
+                style="color: #000000"
+              ></i>
+              Fast</a
+            >
+          </div>
+
+          <div class="cc-personal-info bg-border-style-purchase">
+            <div id="cc-info">
+              <div class="payment-options">
+                <h3>Credit Card</h3>
+                <span>
+                  <i class="fa-brands fa-cc-visa"></i>
+                  <i class="fa-brands fa-cc-mastercard"></i>
+                  <i class="fa-brands fa-cc-paypal"></i>
+                </span>
+              </div>
+
+              <section id="credit-card-inputs">
+                <label class="option-1-1" for="this-card">Current card</label>
                 <input
-                  type="text"
-                  id="creditcard"
-                  placeholder="XXXX-XXXX-XXXX-1234"
-                />
-              </li>
-              <li>
-                <label for="date">Expire date:</label>
-                <input
-                  type="text"
-                  id="date"
-                  placeholder="mm/yyyy"
-                  size="6"
-                  maxlength="7"
-                  minlength="7"
+                  class="option-1-2"
+                  type="radio"
+                  id="this-card"
+                  name="cc-card"
+                  checked="checked"
                 />
 
-                <label for="CVV">CVV/CVC</label>
+                <label class="option-2-1" for="new-card">New card</label>
                 <input
+                  class="option-2-2"
+                  type="radio"
+                  id="new-card"
+                  name="cc-card"
+                />
+                <!-- UNDER HERE ================================= -->
+                <label class="option-3-1" for="fullname">Name on card:</label>
+                <input
+                  class="option-3-2 red-outline"
+                  type="text"
+                  id="fullname"
+                  placeholder="Ola Nordmann"
+                  readonly
+                />
+                <input
+                  class="option-3-2 display-opt-3"
+                  type="text"
+                  id="fullname"
+                  placeholder="Full name..."
+                />
+
+                <label class="option-4-1" for="creditcard">Credit card:</label>
+                <input
+                  class="option-4-2 red-outline"
+                  type="text"
+                  id="creditcard"
+                  placeholder="XXXX-1234"
+                  readonly
+                />
+                <input
+                  class="option-4-2 display-opt-4"
+                  type="text"
+                  id="creditcard"
+                  placeholder="XXXX-XXXX-XXXX-XXXX"
+                />
+
+                <label class="option-5-1" for="expiredate">Expire date:</label>
+                <input
+                  class="option-5-2 red-outline"
+                  type="text"
+                  id="date"
+                  placeholder="2025/07"
+                  size="7"
+                  readonly
+                />
+                <input
+                  class="option-5-2 display-opt-5"
+                  type="text"
+                  id="date"
+                  placeholder="yyyy/mm"
+                  size="7"
+                />
+
+                <label class="option-6-1" for="CVV/CVC">CVV/CVC:</label>
+                <input
+                  class="option-6-2 red-outline"
                   type="text"
                   id="CVV"
                   size="5"
-                  placeholder="CVV/CVC"
+                  placeholder="Hidden"
+                  maxlength="3"
+                  readonly
+                />
+                <input
+                  class="option-6-2 display-opt-6"
+                  type="text"
+                  id="CVV"
+                  size="5"
+                  placeholder=""
                   maxlength="3"
                 />
-              </li>
-            </form>
+              </section>
+            </div>
+
+            <div id="personal-info">
+              <h3>Personal information:</h3>
+              <section id="billing-info-inputs">
+                <label class="option-1-1" for="this-card">Current info</label>
+                <input
+                  class="option-1-2"
+                  type="radio"
+                  id="this-card"
+                  name="bi-card"
+                  checked="checked"
+                />
+
+                <label class="option-2-1" for="new-card">New info</label>
+                <input
+                  class="option-2-2"
+                  type="radio"
+                  id="new-card"
+                  name="bi-card"
+                />
+                <!-- UNDER HERE ================================= -->
+                <label class="option-3-1" for="fname">Full name:</label>
+                <input
+                  class="option-3-2 red-outline"
+                  type="text"
+                  id="fname"
+                  placeholder="Ola Nordmann"
+                  readonly
+                />
+                <input
+                  class="option-3-2 display-opt-3"
+                  type="text"
+                  id="fname"
+                  placeholder="Full name..."
+                />
+
+                <label class="option-4-1" for="phone">Telephone:</label>
+                <input
+                  class="option-4-2 red-outline"
+                  type="number"
+                  id="phone"
+                  placeholder="XXX XX 608"
+                  maxlength="8"
+                  readonly
+                />
+                <input
+                  class="option-4-2 display-opt-4"
+                  type="number"
+                  id="phone"
+                  placeholder="Phone number..."
+                  maxlength="8"
+                />
+
+                <label class="option-5-1" for="adress">Street adress:</label>
+                <input
+                  class="option-5-2 red-outline"
+                  type="text"
+                  id="adress"
+                  placeholder="Bjørnefaret 092a"
+                  readonly
+                />
+                <input
+                  class="option-5-2 display-opt-5"
+                  type="text"
+                  id="adress"
+                  placeholder="Full adress..."
+                />
+
+                <label class="option-6-1" for="city">City</label>
+                <input
+                  class="option-6-2 red-outline"
+                  type="text"
+                  id="adress"
+                  placeholder="Oslo"
+                  size="8"
+                  readonly
+                />
+                <input
+                  class="option-6-2 display-opt-6"
+                  type="text"
+                  id="city"
+                  placeholder="City..."
+                  size="8"
+                />
+
+                <label class="option-7-1" for="CVV/CVC">Post code</label>
+                <input
+                  class="option-7-2 red-outline"
+                  type="text"
+                  id="CVV"
+                  size="5"
+                  placeholder="0049"
+                  maxlength="8"
+                  readonly
+                />
+                <input
+                  class="option-7-2 display-opt-7"
+                  type="text"
+                  id="CVV"
+                  size="5"
+                  placeholder="Empty"
+                  maxlength="8"
+                />
+
+                <label class="option-8-1" for="country">Country:</label>
+                <input
+                  class="option-8-2 red-outline"
+                  type="text"
+                  id="country"
+                  placeholder="Norway"
+                  readonly
+                />
+                <input
+                  class="option-8-2 display-opt-8"
+                  type="text"
+                  id="country"
+                  placeholder="Your country..."
+                />
+              </section>
+            </div>
           </div>
-        </section> -->
+        </div>
 
-        <!-- <section id="personal-info-inputs">
-          <form action="" id="filled-cc-readonly">
-            <li>
-              <label for="this-card">Current card</label>
-              <input type="radio" id="this-card" />
-            </li>
-            <li>
-              <label for="fullname">Name on card:</label>
-              <input
-                type="text"
-                id="fullname"
-                placeholder="Ola Nordmann"
-                readonly
-              />
-            </li>
-            <li>
-              <label for="creditcard">Credit card:</label>
-              <input
-                type="text"
-                id="creditcard"
-                placeholder="XXXX-XXXX-XXXX-1234"
-                readonly
-              />
-            </li>
-            <li>
-              <label for="expiredate">Expire date:</label>
-              <input type="text" id="date" placeholder="2025 07" size="6" />
+        <div>
+          <div class="cart-flexbox bg-border-style-purchase">
+            <p class="cart-position-1">Items in cart: ( 1)</p>
+            <img
+              class="cart-position-2"
+              src="../assets\gamecovers\Marathon.png"
+              alt="Marathon Istoria game cover"
+            />
 
-              <label for="CVV/CVC">CVV/CVC</label>
-              <input
-                type="text"
-                id="CVV"
-                size="5"
-                placeholder="CVV/CVC"
-                readonly
-                maxlength="8"
-              />
-            </li>
-          </form>
-
-          <form action="" id="new-cc-add">
-            <li>
-              <label for="this-card">Current card</label>
-              <input type="radio" id="this-card" />
-            </li>
-            <li>
-              <label for="fullname">Name on card:</label>
-              <input
-                type="text"
-                id="fullname"
-                placeholder="Ola Nordmann"
-                readonly
-              />
-            </li>
-            <li>
-              <label for="creditcard">Credit card:</label>
-              <input
-                type="text"
-                id="creditcard"
-                placeholder="XXXX-XXXX-XXXX-1234"
-                readonly
-              />
-            </li>
-            <li>
-              <label for="expiredate">Expire date:</label>
-              <input type="text" id="date" placeholder="2025 07" size="6" />
-
-              <label for="CVV/CVC">CVV/CVC</label>
-              <input
-                type="text"
-                id="CVV"
-                size="5"
-                placeholder="CVV/CVC"
-                readonly
-                maxlength="8"
-              />
-            </li>
-          </form>
-        </section> -->
+            <h5 class="cart-position-3">Marathon Istoria</h5>
+            <i
+              class="fa-solid fa-x delete-from-cart"
+              style="color: #cc0000"
+            ></i>
+            <p class="cart-position-4">Price:</p>
+            <p class="bold-price">39.98$</p>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -321,56 +440,3 @@
     </footer>
   </body>
 </html>
-
-<div class="in-cart">
-  <div>
-    <p>Items in cart: ( 1)</p>
-  </div>
-  <div>
-    <img
-      src="../assets\gamecovers\Marathon.png"
-      alt="Marathon Istoria game cover"
-    />
-    <div class="content-column">
-      <div class="content-split">
-        <h5>Marathon Istoria</h5>
-        <i class="fa-solid fa-x" style="color: #cc0000"></i>
-      </div>
-      <div class="content-split">
-        <p>Price:</p>
-        <p class="bold-price">39.98$</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="buy-container">
-  <div>
-    <form action="">
-      <label for="enter code" id="g-or-c">Gift-Card or Coupon-Code:</label>
-      <input
-        type="text"
-        id="code"
-        placeholder="Enter code"
-        onsubmit="alert('Code added')"
-        onforminput="alert('Code added')"
-      />
-    </form>
-  </div>
-  <div>
-    <p>
-      You can access the game(s) in your Library for download. We wish you the
-      best adventure, and good luck out there! GG!
-    </p>
-    <p>
-      You can access the game(s) in your Library for download. We wish you the
-      best adventure, and good luck out there! GG!
-    </p>
-  </div>
-
-  <a href="../html/success.html">BUY</a>
-
-  <a href="../html/success.html"
-    ><i class="fa-brands fa-lg fa-cc-paypal" style="color: #000000"></i> Fast</a
-  >
-</div>
