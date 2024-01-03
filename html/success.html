@@ -32,21 +32,95 @@
           src="../assets/images/thearena-Logo.png"
           alt="The Arena The Universe of Games"
         />
+
+        <button class="member-join" id="member">Become a member</button>
       </div>
       <nav>
-        <ul>
-          <a href=""><i class="fa-solid fa-bars fa-lg"></i></a>
-          <a href=""
+        <ul id="hamburger-navbar">
+          <input type="checkbox" id="hamburger" />
+          <label for="hamburger" id="ham-size">
+            <i class="fa-solid fa-bars fa-lg"></i
+          ></label>
+          <section class="hamburger-open">
+            <div>
+              <section>
+                <input type="checkbox" name="login" id="login" />
+                <label for="login"> </label>
+                <img
+                  id="log-in"
+                  src="../assets/images/ta-login-logo.png"
+                  alt="The Arena tiny profile logo"
+                />
+                <h4 id="not-signed">Not logged in</h4>
+
+                <img
+                  id="log-off"
+                  src="../assets/images/ta-logged.png"
+                  alt="The Arena tiny profile logo"
+                />
+                <h4 id="is-signed">Jaguar092</h4>
+                <p id="sign-up"><a href="#Sign-up">Sign up</a>or</p>
+
+                <a class="navlist hidden" href="#Jaguar092"
+                  ><i class="fa-solid fa-user-ninja"></i>Profile</a
+                >
+                <a class="navlist hidden" href="#Game-library"
+                  ><i class="fa-solid fa-gamepad"></i>Game library</a
+                >
+                <a class="navlist hidden" href="#User-settings"
+                  ><i class="fa-solid fa-gear"></i>User settings</a
+                >
+                <a class="navlist" href="#News"
+                  ><i class="fa-solid fa-newspaper"></i> News</a
+                >
+                <a class="navlist" href="#Coupon-codes"
+                  ><i class="fa-solid fa-ticket"></i>Coupon codes</a
+                >
+                <a class="navlist" href="../html/about.html"
+                  ><i class="fa-solid fa-user"></i>About us</a
+                >
+                <a class="navlist" href="../html/contact.html"
+                  ><i class="fa-solid fa-envelope-open-text"></i>Contact us</a
+                >
+                <a class="navlist" href="#Accessibility"
+                  ><i class="fa-solid fa-eye-low-vision"></i>Accessibility</a
+                >
+              </section>
+              <a class="member-join" href="#joinmember">Become a member</a>
+            </div>
+          </section>
+
+          <a href="html/store.html"
             ><i class="fa-solid fa-gamepad fa-lg"></i><span>STORE</span></a
           >
-          <a href=""
+
+          <a href="html/purchase.html"
             ><i class="fa-solid fa-cart-shopping fa-lg"></i><span>CART</span></a
           >
+
           <a href=""
             ><i class="fa-solid fa-magnifying-glass fa-lg"></i
             ><span>SEARCH</span></a
           >
         </ul>
+
+        <div id="desktop-navbar">
+          <div>
+            <a href="../index.html">Home</a>
+            <a href="../html/store.html">Store</a>
+            <a href="#News">News</a>
+            <a href="../html/about.html">About</a>
+            <a href="../html/contact.html">Contact</a>
+            <a href="#profile">Profile</a>
+          </div>
+
+          <span>
+            <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+            <a href="../html/purchase.html"
+              ><i class="fa-solid fa-cart-shopping fa-lg"></i
+            ></a>
+          </span>
+        </div>
       </nav>
     </header>
 
@@ -94,14 +168,14 @@
     <footer>
       <div id="info-row">
         <ul>
-          <li><a href="html/about.html">About</a></li>
+          <li><a href="../html/about.html">About</a></li>
           <li><a href="#Accessibility">Accessibility</a></li>
-          <li><a href="html/contact.html">Feedback</a></li>
+          <li><a href="../html/contact.html">Feedback</a></li>
         </ul>
         <ul>
           <li><a href="#Privacy">Privacy policy</a></li>
           <li><a href="#Returns">Return policy</a></li>
-          <li><a href="html/contact.html">Contact us</a></li>
+          <li><a href="../html/contact.html">Contact us</a></li>
         </ul>
       </div>
 
@@ -116,7 +190,7 @@
       </div>
 
       <div id="logo-footer">
-        <a href="index.html"
+        <a href="../../index.html"
           ><img src="../assets/images/ta-logo-bw.png" alt="The Arena Logo" />
         </a>
       </div>

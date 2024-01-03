@@ -12,9 +12,9 @@
 
   --li-font-shrink: clamp(0.8rem, 0.5vw + 0.6rem, 1rem);
 
-  --h-contact-shrink: clamp(1rem, 2vw + 1rem, 2.6rem);
+  --h3-contact-shrink: clamp(1rem, 2vw + 1rem, 2.6rem);
 
-  --h-about-shrink: clamp(1.1rem, 1vw + 1rem, 2rem);
+  --h4-about-shrink: clamp(1.1rem, 1vw + 1rem, 2rem);
 
   --h-product-shrink: clamp(1.1rem, 1vw + 1rem, 1.3rem);
 
