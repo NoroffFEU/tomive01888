@@ -1,9 +1,24 @@
-/* Use import to split up your CSS into manageable chunks*/
-@import url("./_reset.css");
+/* Use import to split up your CSS into manageable chunks */
+@import url("_reset.css");
 /* Files that are only needed to be imported are called partials */
 /* These are marked with an underscore: */
-@import url("./_variables.css");
+@import url("_variables.css");
 /* Feel free to add as many of these imports as you need */
+
+
+/* *,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  min-height: 100vh;
+  margin: 0;
+} */
 
 html {
   scroll-behavior: smooth;
@@ -536,78 +551,6 @@ nav {
     }
   }
 }
-
-/* #profile-pop-up {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  width: 100%;
-  border-radius: 0%;
-  height: 1000px;
-
-  >.profile-window-popped {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 2rem;
-    margin: 0 auto;
-    margin-top: 250px;
-    width: 100%;
-    max-width: 750px;
-    height: 400px;
-    background-color: white;
-    border-radius: 2rem;
-    padding: 1.5rem;
-  }
-
-  >.profile-window-popped h2 {
-    color: black;
-  }
-
-  >.profile-window-popped .sign-up-now {
-    color: black;
-  }
-
-  >.profile-window-popped form {
-    display: flex;
-    flex-direction: column;
-
-    *:nth-child(3) {
-      margin-top: 1rem;
-    }
-
-    *:nth-child(5) {
-      margin-top: 1rem;
-    }
-
-    >label {
-      font-family: 'zilla slab', serif;
-    }
-
-    >input {
-      padding: 0.2rem 0.5rem;
-      border-radius: 3px;
-      border: 2px solid #00ffb2;
-      font-size: 16px;
-    }
-
-    >.login-desktop-ver {
-      background-color: #00ffb2;
-      color: black;
-      max-width: 100px;
-      font-weight: 900;
-    }
-
-  }
-
-  >.profile-window-popped a {
-    color: blue;
-    text-decoration: none;
-  }
-} */
-
 
 #member {
   display: none;
