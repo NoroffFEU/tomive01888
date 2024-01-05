@@ -14,6 +14,8 @@ body {
   background-image: linear-gradient(blue, purple);
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 
 ul {
@@ -381,8 +383,10 @@ nav {
       display: none;
     }
 
-    >.profile-pop-up {
+    >#profile-pop-up {
       display: none;
+      max-height: 0px;
+      overflow: hidden;
     }
 
     >label {
@@ -400,13 +404,78 @@ nav {
       max-width: 100px;
     }
 
-    >input[type=checkbox]:checked~.profile-pop-up {
+    >input[type="checkbox"]:checked~#profile-pop-up {
       display: block;
+      max-height: max-content;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      width: 100%;
+      border-radius: 0%;
+      height: 1000px;
+
+      >.profile-window-popped {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 2rem;
+        margin: 0 auto;
+        margin-top: 250px;
+        width: 100%;
+        max-width: 750px;
+        height: 400px;
+        background-color: white;
+        border-radius: 2rem;
+        padding: 1.5rem;
+      }
+
+      >.profile-window-popped h2 {
+        color: black;
+      }
+
+      >.profile-window-popped .sign-up-now {
+        color: black;
+      }
+
+      >.profile-window-popped form {
+        display: flex;
+        flex-direction: column;
+
+        *:nth-child(3) {
+          margin-top: 1rem;
+        }
+
+        *:nth-child(5) {
+          margin-top: 1rem;
+        }
+
+        >label {
+          font-family: 'zilla slab', serif;
+        }
+
+        >input {
+          padding: 0.2rem 0.5rem;
+          border-radius: 3px;
+          border: 2px solid #00ffb2;
+          font-size: 16px;
+        }
+
+        >.login-desktop-ver {
+          background-color: #00ffb2;
+          color: black;
+          max-width: 100px;
+          font-weight: 900;
+        }
+
+      }
+
+      >.profile-window-popped a {
+        color: blue;
+        text-decoration: none;
+      }
     }
-
-
-
-
   }
 
   >div a {
@@ -463,7 +532,7 @@ nav {
   }
 }
 
-#profile-pop-up {
+/* #profile-pop-up {
   position: absolute;
   top: 100%;
   left: 0;
@@ -532,7 +601,8 @@ nav {
     color: blue;
     text-decoration: none;
   }
-}
+} */
+
 
 #member {
   display: none;
@@ -2710,8 +2780,6 @@ main {
 }
 
 
-
-
 #buy-text-split {
   display: flex;
   flex-direction: row;
@@ -3011,6 +3079,7 @@ main {
 
   >div {
     width: 100%;
+    margin: 0.5rem 0rem;
 
     i {
       float: left;

@@ -111,18 +111,53 @@
         </div>
 
         <div id="desktop-navbar">
-          <div>
-            <a href="../index.html">Home</a>
-            <a class="on-page" href="../html/store.html">Store</a>
-            <a href="../html\not-built-yet.html">News</a>
-            <a href="../html/about.html">About</a>
-            <a href="../html/contact.html">Contact</a>
-            <a href="#profile">Profile</a>
+          <div class="desknavlist-style">
+            <a class="on-page" href="index.html">Home</a>
+            <a href="html/store.html">Store</a>
+            <a href="html/not-built-yet.html">News</a>
+            <a href="html/about.html">About</a>
+            <a href="html/contact.html">Contact</a>
+
+            <label for="profile-log">Profile</label>
+            <input id="profile-log" type="checkbox" />
+            <section id="profile-pop-up">
+              <div class="profile-window-popped">
+                <h2>Login to The Arena!</h2>
+
+                <form action="">
+                  <label for="prof-usern">Username:</label>
+                  <input
+                    id="prof-usern"
+                    type="text"
+                    placeholder="Input username..."
+                    minlength="10"
+                    maxlength="30"
+                    required
+                  />
+                  <label for="prof-passw">Password:</label>
+                  <input
+                    id="prof-passw"
+                    type="password"
+                    placeholder="Input password..."
+                    minlength="10"
+                    maxlength="30"
+                    required
+                  />
+                  <input
+                    class="login-desktop-ver"
+                    type="submit"
+                    value="LOGIN"
+                  />
+                </form>
+
+                <a href="#SignUp">or Sign Up</a>
+              </div>
+            </section>
           </div>
 
           <span>
             <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-            <a href="../html/purchase.html"
+            <a href="html/purchase.html"
               ><i class="fa-solid fa-cart-shopping fa-lg"></i
             ></a>
           </span>
