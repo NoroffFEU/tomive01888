@@ -383,7 +383,14 @@ nav {
   justify-content: space-between;
 
   >div {
-    width: 700px;
+    width: 680px;
+
+
+  }
+
+  >div a:hover {
+    color: #00ffb2;
+    border-bottom: 2px solid #00ffb2;
   }
 
   >div .desk-nav-stylebutton {
@@ -400,11 +407,6 @@ nav {
     width: 100%;
     max-width: 100px;
 
-  }
-
-  >div .desk-nav-stylebutton:hover {
-    color: #00ffb2;
-    border-bottom: 2px solid #00ffb2;
   }
 
   >div .on-page {
@@ -711,7 +713,7 @@ main {
       >img {
         width: 100%;
         min-width: 5px;
-        max-width: 90px;
+        max-width: 100px;
         margin: 0.1rem;
       }
     }
@@ -1175,7 +1177,7 @@ main {
   }
 }
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 610px) {
   main {
     >.first-box {
       display: flex;
@@ -1191,7 +1193,7 @@ main {
 
         >img {
           width: 100%;
-          max-width: 100px;
+          max-width: 120px;
         }
       }
 
@@ -1223,7 +1225,7 @@ main {
   }
 }
 
-@media only screen and (min-width: 1545px) {
+@media only screen and (min-width: 1525px) {
   main {
     >.first-box {
       display: flex;
