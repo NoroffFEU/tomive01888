@@ -687,9 +687,10 @@ nav {
   }
 
   >div #sign-up-now {
-    color: #0091ff;
-    font-weight: 700;
+    color: #54b5ff;
+    font-weight: 600;
     width: max-content;
+    text-decoration: none;
   }
 }
 
@@ -731,8 +732,9 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   background-color: #2a2a2a;
-  padding: 1rem;
+  padding: 2rem 1rem;
   width: 100%;
+  gap: 2rem;
 
   >#logo-footer {
     >a {
@@ -810,7 +812,6 @@ footer {
     display: flex;
     flex-direction: row;
     height: auto;
-    padding: 1rem;
   }
 
   footer :nth-child(1) {
