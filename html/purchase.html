@@ -169,18 +169,20 @@
         <a href="./product.html">Product></a>
         <p>Cart></p>
       </div>
+
       <h1 class="header-style1">Checkout:</h1>
+
       <section class="column-row-adjuster">
-        <div class="purchase-divider1">
+        <article class="purchase-divider1">
           <div class="buy-container">
-            <form action="">
+            <form action="" novalidate>
               <label for="enter-code"> Gift-Card or Coupon-Code:</label>
+              <input type="text" id="enter-code" placeholder="Enter code" />
               <input
-                type="text"
-                id="enter-code"
-                placeholder="Enter code"
-                onsubmit="alert('Code added')"
-                onforminput="alert('Code added')"
+                id="submit-code"
+                type="submit"
+                value="Add"
+                onclick="alert('Incorrect code!')"
               />
             </form>
 
@@ -425,25 +427,21 @@
               </section>
             </div>
           </div>
-        </div>
+        </article>
 
-        <div class="purchase-divider2">
+        <article>
           <div class="cart-gridbox bg-border-style-purchase">
             <p class="cart-position-1">Items in cart: ( 1)</p>
-            <h5 class="cart-position-2">Marathon Istoria</h5>
+            <h5 class="cart-position-2">"Insert Game Title"</h5>
             <img
               class="cart-position-3"
-              src="../assets\gamecovers\Marathon.png"
+              src="../assets/images/Blank-game-cover-small.png"
               alt="Marathon Istoria game cover"
             />
-            <i
-              class="fa-solid fa-x delete-from-cart"
-              style="color: #cc0000"
-            ></i>
             <p class="cart-position-4">Price:</p>
             <p class="bold-price">39.98$</p>
           </div>
-        </div>
+        </article>
       </section>
     </main>
 
