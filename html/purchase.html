@@ -173,7 +173,7 @@
       <h1 class="header-style1">Checkout:</h1>
 
       <section class="column-row-adjuster">
-        <article class="purchase-divider1">
+        <article>
           <div class="buy-container">
             <form action="" novalidate>
               <label for="enter-code"> Gift-Card or Coupon-Code:</label>
@@ -185,22 +185,19 @@
                 onclick="alert('Incorrect code!')"
               />
             </form>
-
             <div id="buy-text-split">
-              <span>
+              <span class="left-align-box">
                 <p>subtotal:</p>
                 <p>discount:</p>
                 <b>total:</b>
               </span>
-              <span>
+              <span class="right-align-box">
                 <p class="buy-underline">39.98$</p>
                 <p class="buy-underline">-%</p>
                 <b>39.98$</b>
               </span>
             </div>
-
             <a href="./success.html">BUY</a>
-
             <a href="./success.html"
               ><i class="fa-brands fa-lg fa-cc-paypal"></i> Fast</a
             >
@@ -209,7 +206,7 @@
           <div class="cc-personal-info bg-border-style-purchase">
             <div id="cc-info">
               <div class="payment-options">
-                <h5>Credit Card</h5>
+                <h5>Credit Card:</h5>
                 <span>
                   <i class="fa-brands fa-cc-visa"></i>
                   <i class="fa-brands fa-cc-mastercard"></i>
@@ -217,7 +214,7 @@
                 </span>
               </div>
 
-              <section id="credit-card-inputs">
+              <form action="" novalidate id="credit-card-inputs">
                 <label class="option-1-1" for="this-card">Current card</label>
                 <input
                   class="option-1-2"
@@ -234,7 +231,7 @@
                   id="new-card"
                   name="cc-card"
                 />
-                <!-- UNDER HERE ================================= -->
+
                 <label class="option-3-1" for="fullname">Name on card:</label>
                 <input
                   class="option-3-2 red-outline"
@@ -265,7 +262,7 @@
                   placeholder="XXXX-XXXX-XXXX-XXXX"
                 />
 
-                <label class="option-5-1" for="expiredate">Expire date:</label>
+                <label class="option-5-1" for="date">Expire date:</label>
                 <input
                   class="option-5-2 red-outline"
                   type="text"
@@ -282,7 +279,7 @@
                   size="7"
                 />
 
-                <label class="option-6-1" for="CVV/CVC">CVV/CVC:</label>
+                <label class="option-6-1" for="CVV">CVV/CVC:</label>
                 <input
                   class="option-6-2 red-outline"
                   type="text"
@@ -300,7 +297,7 @@
                   placeholder=""
                   maxlength="3"
                 />
-              </section>
+              </form>
             </div>
 
             <div id="personal-info">
@@ -341,7 +338,7 @@
                 <label class="option-4-1" for="phone">Telephone:</label>
                 <input
                   class="option-4-2 red-outline"
-                  type="number"
+                  type="tel"
                   id="phone"
                   placeholder="XXX XX 608"
                   maxlength="8"
@@ -349,24 +346,24 @@
                 />
                 <input
                   class="option-4-2 display-opt-4"
-                  type="number"
+                  type="tel"
                   id="phone"
                   placeholder="Phone number..."
                   maxlength="8"
                 />
 
-                <label class="option-5-1" for="adress">Street adress:</label>
+                <label class="option-5-1" for="address">Street adress:</label>
                 <input
                   class="option-5-2 red-outline"
                   type="text"
-                  id="adress"
+                  id="address"
                   placeholder="Bjørnefaret 092a"
                   readonly
                 />
                 <input
                   class="option-5-2 display-opt-5"
                   type="text"
-                  id="adress"
+                  id="address"
                   placeholder="Full adress..."
                 />
 
@@ -374,7 +371,7 @@
                 <input
                   class="option-6-2 red-outline"
                   type="text"
-                  id="adress"
+                  id="city"
                   placeholder="Oslo"
                   size="8"
                   readonly
@@ -387,11 +384,11 @@
                   size="8"
                 />
 
-                <label class="option-7-1" for="CVV/CVC">Post code</label>
+                <label class="option-7-1" for="postcode">Post code</label>
                 <input
                   class="option-7-2 red-outline"
                   type="text"
-                  id="CVV"
+                  id="postcode"
                   size="5"
                   placeholder="0049"
                   maxlength="8"
@@ -400,7 +397,7 @@
                 <input
                   class="option-7-2 display-opt-7"
                   type="text"
-                  id="CVV"
+                  id="postcode"
                   size="5"
                   placeholder="Empty"
                   maxlength="8"
@@ -425,18 +422,16 @@
           </div>
         </article>
 
-        <article>
-          <div class="cart-gridbox bg-border-style-purchase">
-            <p class="cart-position-1">Items in cart: ( 1)</p>
-            <h5 class="cart-position-2">"Insert Game Title"</h5>
-            <img
-              class="cart-position-3"
-              src="../assets/images/Blank-game-cover-small.png"
-              alt="Marathon Istoria game cover"
-            />
-            <p class="cart-position-4">Price:</p>
-            <p class="bold-price">39.98$</p>
-          </div>
+        <article class="cart-gridbox bg-border-style-purchase">
+          <p class="cart-position-1">Items in cart: ( 1)</p>
+          <h5 class="cart-position-2">"Insert Game Title"</h5>
+          <img
+            class="cart-position-3"
+            src="../assets/images/Blank-game-cover-small.png"
+            alt="Marathon Istoria game cover"
+          />
+          <p class="cart-position-4">Price:</p>
+          <p class="bold-price">39.98$</p>
         </article>
       </section>
     </main>

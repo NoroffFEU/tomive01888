@@ -83,6 +83,7 @@ h4 {
 
 h5 {
   font-size: var(--h5-product-shrink);
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0.5rem;
   margin-left: 0;
   font-weight: 700;
@@ -316,7 +317,7 @@ nav {
 
       >span {
         padding-top: 10px;
-        font-size: 10px;
+        font-size: 13px;
         font-family: "zilla slab", serif;
         font-weight: 900;
       }
@@ -1763,6 +1764,13 @@ footer {
     max-height: 350px;
     height: 60vh;
 
+    >h1 {
+      font-size: var(--h3-contact-shrink);
+      font-family: 'Arial, Helvetica', sans-serif;
+      font-weight: 700;
+      text-align: center;
+    }
+
   }
 
   >.discord-frame {
@@ -2249,462 +2257,76 @@ footer {
   width: 95%;
 }
 
-.purchase-divider1 {
+.buy-container {
+  background-color: rgb(95, 95, 95);
+  background-image: linear-gradient(to bottom, #000000, #003719);
+  border-radius: 2rem;
+  border: 3px solid #000;
+  border-top: 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 1.2rem;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 2rem;
 
-  >.buy-container {
-    background-color: rgb(95, 95, 95);
-    background-image: linear-gradient(to bottom, #000000, #003719);
-    border-radius: 2rem;
-    border: 3px solid #000;
-    border-top: 0;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 1rem;
-    padding: 1.2rem;
+  >form {
+    text-align: center;
     width: 100%;
-    max-width: 400px;
-    margin-bottom: 2rem;
+    gap: 20px;
 
-    >form {
-      text-align: center;
-      width: 100%;
-      gap: 20px;
-
-      >label {
-        font-size: clamp(0.65rem, 1vw + 1rem, 0.88rem);
-        font-family: 'Zilla slab', serif;
-      }
-
-      @media only screen (min-width) {}
-
-      >input {
-        width: 120px;
-        padding: 0.2rem 0.6rem;
-        text-align: center;
-        border-radius: 2rem;
-        border-color: #00ffb2;
-      }
-
-      #submit-code {
-        width: 60px;
-        background-color: #00ffb2;
-        color: #000;
-        font-weight: 700;
-      }
+    >label {
+      font-size: clamp(0.65rem, 1vw + 1rem, 0.88rem);
+      font-family: 'Zilla slab', serif;
     }
 
-    >a {
-      width: 100%;
-      max-width: 180px;
-      background-color: #00ffb2;
-      border: 2px solid #ff42f6;
-      border-radius: 2rem;
-      border-top: 0;
-      padding: 0.3rem 1rem;
-      text-decoration: none;
+    @media only screen (min-width) {}
+
+    >input {
+      width: 120px;
+      padding: 0.2rem 0.6rem;
       text-align: center;
-      color: black;
-      font-size: clamp(1rem, 1vw + 1rem, 1.5rem);
-      font-weight: 900;
-      font-family: 'zilla slab', serif;
+      border-radius: 2rem;
+      border-color: #00ffb2;
+    }
+
+    #submit-code {
+      width: 60px;
+      background-color: #00ffb2;
+      color: #000;
+      font-weight: 700;
     }
   }
 
-  >.cc-personal-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 1.2rem;
+  >a {
     width: 100%;
-    max-width: 400px;
-
-    >#cc-info .payment-options {
-      margin: 0.5rem 0rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-      width: 100%;
-      gap: 0.4rem;
-
-      >h3 {
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 700;
-        margin: 0;
-      }
-
-      >span i {
-        font-size: 20px;
-      }
-    }
-
-    >#cc-info #credit-card-inputs {
-      display: grid;
-      grid-template-columns: repeat(12, 1fr);
-      height: auto;
-      gap: 5px;
-      border: 1px solid black;
-      padding: 1rem;
-      border-radius: 1rem;
-      background-color: #fff;
-
-      >label {
-        font-family: Arial, Helvetica, sans-serif;
-        font-style: 400;
-        font-size: clamp(0.7rem, 0.6vw + 0.5rem, 0.85rem);
-
-      }
-    }
-
-    /* GRID SYSTEM POSITIONS */
-    >#cc-info #credit-card-inputs {
-      >.option-1-1 {
-        grid-row: 1;
-        grid-column: 2 /span 8;
-        font-size: 18px;
-        align-self: center;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 700;
-      }
-
-      >.option-1-2 {
-        grid-row: 1;
-        grid-column: 1;
-        align-self: center;
-        height: 16px;
-        width: 16px;
-      }
-
-      >.option-2-1 {
-        grid-row: 2;
-        grid-column: 2/span 8;
-        align-self: center;
-        font-size: 18px;
-        align-self: center;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 700;
-      }
-
-      >.option-2-2 {
-        grid-row: 2;
-        grid-column: 1;
-        align-self: center;
-        height: 16px;
-        width: 16px;
-      }
-
-      >.option-3-1 {
-        grid-row: 4;
-        grid-column: 1 /span 8;
-        align-self: center;
-      }
-
-      >.option-3-2 {
-        grid-row: 5;
-        grid-column: 1 /span 12;
-        padding: 0.2rem;
-      }
-
-      >.option-4-1 {
-        grid-row: 6;
-        grid-column: 1 /span 8;
-        align-self: center;
-      }
-
-      >.option-4-2 {
-        grid-row: 7;
-        grid-column: 1 /span 12;
-        padding: 0.2rem;
-      }
-
-      >.option-5-1 {
-        grid-row: 8;
-        grid-column: 1 /span 5;
-        align-self: center;
-      }
-
-      >.option-5-2 {
-        grid-row: 9;
-        grid-column: 1 /span 5;
-        padding: 0.2rem;
-        text-align: center;
-      }
-
-      >.option-6-1 {
-        grid-row: 10;
-        grid-column: 1 /span 4;
-        align-self: center;
-      }
-
-      >.option-6-2 {
-        grid-row: 11;
-        grid-column: 1 /span 5;
-        padding: 0.2rem;
-        text-align: center;
-      }
-    }
-
-    /*^^^^ GRID SYSTEM POSITIONS ^^^^*/
-
-    >#cc-info #credit-card-inputs {
-
-      >.red-outline {
-        border: 1px solid red;
-      }
-
-      >.display-opt-3 {
-        display: none;
-      }
-
-      >.display-opt-4 {
-        display: none;
-      }
-
-      >.display-opt-5 {
-        display: none;
-      }
-
-      >.display-opt-6 {
-        display: none;
-      }
-
-      >.option-2-2[type="radio"]:checked~.display-opt-3 {
-        display: block;
-      }
-
-      >.option-2-2[type="radio"]:checked~.display-opt-4 {
-        display: block;
-      }
-
-      >.option-2-2[type="radio"]:checked~.display-opt-5 {
-        display: block;
-      }
-
-      >.option-2-2[type="radio"]:checked~.display-opt-6 {
-        display: block;
-      }
-
-
-    }
-
-
-    >#personal-info #billing-info-inputs {
-      width: 100%;
-      display: grid;
-      grid-template-columns: repeat(12, 1fr);
-      height: auto;
-      gap: 5px;
-      border: 1px solid black;
-      padding: 1rem;
-      border-radius: 1rem;
-      background-color: #fff;
-
-      >label {
-        font-family: Arial, Helvetica, sans-serif;
-        font-style: 400;
-        font-size: clamp(0.7rem, 0.6vw + 0.5rem, 0.85rem);
-
-      }
-    }
-
-    /* GRID SYSTEM POSITIONS */
-    >#personal-info #billing-info-inputs {
-      >.option-1-1 {
-        grid-row: 1;
-        grid-column: 2 /span 8;
-        font-size: 18px;
-        align-self: center;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 700;
-      }
-
-      >.option-1-2 {
-        grid-row: 1;
-        grid-column: 1;
-        align-self: center;
-        height: 16px;
-        width: 16px;
-      }
-
-      >.option-2-1 {
-        grid-row: 2;
-        grid-column: 2/span 8;
-        align-self: center;
-        font-size: 18px;
-        align-self: center;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 700;
-
-      }
-
-      >.option-2-2 {
-        grid-row: 2;
-        grid-column: 1;
-        align-self: center;
-        height: 16px;
-        width: 16px;
-      }
-
-      >.option-3-1 {
-        grid-row: 4;
-        grid-column: 1 /span 8;
-
-        align-self: center;
-      }
-
-      >.option-3-2 {
-        grid-row: 5;
-        grid-column: 1 /span 12;
-        padding: 0.2rem;
-      }
-
-      >.option-4-1 {
-        grid-row: 6;
-        grid-column: 1 /span 8;
-        align-self: center;
-      }
-
-      >.option-4-2 {
-        grid-row: 7;
-        grid-column: 1 /span 12;
-        padding: 0.2rem;
-      }
-
-      >.option-5-1 {
-        grid-row: 8;
-        grid-column: 1 /span 8;
-      }
-
-      >.option-5-2 {
-        grid-row: 9;
-        grid-column: 1 /span 12;
-        padding: 0.2rem;
-      }
-
-      >.option-6-1 {
-        grid-row: 10;
-        grid-column: 1 /span 6;
-      }
-
-      >.option-6-2 {
-        grid-row: 11;
-        grid-column: 1 /span 5;
-        padding: 0.2rem;
-      }
-
-      >.option-7-1 {
-        grid-row: 10;
-        grid-column: 8 /span 5;
-      }
-
-      >.option-7-2 {
-        grid-row: 11;
-        grid-column: 8 /span 5;
-        padding: 0.2rem;
-      }
-
-      >.option-8-1 {
-        grid-row: 12;
-        grid-column: 1 /span 8;
-      }
-
-      >.option-8-2 {
-        grid-row: 13;
-        grid-column: 1 /span 12;
-        padding: 0.2rem;
-      }
-    }
-
-    /*^^^^ GRID SYSTEM POSITIONS ^^^^*/
-
-    >#personal-info #billing-info-inputs {
-      >.red-outline {
-        border: 1px solid red;
-      }
-
-      >.display-opt-3 {
-        display: none;
-      }
-
-      >.display-opt-4 {
-        display: none;
-      }
-
-      >.display-opt-5 {
-        display: none;
-      }
-
-      >.display-opt-6 {
-        display: none;
-      }
-
-      >.display-opt-7 {
-        display: none;
-      }
-
-      >.display-opt-8 {
-        display: none;
-      }
-
-      >.option-2-2[type="radio"]:checked~.display-opt-3 {
-        display: block;
-      }
-
-      >.option-2-2[type="radio"]:checked~.display-opt-4 {
-        display: block;
-      }
-
-      >.option-2-2[type="radio"]:checked~.display-opt-5 {
-        display: block;
-      }
-
-      >.option-2-2[type="radio"]:checked~.display-opt-6 {
-        display: block;
-      }
-
-      >.option-2-2[type="radio"]:checked~.display-opt-7 {
-        display: block;
-      }
-
-      >.option-2-2[type="radio"]:checked~.display-opt-8 {
-        display: block;
-      }
-
-
-    }
-
-    >#personal-info {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-
-
-      >h3 {
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 700;
-        margin: 0.5rem 0rem;
-        text-align: left;
-        padding-top: 1rem;
-      }
-    }
+    max-width: 180px;
+    background-color: #00ffb2;
+    border: 2px solid #ff42f6;
+    border-radius: 2rem;
+    border-top: 0;
+    padding: 0.3rem 1rem;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-size: clamp(1rem, 1vw + 1rem, 1.5rem);
+    font-weight: 900;
+    font-family: 'zilla slab', serif;
   }
 }
 
 #buy-text-split {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   width: 90%;
-
+  gap: 10px;
 
   >span {
-    width: 40%;
-    text-align: right;
 
     >p {
       font-size: clamp(1rem, 1vw + 1rem, 1.3rem);
@@ -2719,10 +2341,401 @@ footer {
     }
 
     >.buy-underline {
-
       border-bottom: 1px solid #00ffb2;
     }
+  }
 
+  >.left-align-box {
+    width: max-content;
+    text-align: right;
+    gap: 5px;
+  }
+
+  >.right-align-box {
+    width: 40%;
+    text-align: center;
+    gap: 5px;
+  }
+}
+
+.cc-personal-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1.2rem;
+  width: 100%;
+  max-width: 400px;
+
+  >#cc-info .payment-options {
+    margin: 0.5rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    gap: 0.4rem;
+
+    >h3 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    >span i {
+      font-size: 20px;
+    }
+  }
+
+  >#cc-info #credit-card-inputs {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    height: auto;
+    gap: 5px;
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #fff;
+
+    >label {
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: 400;
+      font-size: clamp(0.7rem, 0.6vw + 0.5rem, 0.85rem);
+
+    }
+  }
+
+  /* GRID SYSTEM POSITIONS */
+  >#cc-info #credit-card-inputs {
+    >.option-1-1 {
+      grid-row: 1;
+      grid-column: 2 /span 8;
+      font-size: 18px;
+      align-self: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+    }
+
+    >.option-1-2 {
+      grid-row: 1;
+      grid-column: 1;
+      align-self: center;
+      height: 16px;
+      width: 16px;
+    }
+
+    >.option-2-1 {
+      grid-row: 2;
+      grid-column: 2/span 8;
+      align-self: center;
+      font-size: 18px;
+      align-self: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+    }
+
+    >.option-2-2 {
+      grid-row: 2;
+      grid-column: 1;
+      align-self: center;
+      height: 16px;
+      width: 16px;
+    }
+
+    >.option-3-1 {
+      grid-row: 4;
+      grid-column: 1 /span 8;
+      align-self: center;
+    }
+
+    >.option-3-2 {
+      grid-row: 5;
+      grid-column: 1 /span 12;
+      padding: 0.2rem;
+    }
+
+    >.option-4-1 {
+      grid-row: 6;
+      grid-column: 1 /span 8;
+      align-self: center;
+    }
+
+    >.option-4-2 {
+      grid-row: 7;
+      grid-column: 1 /span 12;
+      padding: 0.2rem;
+    }
+
+    >.option-5-1 {
+      grid-row: 8;
+      grid-column: 1 /span 5;
+      align-self: center;
+    }
+
+    >.option-5-2 {
+      grid-row: 9;
+      grid-column: 1 /span 5;
+      padding: 0.2rem;
+      text-align: center;
+    }
+
+    >.option-6-1 {
+      grid-row: 10;
+      grid-column: 1 /span 4;
+      align-self: center;
+    }
+
+    >.option-6-2 {
+      grid-row: 11;
+      grid-column: 1 /span 5;
+      padding: 0.2rem;
+      text-align: center;
+    }
+  }
+
+  /*^^^^ GRID SYSTEM POSITIONS ^^^^*/
+
+  >#cc-info #credit-card-inputs {
+
+    >.red-outline {
+      border: 1px solid red;
+    }
+
+    >.display-opt-3 {
+      display: none;
+    }
+
+    >.display-opt-4 {
+      display: none;
+    }
+
+    >.display-opt-5 {
+      display: none;
+    }
+
+    >.display-opt-6 {
+      display: none;
+    }
+
+    >.option-2-2[type="radio"]:checked~.display-opt-3 {
+      display: block;
+    }
+
+    >.option-2-2[type="radio"]:checked~.display-opt-4 {
+      display: block;
+    }
+
+    >.option-2-2[type="radio"]:checked~.display-opt-5 {
+      display: block;
+    }
+
+    >.option-2-2[type="radio"]:checked~.display-opt-6 {
+      display: block;
+    }
+
+
+  }
+
+
+  >#personal-info #billing-info-inputs {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    height: auto;
+    gap: 5px;
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #fff;
+
+    >label {
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: 400;
+      font-size: clamp(0.7rem, 0.6vw + 0.5rem, 0.85rem);
+
+    }
+  }
+
+  /* GRID SYSTEM POSITIONS */
+  >#personal-info #billing-info-inputs {
+    >.option-1-1 {
+      grid-row: 1;
+      grid-column: 2 /span 8;
+      font-size: 18px;
+      align-self: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+    }
+
+    >.option-1-2 {
+      grid-row: 1;
+      grid-column: 1;
+      align-self: center;
+      height: 16px;
+      width: 16px;
+    }
+
+    >.option-2-1 {
+      grid-row: 2;
+      grid-column: 2/span 8;
+      align-self: center;
+      font-size: 18px;
+      align-self: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+
+    }
+
+    >.option-2-2 {
+      grid-row: 2;
+      grid-column: 1;
+      align-self: center;
+      height: 16px;
+      width: 16px;
+    }
+
+    >.option-3-1 {
+      grid-row: 4;
+      grid-column: 1 /span 8;
+
+      align-self: center;
+    }
+
+    >.option-3-2 {
+      grid-row: 5;
+      grid-column: 1 /span 12;
+      padding: 0.2rem;
+    }
+
+    >.option-4-1 {
+      grid-row: 6;
+      grid-column: 1 /span 8;
+      align-self: center;
+    }
+
+    >.option-4-2 {
+      grid-row: 7;
+      grid-column: 1 /span 12;
+      padding: 0.2rem;
+    }
+
+    >.option-5-1 {
+      grid-row: 8;
+      grid-column: 1 /span 8;
+    }
+
+    >.option-5-2 {
+      grid-row: 9;
+      grid-column: 1 /span 12;
+      padding: 0.2rem;
+    }
+
+    >.option-6-1 {
+      grid-row: 10;
+      grid-column: 1 /span 6;
+    }
+
+    >.option-6-2 {
+      grid-row: 11;
+      grid-column: 1 /span 5;
+      padding: 0.2rem;
+    }
+
+    >.option-7-1 {
+      grid-row: 10;
+      grid-column: 8 /span 5;
+    }
+
+    >.option-7-2 {
+      grid-row: 11;
+      grid-column: 8 /span 5;
+      padding: 0.2rem;
+    }
+
+    >.option-8-1 {
+      grid-row: 12;
+      grid-column: 1 /span 8;
+    }
+
+    >.option-8-2 {
+      grid-row: 13;
+      grid-column: 1 /span 12;
+      padding: 0.2rem;
+    }
+  }
+
+  /*^^^^ GRID SYSTEM POSITIONS ^^^^*/
+
+  >#personal-info #billing-info-inputs {
+    >.red-outline {
+      border: 1px solid red;
+    }
+
+    >.display-opt-3 {
+      display: none;
+    }
+
+    >.display-opt-4 {
+      display: none;
+    }
+
+    >.display-opt-5 {
+      display: none;
+    }
+
+    >.display-opt-6 {
+      display: none;
+    }
+
+    >.display-opt-7 {
+      display: none;
+    }
+
+    >.display-opt-8 {
+      display: none;
+    }
+
+    >.option-2-2[type="radio"]:checked~.display-opt-3 {
+      display: block;
+    }
+
+    >.option-2-2[type="radio"]:checked~.display-opt-4 {
+      display: block;
+    }
+
+    >.option-2-2[type="radio"]:checked~.display-opt-5 {
+      display: block;
+    }
+
+    >.option-2-2[type="radio"]:checked~.display-opt-6 {
+      display: block;
+    }
+
+    >.option-2-2[type="radio"]:checked~.display-opt-7 {
+      display: block;
+    }
+
+    >.option-2-2[type="radio"]:checked~.display-opt-8 {
+      display: block;
+    }
+
+
+  }
+
+  >#personal-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+
+    >h3 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+      margin: 0.5rem 0rem;
+      text-align: left;
+      padding-top: 1rem;
+    }
   }
 }
 
@@ -2751,14 +2764,16 @@ footer {
   }
 
   >.cart-position-2 {
-    grid-column: 1 /span 6;
-    grid-row: 2;
+    grid-column: 1 /span 7;
+    grid-row: 2 /span 2;
     margin: 0;
+    text-align: left;
+    text-wrap: wrap;
   }
 
   >.cart-position-3 {
     grid-column: 1 /span 4;
-    grid-row: 3 /span 7;
+    grid-row: 4 /span 7;
     align-self: flex-end;
   }
 
@@ -3102,7 +3117,7 @@ footer {
     flex-direction: column;
     margin: 1rem;
 
-    >span {
+    >.drop-content {
       font-size: clamp(0.8rem, 0.5vw + 0.6rem, 1.2rem);
       font-family: Arial, Helvetica, sans-serif;
       font-weight: 900;
@@ -3163,9 +3178,10 @@ footer {
   >section {
     width: 50%;
 
-    >h3 {
-      text-wrap: wrap;
+    >h1 {
+      text-align: center;
       margin: 1rem;
+      font-size: clamp(1rem, 2vw + 1rem, 2.6rem);
 
     }
 
