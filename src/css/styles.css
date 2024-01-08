@@ -42,11 +42,6 @@ li {
 
 /* ================== FONT STYLE AREA ==================*/
 
-h1 {
-  font-size: var(--font-shrinker);
-  font-family: "zilla slab", serif;
-  font-weight: 900;
-}
 
 p {
   font-size: var(--p-font-shrink);
@@ -56,12 +51,10 @@ li {
   font-size: var(--li-font-shrink);
 }
 
-h3 {
-  font-size: var(--h3-contact-shrink);
+h1 {
+  font-size: var(--font-shrinker);
   font-family: "zilla slab", serif;
   font-weight: 900;
-  text-align: center;
-  margin: 0 auto;
 }
 
 h2 {
@@ -70,6 +63,14 @@ h2 {
   font-weight: 700;
   text-align: center;
 
+}
+
+h3 {
+  font-size: var(--h3-contact-shrink);
+  font-family: "zilla slab", serif;
+  font-weight: 900;
+  text-align: center;
+  margin: 0 auto;
 }
 
 h4 {
@@ -85,6 +86,12 @@ h5 {
   margin: 0.5rem;
   margin-left: 0;
   font-weight: 700;
+}
+
+h6 {
+  font-size: var(--font-shrinker);
+  font-family: "zilla slab", serif;
+  font-weight: 900;
 }
 
 /* ================== SIMILAR CSS STYLE AREA ==================*/
@@ -863,25 +870,20 @@ footer {
     justify-content: center;
     align-items: center;
     margin: 1rem;
-  }
 
-  >.enter-now h1 {
-    background-color: rgba(0, 0, 0, 0.45);
-    border-radius: 1.8rem;
-    color: #fff;
-    font-family: "zilla slab", serif;
-    font-weight: 700;
-    height: fit-content;
-    width: 80%;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    text-align: center;
-  }
 
-  >.enter-now span {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    >h1 {
+      background-color: rgba(0, 0, 0, 0.45);
+      border-radius: 1.8rem;
+      color: #fff;
+      font-family: "zilla slab", serif;
+      font-weight: 700;
+      height: fit-content;
+      width: 80%;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
 
     >a {
       border-radius: 999px;
@@ -916,19 +918,16 @@ footer {
   padding: 2rem;
   border-radius: 2rem;
   width: 100%;
-  margin-bottom: 3rem;
+  gap: 1rem;
 
-  >.image-container {
-    width: fit-content;
-
-    >img {
-      width: 100%;
-      max-width: 420px;
-      border-radius: 30px;
-      border: 3px solid white;
-      border-top: 0px;
-    }
+  >img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 30px;
+    border: 3px solid white;
+    border-top: 0px;
   }
+
 
   >.border-boxing {
     display: flex;
@@ -1318,7 +1317,7 @@ footer {
   justify-content: center;
   align-items: center;
 
-  >section {
+  >div {
     width: 90%;
     background-color: rgb(220, 220, 220);
     padding: 2rem 1rem;
@@ -3154,7 +3153,7 @@ footer {
   padding-bottom: 2rem;
   gap: 2rem;
 
-  >span {
+  >section {
     width: 50%;
 
     >h3 {
