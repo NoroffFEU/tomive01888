@@ -37,10 +37,10 @@
       </div>
       <nav>
         <div id="hamburger-navbar">
-          <input type="checkbox" id="hamburger" />
+          <input type="checkbox" id="hamburger" name="hamburger" />
           <label for="hamburger" id="ham-size">
-            <i class="fa-solid fa-bars fa-lg"></i
-          ></label>
+            <i class="fa-solid fa-bars fa-lg">/</i></label
+          >
           <section class="hamburger-open">
             <div>
               <section>
@@ -177,7 +177,12 @@
           <div class="buy-container">
             <form action="" novalidate>
               <label for="enter-code"> Gift-Card or Coupon-Code:</label>
-              <input type="text" id="enter-code" placeholder="Enter code" />
+              <input
+                type="text"
+                id="enter-code"
+                name="enter-code"
+                placeholder="Enter code"
+              />
               <input
                 id="submit-code"
                 type="submit"
@@ -206,7 +211,7 @@
           <div class="cc-personal-info bg-border-style-purchase">
             <div id="cc-info">
               <div class="payment-options">
-                <h5>Credit Card:</h5>
+                <p>Credit Card:</p>
                 <span>
                   <i class="fa-brands fa-cc-visa"></i>
                   <i class="fa-brands fa-cc-mastercard"></i>
@@ -237,13 +242,16 @@
                   class="option-3-2 red-outline"
                   type="text"
                   id="fullname"
+                  name="fullname"
                   placeholder="Ola Nordmann"
                   readonly
                 />
+                <label class="option-3-1" for="fullname2">Name on card:</label>
                 <input
                   class="option-3-2 display-opt-3"
                   type="text"
-                  id="fullname"
+                  id="fullname2"
+                  name="fullname2"
                   placeholder="Full name..."
                 />
 
@@ -252,13 +260,16 @@
                   class="option-4-2 red-outline"
                   type="text"
                   id="creditcard"
+                  name="creditcard"
                   placeholder="XXXX-1234"
                   readonly
                 />
+                <label class="option-4-1" for="creditcard2">Credit card:</label>
                 <input
                   class="option-4-2 display-opt-4"
                   type="text"
-                  id="creditcard"
+                  id="creditcard2"
+                  name="creditcard2"
                   placeholder="XXXX-XXXX-XXXX-XXXX"
                 />
 
@@ -267,14 +278,17 @@
                   class="option-5-2 red-outline"
                   type="text"
                   id="date"
+                  name="date"
                   placeholder="2025/07"
                   size="7"
                   readonly
                 />
+                <label class="option-5-1" for="date2">Expire date:</label>
                 <input
                   class="option-5-2 display-opt-5"
                   type="text"
-                  id="date"
+                  id="date2"
+                  name="date2"
                   placeholder="yyyy/mm"
                   size="7"
                 />
@@ -284,15 +298,18 @@
                   class="option-6-2 red-outline"
                   type="text"
                   id="CVV"
+                  name="CVV"
                   size="5"
                   placeholder="Hidden"
                   maxlength="3"
                   readonly
                 />
+                <label class="option-6-1" for="CVV2">CVV/CVC:</label>
                 <input
                   class="option-6-2 display-opt-6"
                   type="text"
-                  id="CVV"
+                  id="CVV2"
+                  name="CVV2"
                   size="5"
                   placeholder=""
                   maxlength="3"
@@ -301,23 +318,23 @@
             </div>
 
             <div id="personal-info">
-              <h5>Personal information:</h5>
-              <section id="billing-info-inputs">
-                <label class="option-1-1" for="this-card">Current info</label>
+              <p>Personal information:</p>
+              <form id="billing-info-inputs">
+                <label class="option-1-1" for="this-info">Current info</label>
                 <input
                   class="option-1-2"
                   type="radio"
-                  id="this-card"
-                  name="bi-card"
+                  id="this-info"
+                  name="bi-info"
                   checked="checked"
                 />
 
-                <label class="option-2-1" for="new-card">New info</label>
+                <label class="option-2-1" for="new-info">New info</label>
                 <input
                   class="option-2-2"
                   type="radio"
-                  id="new-card"
-                  name="bi-card"
+                  id="new-info"
+                  name="bi-info"
                 />
 
                 <label class="option-3-1" for="fname">Full name:</label>
@@ -325,13 +342,16 @@
                   class="option-3-2 red-outline"
                   type="text"
                   id="fname"
+                  name="fname"
                   placeholder="Ola Nordmann"
                   readonly
                 />
+                <label class="option-3-1" for="fname2">Full name:</label>
                 <input
                   class="option-3-2 display-opt-3"
                   type="text"
-                  id="fname"
+                  id="fname2"
+                  name="fname2"
                   placeholder="Full name..."
                 />
 
@@ -340,14 +360,17 @@
                   class="option-4-2 red-outline"
                   type="tel"
                   id="phone"
+                  name="phone"
                   placeholder="XXX XX 608"
                   maxlength="8"
                   readonly
                 />
+                <label class="option-4-1" for="phone2">Telephone:</label>
                 <input
                   class="option-4-2 display-opt-4"
                   type="tel"
-                  id="phone"
+                  id="phone2"
+                  name="phone2"
                   placeholder="Phone number..."
                   maxlength="8"
                 />
@@ -357,13 +380,16 @@
                   class="option-5-2 red-outline"
                   type="text"
                   id="address"
+                  name="address"
                   placeholder="Bjørnefaret 092a"
                   readonly
                 />
+                <label class="option-5-1" for="address2">Street adress:</label>
                 <input
                   class="option-5-2 display-opt-5"
                   type="text"
-                  id="address"
+                  id="address2"
+                  name="address2"
                   placeholder="Full adress..."
                 />
 
@@ -372,14 +398,17 @@
                   class="option-6-2 red-outline"
                   type="text"
                   id="city"
+                  name="city"
                   placeholder="Oslo"
                   size="8"
                   readonly
                 />
+                <label class="option-6-1" for="city2">City</label>
                 <input
                   class="option-6-2 display-opt-6"
                   type="text"
-                  id="city"
+                  id="city2"
+                  name="city2"
                   placeholder="City..."
                   size="8"
                 />
@@ -389,15 +418,18 @@
                   class="option-7-2 red-outline"
                   type="text"
                   id="postcode"
+                  name="postcode"
                   size="5"
                   placeholder="0049"
                   maxlength="8"
                   readonly
                 />
+                <label class="option-7-1" for="postcode2">Post code</label>
                 <input
                   class="option-7-2 display-opt-7"
                   type="text"
-                  id="postcode"
+                  id="postcode2"
+                  name="postcode2"
                   size="5"
                   placeholder="Empty"
                   maxlength="8"
@@ -408,27 +440,30 @@
                   class="option-8-2 red-outline"
                   type="text"
                   id="country"
+                  name="country"
                   placeholder="Norway"
                   readonly
                 />
+                <label class="option-8-1" for="country2">Country:</label>
                 <input
                   class="option-8-2 display-opt-8"
                   type="text"
-                  id="country"
+                  id="country2"
+                  name="country2"
                   placeholder="Your country..."
                 />
-              </section>
+              </form>
             </div>
           </div>
         </article>
 
         <article class="cart-gridbox bg-border-style-purchase">
           <p class="cart-position-1">Items in cart: ( 1)</p>
-          <h5 class="cart-position-2">"Insert Game Title"</h5>
+          <p class="cart-position-2">"Insert Game Title"</p>
           <img
             class="cart-position-3"
             src="../assets/images/Blank-game-cover-small.png"
-            alt="Marathon Istoria game cover"
+            alt="grey solid color placeholder image for game cover"
           />
           <p class="cart-position-4">Price:</p>
           <p class="bold-price">39.98$</p>
@@ -451,7 +486,7 @@
       </div>
 
       <div id="social-connect">
-        <span class="border-bg">Stay in touch!</span>
+        <p class="border-bg">Stay in touch!</p>
         <div>
           <i class="fa-brands fa-x-twitter"></i>
           <i class="fa-brands fa-discord"></i>

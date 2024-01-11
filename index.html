@@ -37,29 +37,31 @@
       </div>
       <nav>
         <div id="hamburger-navbar">
-          <input type="checkbox" id="hamburger" />
+          <input type="checkbox" id="hamburger" name="hamburger" />
           <label for="hamburger" id="ham-size">
             <i class="fa-solid fa-bars fa-lg"></i
           ></label>
           <section class="hamburger-open">
-            <div>
-              <section>
+            <article>
+              <div>
                 <input type="checkbox" name="login" id="login" />
-                <label for="login"> </label>
+                <label for="login">.</label>
                 <img
-                  id="log-in"
+                  class="pro-logo-grid-location"
                   src="assets/images/ta-login-logo.png"
                   alt="The Arena tiny profile logo"
                 />
-                <h4 id="not-signed">Not logged in</h4>
-
                 <img
-                  id="log-off"
+                  class="pro-logo-grid-location"
+                  id="active-logo"
                   src="assets/images/ta-logged.png"
                   alt="The Arena tiny profile logo"
                 />
-                <h4 id="is-signed">Jaguar092</h4>
-                <p id="sign-up"><a href="#Sign-up">Sign up</a>or</p>
+
+                <p class="account-sign" id="not-signed">Not logged in</p>
+                <p class="account-sign" id="is-signed">Jaguar092</p>
+
+                <p id="sign-up"><a href="#Sign-up">Sign up</a> or</p>
 
                 <a class="navlist hidden" href="#Jaguar092"
                   ><i class="fa-solid fa-user-ninja"></i>Profile</a
@@ -85,13 +87,13 @@
                 <a class="navlist" href="#Accessibility"
                   ><i class="fa-solid fa-eye-low-vision"></i>Accessibility</a
                 >
-              </section>
+              </div>
               <a
                 class="member-button-style membutton-position"
                 href="#joinmember"
                 >Become a member</a
               >
-            </div>
+            </article>
           </section>
 
           <a href="html/store.html"
@@ -102,7 +104,7 @@
             ><i class="fa-solid fa-cart-shopping fa-lg"></i><span>CART</span></a
           >
 
-          <a href=""
+          <a href="#"
             ><i class="fa-solid fa-magnifying-glass fa-lg"></i
             ><span>SEARCH</span></a
           >
@@ -126,15 +128,15 @@
             ></a>
 
             <label for="profile-log">Profile</label>
-            <input id="profile-log" type="checkbox" />
+            <input id="profile-log" name="profile-log" type="checkbox" />
             <section id="profile-pop-up">
-              <section class="profile-window-popped">
+              <article class="profile-window-popped">
                 <span>
                   <img
                     src="assets/images/ta-logged.png"
                     alt="The Arena tiny profile logo"
                   />
-                  <h4>Jaguar092</h4>
+                  <p>Jaguar092</p>
                 </span>
 
                 <a class="navlist" href="#Jaguar092"
@@ -150,7 +152,7 @@
                   ><i class="fa-solid fa-ticket"></i>Coupon codes</a
                 >
                 <div class="square"></div>
-              </section>
+              </article>
             </section>
             <div>
               <p>or</p>
@@ -170,19 +172,21 @@
           <img src="assets/images/intro-pic4.png" alt="Outplay" />
         </div>
         <div class="enter-now">
-          <h1>Head into our store now! It's time for another session!</h1>
+          <h1 class="h1-size">
+            Head into our store now! It's time for another session!
+          </h1>
 
           <a href="html/store.html">STORE</a>
         </div>
       </section>
 
       <section class="game-content">
-        <h1>New releases this month:</h1>
+        <h2 class="h2-size greenheader-bar">New releases this month:</h2>
         <div class="game-gridbox">
           <div class="game-card">
-            <h4>Marathon Istoria</h4>
+            <b>Marathon Istoria</b>
             <a class="click-product-gogo" href="html/product.html"
-              ><img
+              >              <img
                 src="assets/gamecovers/Marathon.png"
                 alt="Marathon Istoria game cover"
             /></a>
@@ -198,7 +202,7 @@
           </div>
 
           <div class="game-card">
-            <h4>Cyberpunk 2077</h4>
+            <b>Cyberpunk 2077</b>
             <a class="click-product-gogo" href="html/product.html"
               ><img
                 src="assets/gamecovers/cyberpunk-2077.png"
@@ -216,7 +220,7 @@
           </div>
 
           <div class="game-card">
-            <h4>Stellar Blade</h4>
+            <b>Stellar Blade</b>
             <a class="click-product-gogo" href="html/product.html">
               <img
                 src="assets/gamecovers/stellar-blade.png"
@@ -234,7 +238,7 @@
           </div>
 
           <div class="game-card">
-            <h4>Dawntrail FFXIV</h4>
+            <b>Dawntrail FFXIV</b>
             <a class="click-product-gogo" href="html/product.html">
               <img
                 src="assets/gamecovers/dawntrail-ffXIV.png"
@@ -252,7 +256,7 @@
           </div>
 
           <div class="game-card">
-            <h4>Tekken 8</h4>
+            <b>Tekken 8</b>
             <a class="click-product-gogo" href="html/product.html">
               <img
                 src="assets/gamecovers/tekken-8.png"
@@ -270,7 +274,7 @@
           </div>
 
           <div class="game-card">
-            <h4>The First Descendant</h4>
+            <b>The First Descendant</b>
             <a class="click-product-gogo" href="html/product.html">
               <img
                 src="assets/gamecovers/the-first-descendant.png"
@@ -293,7 +297,7 @@
         <img src="assets/images/girl-fingerpoint.webp" alt="Conquer" />
 
         <div class="border-boxing">
-          <h1>Become a member</h1>
+          <b class="h3-size">Become a member</b>
           <p>
             Get discount codes, news, points on all purchases and discounted
             pre-order. <br /><br />
@@ -321,7 +325,7 @@
       </div>
 
       <div id="social-connect">
-        <span class="border-bg">Stay in touch!</span>
+        <p class="border-bg">Stay in touch!</p>
         <div>
           <i class="fa-brands fa-x-twitter"></i>
           <i class="fa-brands fa-discord"></i>

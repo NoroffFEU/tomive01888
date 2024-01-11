@@ -186,7 +186,7 @@
 
       <section class="contact-2ndbox container-custom-2">
         <div class="webform-textguide">
-          <h2>Use our webform</h2>
+          <h2 class="contact-header-style">Use our webform</h2>
           <p>We will get in touch within 2-3 workdays!</p>
           <img
             src="../assets/images/envelope-img1.png"
@@ -199,6 +199,7 @@
               <label for="fullname">Full name:</label>
               <input
                 type="text"
+                name="fullname"
                 id="fullname"
                 placeholder="Full name..."
                 required
@@ -206,15 +207,23 @@
               <label for="email">E-mail:</label>
               <input
                 type="email"
+                name="email"
                 id="email"
                 placeholder="E-mail address..."
                 required
               />
               <label for="topic">Topic:</label>
-              <input type="text" id="topic" placeholder="Topic..." required />
+              <input
+                type="text"
+                name="message"
+                id="topic"
+                placeholder="Topic..."
+                required
+              />
               <label for="message">Message:</label>
               <textarea
                 id="message"
+                name="message"
                 placeholder="Your message..."
                 required
                 minlength="1"
@@ -224,6 +233,7 @@
               <p>Max 1000 words</p>
               <input
                 type="button"
+                name="button"
                 onclick="alert('Thank you for your message')"
                 value="SUBMIT"
               />
@@ -234,11 +244,9 @@
 
       <section class="container-size" id="facebook-box">
         <div class="textbox-padding">
-          <h2>Reach us</h2>
-          <h2>in other ways!</h2>
-          <br />
-          <h3>Facebook</h3>
-          <h3>@TheArena</h3>
+          <h3 class="contact-header-style">Reach us in other ways!</h3>
+          <h4 class="contact-header-style">Facebook</h4>
+          <p class="contact-header-style">@TheArena</p>
         </div>
         <img
           class="social-image"
@@ -249,8 +257,8 @@
 
       <section class="container-size" id="instagram-box">
         <div class="textbox-padding">
-          <h3>Instagram</h3>
-          <h3>@TheArena</h3>
+          <h5 class="contact-header-style text-insta-white">Instagram</h5>
+          <p class="contact-header-style text-insta-white">@TheArena</p>
         </div>
         <img
           class="social-image"
@@ -261,13 +269,13 @@
 
       <section class="container-size" id="twitx-box">
         <div class="textbox-padding">
-          <h3>Twitter X</h3>
-          <h3>@TheArena</h3>
+          <h6 class="contact-header-style text-twitx-white">Twitter X</h6>
+          <p class="contact-header-style text-twitx-white">@TheArena</p>
         </div>
         <img
           class="social-image"
           src="../assets/images/twitter-x-img.png"
-          alt="facebook logo"
+          alt="twitter x logo"
         />
       </section>
     </main>
@@ -287,7 +295,7 @@
       </div>
 
       <div id="social-connect">
-        <span class="border-bg">Stay in touch!</span>
+        <p class="border-bg">Stay in touch!</p>
         <div>
           <i class="fa-brands fa-x-twitter"></i>
           <i class="fa-brands fa-discord"></i>
