@@ -51,9 +51,14 @@ li {
   font-size: var(--li-font-shrink);
 }
 
-/* ================== FONT CSS STYLE AREA ==================*/
+.header-store-sizer {
+  font-size: var(--h-contact-shrink);
+
+}
+
+/* ================== SIMILAR CSS STYLE AREA ==================*/
+
 .greenheader-bar {
-  font-size: var(--font-shrinker);
   font-family: "zilla slab", serif;
   font-weight: 700;
   border: 3px solid black;
@@ -66,7 +71,6 @@ li {
   padding-left: 2rem;
   margin: 1.5rem;
 }
-
 
 
 
@@ -376,7 +380,7 @@ header {
 
   }
 
-  >div>.desk-nav-stylebutton:hover {
+  >div .desk-nav-stylebutton:hover {
     color: #00ffb2;
     border-bottom: 2px solid #00ffb2;
   }
@@ -410,18 +414,25 @@ header {
   align-items: center;
   width: 50%;
   max-width: 300px;
+  gap: 0.8rem;
 
-  >i {
+  >a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: #00ffb2;
-    font-size: 1.3rem;
-    margin: 0.7rem;
-  }
-
-  >i:hover {
-    color: #00ae7a;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
   >a i {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #00ffb2;
+    text-decoration: none;
+    font-size: 16px;
     color: #00ffb2;
     font-size: 1.3rem;
     margin: 0.7rem;
@@ -963,7 +974,7 @@ footer {
   border-radius: 2rem;
   padding: 1rem;
 
-  >h4 {
+  >h1 {
     font-size: clamp(2.2rem, 1vw + 1rem, 5rem);
     font-family: 'zilla slab', serif;
     font-weight: 900;
@@ -1022,8 +1033,8 @@ footer {
   width: 100%;
   max-width: 1250px;
   scroll-margin-top: 137px;
-  display: flex;
   margin: 0 auto;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -1060,6 +1071,7 @@ footer {
       border-radius: 0.5rem;
       border: 1.5px solid rgb(142, 142, 142);
       width: 100%;
+      max-width: 238px;
       margin: 0 auto;
 
       >b {
@@ -1170,6 +1182,7 @@ footer {
   border-radius: 0.5rem;
   border: 1.5px solid rgb(114, 5, 160);
   width: 100%;
+  max-width: 238px;
   margin: 0 auto;
 
   >b {
@@ -1278,6 +1291,11 @@ footer {
   width: 100%;
   column-gap: 0.8rem;
   row-gap: 2rem;
+
+  @media (max-width: 480px) {
+    grid-template-columns: repeat(1, 1fr);
+
+  }
 
   @media (min-width: 670px) {
     grid-template-columns: repeat(3, 1fr);
@@ -2802,89 +2820,74 @@ footer {
 }
 
 /* ====================== BODY CONTENT ======================== */
-/* ====================== PRODUCT INFORMATION ======================== */
+/* ====================== PRODUCT INFORMATION ================== */
 
-#product-page {
-  padding: 3rem 0rem;
+.prod-section-divider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 
-  >.product {
+  >.game-image {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 2rem;
+    background-color: #d9d9d9;
+    border-radius: 30px;
+    border: 3px solid #000;
+    border-top: 0;
+    width: 100%;
+    min-width: 50px;
+    max-width: 500px;
+    padding: 1rem;
+    gap: 0.7rem;
+    background-color: rgb(95, 95, 95);
+    background-image: linear-gradient(to bottom right,
+        rgb(43, 0, 93),
+        rgb(61, 0, 141),
+        rgb(110, 0, 255),
+        rgb(59, 15, 118),
+        rgb(39, 0, 91));
 
-
-    >section {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+    >div {
       width: 100%;
-      max-width: 1250px;
+      background-color: grey;
+      border-radius: 2rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+
     }
 
-    >.game-image {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background-color: #d9d9d9;
-      border-radius: 30px;
-      border: 3px solid #000;
-      border-top: 0;
+    >div p {
+      font-size: clamp(1.1rem, 1vw + 1rem, 1.3rem);
+      grid-row: 3;
+      grid-column: 1 /span 4;
+      text-align: center;
+    }
+
+    >div b {
+      font-size: clamp(1.1rem, 1vw + 1rem, 1.3rem);
+      grid-row: 4;
+      grid-column: 1 /span 4;
+      text-align: center;
+    }
+
+    >div img {
       width: 100%;
-      min-width: 50px;
-      max-width: 500px;
-      padding: 1rem;
-      gap: 0.7rem;
-      background-color: rgb(95, 95, 95);
-      background-image: linear-gradient(to bottom right,
-          rgb(43, 0, 93),
-          rgb(61, 0, 141),
-          rgb(110, 0, 255),
-          rgb(59, 15, 118),
-          rgb(39, 0, 91));
+      grid-row: 1 /span 6;
+      grid-column: 1 /span 4;
+      border-radius: 0.6rem;
+    }
 
-
-
-      >div {
-        width: 100%;
-        background-color: grey;
-        border-radius: 2rem;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(6, 1fr);
-
-      }
-
-      >div p {
-        font-size: clamp(1.1rem, 1vw + 1rem, 1.3rem);
-        grid-row: 3;
-        grid-column: 1 /span 4;
-        text-align: center;
-      }
-
-      >div b {
-        font-size: clamp(1.1rem, 1vw + 1rem, 1.3rem);
-        grid-row: 4;
-        grid-column: 1 /span 4;
-        text-align: center;
-      }
-
-      >div img {
-        width: 100%;
-        grid-row: 1 /span 6;
-        grid-column: 1 /span 4;
-        border-radius: 2rem;
-      }
-
-      >p {
-        font-family: "arial", sans-serif;
-        font-size: clamp(0.85rem, 1vw + 0.6rem, 1.1rem);
-        margin: 0;
-        color: white;
-        width: 100%;
-        text-align: center;
-      }
+    >p {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: clamp(0.85rem, 1vw + 0.6rem, 1.1rem);
+      margin: 0;
+      color: white;
+      width: 100%;
+      text-align: center;
     }
   }
 }
@@ -2902,7 +2905,6 @@ footer {
 
 #add-cart {
   width: 100%;
-  min-width: 50px;
   max-width: 500px;
   background-color: rgb(95, 95, 95);
   background-image: linear-gradient(#000000, #003928);
@@ -2911,10 +2913,13 @@ footer {
   color: white;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 0.4rem;
+  height: 200px;
 
   >p {
     font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 2px solid #00ffb2;
   }
 
   >div {
@@ -2922,10 +2927,13 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-top: 2.5rem;
-    border-top: 2px solid #00ffb2;
     border-bottom: 2px solid #00ffb2;
     font-family: "arial", sans-serif;
+
+    >b {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: clamp(1.1rem, 1vw + 1rem, 1.2rem);
+    }
   }
 
   >a {
@@ -2961,11 +2969,9 @@ footer {
   border-top: 0;
   color: white;
   font-family: "arial", sans-serif;
-  gap: 1rem;
 
   >div {
     width: 100%;
-    margin: 0.5rem 0rem;
 
     i {
       float: left;
@@ -2986,13 +2992,17 @@ footer {
     }
   }
 
-  >section {
+  >span {
     border-top: 1px solid #ff00b8;
+    padding: 0.35rem;
+
+    >b {
+      font-size: clamp(1.1rem, 1vw + 2rem, 1.4rem);
+    }
   }
 }
 
 #row-list {
-  margin-top: 0.5rem;
   display: flex;
   flex-direction: row;
   border-top: 1px solid #ff00b8;
@@ -3098,7 +3108,7 @@ footer {
   }
 
   #product-page {
-    >.product {
+    >.prod-section-divider {
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -3107,7 +3117,7 @@ footer {
 
       >.game-image {
         width: 100%;
-        max-width: 628px;
+        max-width: 587px;
       }
 
       >#double-section {
@@ -3128,7 +3138,6 @@ footer {
     }
   }
 }
-
 
 /* ====================== BODY CONTENT ======================== */
 /* ====================== NOT BUILT YET ======================== */

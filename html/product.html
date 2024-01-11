@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Arena</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon-ta.png" />
     <meta
       name="description"
       content="Details of [game], it's game features and system requirements"
@@ -37,29 +38,30 @@
       </div>
       <nav>
         <div id="hamburger-navbar">
-          <input type="checkbox" id="hamburger" />
-          <label for="hamburger" id="ham-size">
-            <i class="fa-solid fa-bars fa-lg"></i
-          ></label>
+          <label for="hamburger" id="ham-size">|||</label>
+          <input type="checkbox" id="hamburger" name="hamburger" />
+
           <section class="hamburger-open">
-            <div>
-              <section>
+            <article>
+              <div>
                 <input type="checkbox" name="login" id="login" />
-                <label for="login"> </label>
+                <label for="login">.</label>
                 <img
-                  id="log-in"
+                  class="pro-logo-grid-location"
                   src="../assets/images/ta-login-logo.png"
                   alt="The Arena tiny profile logo"
                 />
-                <h4 id="not-signed">Not logged in</h4>
-
                 <img
-                  id="log-off"
+                  class="pro-logo-grid-location"
+                  id="active-logo"
                   src="../assets/images/ta-logged.png"
                   alt="The Arena tiny profile logo"
                 />
-                <h4 id="is-signed">Jaguar092</h4>
-                <p id="sign-up"><a href="#Sign-up">Sign up</a>or</p>
+
+                <p class="account-sign" id="not-signed">Not logged in</p>
+                <p class="account-sign" id="is-signed">Jaguar092</p>
+
+                <p id="sign-up">or <a href="#Sign-up">Sign up</a></p>
 
                 <a class="navlist hidden" href="#Jaguar092"
                   ><i class="fa-solid fa-user-ninja"></i>Profile</a
@@ -70,7 +72,7 @@
                 <a class="navlist hidden" href="#User-settings"
                   ><i class="fa-solid fa-gear"></i>User settings</a
                 >
-                <a class="navlist" href="./not-built-yet-NEWS.html"
+                <a class="navlist" href="#News"
                   ><i class="fa-solid fa-newspaper"></i> News</a
                 >
                 <a class="navlist" href="#Coupon-codes"
@@ -82,26 +84,28 @@
                 <a class="navlist" href="./contact.html"
                   ><i class="fa-solid fa-envelope-open-text"></i>Contact us</a
                 >
-                <a class="navlist" href="./not-built-yet.html"
+                <a class="navlist" href="#Accessibility"
                   ><i class="fa-solid fa-eye-low-vision"></i>Accessibility</a
                 >
-              </section>
+              </div>
               <a
                 class="member-button-style membutton-position"
                 href="#joinmember"
                 >Become a member</a
               >
-            </div>
+            </article>
           </section>
+
           <a href="./store.html"
-            ><i class="fa-solid fa-gamepad fa-lg"></i><span>STORE</span></a
+            ><i class="fa-solid fa-gamepad fa-lg"></i>STORE</a
           >
+
           <a href="./purchase.html"
-            ><i class="fa-solid fa-cart-shopping fa-lg"></i><span>CART</span></a
+            ><i class="fa-solid fa-cart-shopping fa-lg"></i>CART</a
           >
-          <a href=""
-            ><i class="fa-solid fa-magnifying-glass fa-lg"></i
-            ><span>SEARCH</span></a
+
+          <a href="#"
+            ><i class="fa-solid fa-magnifying-glass fa-lg"></i>SEARCH</a
           >
         </div>
 
@@ -119,21 +123,23 @@
           </div>
 
           <div class="desknav-prof-style">
-            <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+            <a href="#"
+              ><i class="fa-solid fa-magnifying-glass fa-lg"></i>search</a
+            >
             <a href="./purchase.html"
-              ><i class="fa-solid fa-cart-shopping fa-lg"></i
-            ></a>
+              ><i class="fa-solid fa-cart-shopping fa-lg"></i>cart</a
+            >
 
             <label for="profile-log">Profile</label>
-            <input id="profile-log" type="checkbox" />
+            <input id="profile-log" name="profile-log" type="checkbox" />
             <section id="profile-pop-up">
-              <section class="profile-window-popped">
+              <article class="profile-window-popped">
                 <span>
                   <img
                     src="../assets/images/ta-logged.png"
                     alt="The Arena tiny profile logo"
                   />
-                  <h4>Jaguar092</h4>
+                  <p>Jaguar092</p>
                 </span>
 
                 <a class="navlist" href="#Jaguar092"
@@ -148,8 +154,7 @@
                 <a class="navlist" href="#Coupon-codes"
                   ><i class="fa-solid fa-ticket"></i>Coupon codes</a
                 >
-                <div class="square"></div>
-              </section>
+              </article>
             </section>
             <div>
               <p>or</p>
@@ -168,7 +173,7 @@
 
       <h1 class="header-style1">"Insert Game Title"</h1>
 
-      <section class="product">
+      <section class="prod-section-divider">
         <article class="game-image">
           <div>
             <img
@@ -194,7 +199,7 @@
 
             <div>
               <p>Price:</p>
-              <h6>$ 39.98</h6>
+              <b>$ 39.98</b>
             </div>
 
             <a href="./purchase.html">Add to cart</a>
@@ -208,8 +213,8 @@
               <p>Pre order</p>
             </div>
 
-            <section>
-              <h5>Game's about:</h5>
+            <span>
+              <b>Game's about:</b>
               <p>
                 Marathon: Istoria is an RPG scenario set in the Marathon
                 universe and designed for the Aleph One engine. It pushes the
@@ -222,7 +227,7 @@
                 world through a combination of terminals and communicating with
                 the recently deceased.
               </p>
-            </section>
+            </span>
 
             <div id="row-list">
               <ul>
@@ -324,7 +329,7 @@
       </div>
 
       <div id="social-connect">
-        <span class="border-bg">Stay in touch!</span>
+        <p class="border-bg">Stay in touch!</p>
         <div>
           <i class="fa-brands fa-x-twitter"></i>
           <i class="fa-brands fa-discord"></i>
