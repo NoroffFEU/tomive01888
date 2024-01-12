@@ -55,6 +55,10 @@ li {
 
 }
 
+.header-about-size {
+  font-size: var(--h-about-shrink);
+}
+
 /* ================== SIMILAR CSS STYLE AREA ==================*/
 
 .greenheader-bar {
@@ -412,8 +416,8 @@ header {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  width: 50%;
-  max-width: 300px;
+  width: 100%;
+  max-width: 320px;
   gap: 0.8rem;
 
   >a {
@@ -476,11 +480,11 @@ header {
       color: white;
     }
 
-    >#sign-up-now {
+    >a {
       color: #54b5ff;
       font-weight: 600;
-      width: max-content;
-      text-decoration: none;
+      text-decoration: underline;
+      width: 66px;
     }
   }
 }
@@ -824,7 +828,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: flex-start;
+    align-items: center;
     width: 100%;
     max-width: 420px;
     height: 35vh;
@@ -843,47 +847,40 @@ footer {
     >b {
       font-weight: 900;
       font-size: 24px;
-      color: #2400ff;
+      color: #4d0080;
       margin: 0.8rem;
       margin-left: 0.4rem;
+      text-decoration: underline;
+      letter-spacing: 1px;
     }
 
     >p {
-      font-weight: bolder;
-      color: #2400ff;
+      font-weight: bold;
+      color: #4d0080;
       margin: 0.4rem;
+      width: 30ch;
     }
 
-    >span {
-      display: flex;
-      justify-content: center;
-      align-self: center;
+    >a {
+      border-radius: 999px;
+      border: 3px solid #000;
+      background-color: rgb(95, 95, 95);
+      background-image: linear-gradient(#ff98e8, #e6fa00);
+      border-top: 0px;
+      color: #000;
+      font-family: "zilla slab", serif;
+      font-weight: 900;
+      font-size: clamp(0.8rem, 0.5vw + 0.6rem, 1rem);
+      padding: 3px 20px;
+      text-decoration: none;
+      margin: 1rem;
+    }
 
-      >a {
-        border-radius: 999px;
-        border: 3px solid #000;
-        background-color: rgb(95, 95, 95);
-        background-image: linear-gradient(#ff98e8, #e6fa00);
-        border-top: 0px;
-        color: #000;
-        font-family: "zilla slab", serif;
-        font-weight: 900;
-        font-size: clamp(0.8rem, 0.5vw + 0.6rem, 1rem);
-        padding: 3px 20px;
-        text-decoration: none;
-        margin: 1rem;
-      }
-
-      >a:hover {
-        border: 3px solid #000;
-        background-color: rgb(95, 95, 95);
-        background-image: linear-gradient(#ff3aba, #a2ff00);
-        border-top: 0px;
-      }
-
-      >a:active {
-        box-shadow: 0px 0px 10px purple;
-      }
+    >a:hover {
+      border: 3px solid #000;
+      background-color: rgb(95, 95, 95);
+      background-image: linear-gradient(#ff3aba, #a2ff00);
+      border-top: 0px;
     }
   }
 }
@@ -1469,6 +1466,11 @@ footer {
 
 /* ====================== BODY CONTENT ======================== */
 /* ====================== ABOUT US ======================== */
+#about {
+  >h1 {
+    max-width: 1250px;
+  }
+}
 
 .about-text-frame {
   display: flex;
@@ -1488,7 +1490,7 @@ footer {
   border-top: 0px;
   box-shadow: inset 2px 4px 10px #8c8c8c;
 
-  >.header-about-size {
+  >.about-title {
     font-size: var(--h-about-shrink);
   }
 
@@ -1731,7 +1733,7 @@ footer {
 
     >h1 {
       font-size: var(--font-shrinker);
-      font-family: 'Arial, Helvetica', sans-serif;
+      font-family: 'zilla slab', serif;
       font-weight: 700;
       text-align: center;
     }
@@ -2259,11 +2261,11 @@ footer {
   >form {
     text-align: center;
     width: 100%;
-    gap: 20px;
 
     >label {
       font-size: clamp(0.65rem, 1vw + 1rem, 0.88rem);
       font-family: 'Zilla slab', serif;
+      text-align: center;
     }
 
     >input {
@@ -2274,7 +2276,7 @@ footer {
       border-color: #00ffb2;
     }
 
-    #submit-code {
+    >#submit-code {
       width: 60px;
       background-color: #00ffb2;
       color: #000;
@@ -2306,7 +2308,7 @@ footer {
   width: 90%;
   gap: 10px;
 
-  >span {
+  >div {
 
     >p {
       font-size: clamp(1rem, 1vw + 1rem, 1.3rem);
@@ -2618,18 +2620,18 @@ footer {
 
     >.option-6-2 {
       grid-row: 11;
-      grid-column: 1 /span 5;
+      grid-column: 1 /span 7;
       padding: 0.2rem;
     }
 
     >.option-7-1 {
       grid-row: 10;
-      grid-column: 8 /span 5;
+      grid-column: 9 /span 4;
     }
 
     >.option-7-2 {
       grid-row: 11;
-      grid-column: 8 /span 5;
+      grid-column: 9 /span 4;
       padding: 0.2rem;
     }
 
@@ -2774,7 +2776,7 @@ footer {
     text-align: left;
     font-weight: 700;
     font-family: 'Arial, Helvetica', sans-serif;
-    font-size: var(--h-product-shrink);
+    font-size: 20px;
   }
 }
 
@@ -2975,7 +2977,7 @@ footer {
   color: white;
   font-family: "arial", sans-serif;
 
-  >div {
+  >.game-about-top {
     width: 100%;
 
     i {
@@ -2997,7 +2999,7 @@ footer {
     }
   }
 
-  >span {
+  >.game-about-bottom {
     border-top: 1px solid #ff00b8;
     padding: 0.35rem;
 
