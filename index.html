@@ -38,10 +38,13 @@
       </div>
       <nav>
         <div id="hamburger-navbar">
-          <label for="hamburger-open" id="ham-size"
-            ><i class="fa-solid fa-burger"></i
-          ></label>
-          <input type="checkbox" id="hamburger-open" name="hamburger-open" />
+          <label for="hamburger-open" id="ham-size">|||</label>
+          <input
+            type="checkbox"
+            id="hamburger-open"
+            name="hamburger-open"
+            hidden
+          />
 
           <section class="hamburger-open">
             <article>
@@ -136,13 +139,13 @@
             <input id="profile-log" name="profile-log" type="checkbox" />
             <section id="profile-pop-up">
               <article class="profile-window-popped">
-                <span>
+                <div>
                   <img
                     src="/assets/images/ta-logged.png"
                     alt="The Arena tiny profile logo"
                   />
                   <p>Jaguar092</p>
-                </span>
+                </div>
 
                 <a class="navlist" href="#Jaguar092"
                   ><i class="fa-solid fa-user-ninja"></i>Profile</a
@@ -185,7 +188,9 @@
       </section>
 
       <section class="game-content">
-        <h2 class="h2-size greenheader-bar">New releases this month:</h2>
+        <h2 class="header-store-sizer greenheader-bar">
+          New releases this month:
+        </h2>
         <div class="game-gridbox">
           <div class="game-card">
             <b>Marathon Istoria</b>

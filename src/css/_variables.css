@@ -16,6 +16,6 @@
 
   --h-about-shrink: clamp(1.1rem, 1vw + 1rem, 2rem);
 
-  --h-product-shrink: clamp(1.1rem, 1vw + 1rem, 1.5rem);
+  --h-greenstyle-shrink: clamp(1.1rem, 1vw + 1rem, 1.8rem);
 
 }
