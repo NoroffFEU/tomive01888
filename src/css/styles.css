@@ -227,7 +227,7 @@ header {
   border-radius: 0%;
   height: 1000px;
 
-  >article {
+  >div {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -1327,7 +1327,8 @@ footer {
 
 #marathon-commercial {
   background-color: rgb(95, 95, 95);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 03)), url(../../assets/images/commercial-bg-min.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 03)),
+    url(../../assets/images/commercial-bg-min.png);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -3197,30 +3198,5 @@ footer {
     width: 100%;
     min-width: 220px;
     max-width: 360px;
-  }
-}
-
-@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) {
-  @media {
-    selector {
-      property: value;
-    }
-  }
-}
-
-
-@media not all and (min-resolution:.001dpcm) {
-  @supports (-webkit-appearance:none) and (not (stroke-color:transparent)) {
-    selector {
-      property: value;
-    }
-  }
-}
-
-@media not all and (min-resolution:.001dpcm) {
-  @supports (-webkit-appearance:none) and (stroke-color:transparent) {
-    selector {
-      property: value;
-    }
   }
 }
