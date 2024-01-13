@@ -70,6 +70,7 @@ li {
   background-image: linear-gradient(#569032, #bafcfc);
   border-radius: 0.4rem;
   width: 100%;
+  max-width: 1250px;
   text-align: left;
   padding: 0.25rem 2rem;
 }
@@ -98,8 +99,6 @@ li {
   gap: 1rem;
   width: 90%;
   margin-bottom: 2rem;
-  display: flex;
-
 
   >p {
     font-family: 'zilla slab', serif;
@@ -953,6 +952,55 @@ footer {
 /* ====================== BODY CONTENT ======================== */
 /* ====================== STORE ======================== */
 
+.game-content {
+  scroll-margin-top: 137px;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1250px;
+  padding-bottom: 2rem;
+  gap: 2rem;
+}
+
+.commercial-card {
+  width: 100%;
+  max-width: 1250px;
+  border: 3px solid black;
+  border-top: 0;
+  border-radius: 2rem;
+  padding: 2rem 0rem;
+}
+
+.game-gridbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  column-gap: 0.8rem;
+  row-gap: 2rem;
+
+  @media (max-width: 480px) {
+    grid-template-columns: repeat(1, 1fr);
+
+  }
+
+  @media (min-width: 670px) {
+    grid-template-columns: repeat(3, 1fr);
+
+  }
+
+  @media (min-width: 1000px) {
+    grid-template-columns: repeat(4, 1fr);
+
+  }
+
+  @media (min-width: 1250px) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
 .browse-filter {
   display: flex;
   flex-direction: column;
@@ -1014,19 +1062,6 @@ footer {
       color: white;
     }
   }
-}
-
-.game-content {
-  scroll-margin-top: 137px;
-  display: flex;
-  margin: 0 auto;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 1250px;
-  padding-bottom: 2rem;
-  gap: 2rem;
 }
 
 .game-content-old {
@@ -1276,52 +1311,6 @@ footer {
   }
 }
 
-.retro-bg {
-  width: 100%;
-  background-color: rgb(220, 220, 220);
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.game-gridbox {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 100%;
-  column-gap: 0.8rem;
-  row-gap: 2rem;
-
-  @media (max-width: 480px) {
-    grid-template-columns: repeat(1, 1fr);
-
-  }
-
-  @media (min-width: 670px) {
-    grid-template-columns: repeat(3, 1fr);
-
-  }
-
-  @media (min-width: 1000px) {
-    grid-template-columns: repeat(4, 1fr);
-
-  }
-
-  @media (min-width: 1250px) {
-    grid-template-columns: repeat(5, 1fr);
-  }
-}
-
-.commercial-card {
-  width: 100%;
-  max-width: 1250px;
-  border: 3px solid black;
-  border-top: 0;
-  border-radius: 2rem;
-  padding: 2rem 0rem;
-}
-
 #marathon-commercial {
   background-color: rgb(95, 95, 95);
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 03)),
@@ -1370,6 +1359,16 @@ footer {
   }
 }
 
+.retro-bg {
+  width: 100%;
+  background-color: rgb(220, 220, 220);
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
 #komplett-commercial {
   display: flex;
   flex-direction: column-reverse;
@@ -1392,14 +1391,16 @@ footer {
     max-height: 350px;
     max-width: fit-content;
 
-    #gaming-pc {
-      max-height: 285px;
+    >#gaming-pc {
+      width: 100%;
+      max-width: 190px;
       border-radius: 1rem;
     }
 
-    #komplett {
-      max-width: 170px;
-      padding: 0.2rem;
+
+    >#komplett-logo {
+      width: 100%;
+      max-width: 160px;
     }
   }
 
@@ -1453,26 +1454,10 @@ footer {
   }
 }
 
-#komplett {
-  width: 100%;
-  max-width: 160px;
-}
-
-#gaming-pc {
-  width: 100%;
-  max-width: 190px;
-  border-radius: 1rem;
-}
-
 /* ====================== BODY CONTENT ======================== */
 /* ====================== ABOUT US ======================== */
-#about {
-  >h1 {
-    max-width: 1250px;
-  }
-}
-
 .about-text-frame {
+  -webkit-box-flex: flex;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1500,6 +1485,7 @@ footer {
 }
 
 .about-containers {
+  -webkit-box-flex: flex;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1525,6 +1511,7 @@ footer {
 }
 
 .type-1-frame {
+  -webkit-box-flex: flex;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -1534,6 +1521,7 @@ footer {
 
   >div {
     margin: 1rem;
+    -webkit-box-flex: flex;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1556,6 +1544,7 @@ footer {
     height: 100%;
 
     >.row-list {
+      -webkit-box-flex: flex;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -1596,6 +1585,7 @@ footer {
 }
 
 .type-2-frame {
+  -webkit-box-flex: flex;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1681,6 +1671,7 @@ footer {
     width: 100%;
     max-width: 1250px;
     margin: 0;
+    -webkit-box-flex: flex;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1894,6 +1885,7 @@ footer {
 
 #facebook-box {
   background-color: #177ae3;
+
 }
 
 #twitx-box {
@@ -1974,7 +1966,6 @@ footer {
   .container-size {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-evenly;
     max-width: 1250px;
   }
@@ -1982,7 +1973,6 @@ footer {
   .container-custom-2 {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-evenly;
     max-width: 1250px;
   }
@@ -1990,9 +1980,7 @@ footer {
   #instagram-box {
     display: flex;
     flex-direction: row-reverse;
-    align-items: center;
     justify-content: center;
-    max-width: 1250px;
   }
 
   .social-image {
@@ -2158,7 +2146,8 @@ footer {
         box-shadow: inset 2px 2px 10px #000;
         height: 350px;
 
-        >h2 {
+        >b {
+          font-size: clamp(1.5rem, 2vw + 1rem, 3rem);
           font-family: "zilla slab", serif;
           text-align: center;
         }
