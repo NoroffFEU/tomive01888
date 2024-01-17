@@ -583,7 +583,7 @@ footer {
 
     >li {
       font-size: clamp(0.85rem, 1vw + 0.6rem, 1rem);
-      text-align: left;
+      text-align: center;
       width: 100%;
 
       >a {
@@ -890,8 +890,6 @@ footer {
 .commercial-card {
   width: 100%;
   max-width: 1250px;
-  border: 3px solid black;
-  border-top: 0;
   border-radius: 2rem;
   padding: 2rem 0rem;
 }
@@ -945,8 +943,6 @@ footer {
   width: 100%;
   max-width: 1250px;
   max-height: 300px;
-  border: 3px solid black;
-  border-top: 0;
   border-radius: 2rem;
   padding: 1rem;
 
@@ -1244,7 +1240,6 @@ footer {
       max-width: 190px;
       border-radius: 1rem;
     }
-
 
     >#komplett-logo {
       width: 100%;
@@ -2684,7 +2679,7 @@ footer {
   align-items: center;
   gap: 2rem;
 
-  >.game-image {
+  >.game-product {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2751,7 +2746,6 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
   width: 100%;
   gap: 2rem;
   height: 100%;
@@ -2771,9 +2765,9 @@ footer {
   justify-content: space-between;
   gap: 0.4rem;
   height: 200px;
+  font-family: Arial, Helvetica, sans-serif;
 
   >p {
-    font-family: Arial, Helvetica, sans-serif;
     border-bottom: 2px solid #00ffb2;
   }
 
@@ -2783,10 +2777,9 @@ footer {
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid #00ffb2;
-    font-family: "arial", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 
     >b {
-      font-family: Arial, Helvetica, sans-serif;
       font-size: clamp(1.1rem, 1vw + 1rem, 1.2rem);
     }
   }
@@ -2797,7 +2790,6 @@ footer {
     max-width: 300px;
     padding: 0.3rem 1rem;
     border-radius: 4rem;
-    font-family: "arial", sans-serif;
     font-size: clamp(0.85rem, 1vw + 0.5rem, 1.5rem);
     font-weight: 900;
     text-align: center;
@@ -2963,7 +2955,7 @@ footer {
       align-items: flex-start;
       max-width: 1250px;
 
-      >.game-image {
+      >.game-product {
         width: 100%;
         max-width: 587px;
       }
