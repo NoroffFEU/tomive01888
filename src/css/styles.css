@@ -42,15 +42,14 @@ li {
 /* ================== FONT SIZE STYLE AREA ==================*/
 
 
-p {
+p,
+b,
+i,
+a,
+li {
   font-size: var(--p-font-shrink);
   font-family: 'zilla slab', serif;
 
-}
-
-li {
-  font-size: var(--li-font-shrink);
-  font-family: 'zilla slab', serif;
 }
 
 h1,
@@ -59,10 +58,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'zilla slab', serif;
-}
-
-a {
   font-family: 'zilla slab', serif;
 }
 
