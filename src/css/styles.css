@@ -772,7 +772,7 @@ footer {
     box-shadow: inset 2px 4px 10px #8c8c8c;
 
 
-    >b {
+    >h3 {
       font-weight: 900;
       font-size: 24px;
       color: #4d0080;
@@ -1033,13 +1033,16 @@ footer {
       margin: 0 auto;
       text-decoration: none;
 
-      >b {
+      >p {
         text-align: center;
-        font-size: clamp(1rem, 1vw + 0.6rem, 1.1rem);
-        color: white;
-        padding: 1rem 0.2rem;
-        text-shadow: 2px 2px 2px black;
+        padding: 0.4rem 0.1rem;
 
+        >b {
+          width: 100%;
+          font-size: clamp(1rem, 1vw + 0.6rem, 1.1rem);
+          color: white;
+          text-shadow: 2px 1px 2px black;
+        }
       }
 
 
@@ -1103,13 +1106,16 @@ footer {
   margin: 0 auto;
   text-decoration: none;
 
-  >b {
+  >p {
     text-align: center;
-    font-size: clamp(1rem, 1vw + 0.6rem, 1.1rem);
-    color: white;
-    padding: 1rem 0rem;
-    text-decoration: none;
-    text-shadow: 2px 1px 2px black;
+    padding: 0.4rem 0.1rem;
+
+    >b {
+      width: 100%;
+      font-size: clamp(1rem, 1vw + 0.6rem, 1.1rem);
+      color: white;
+      text-shadow: 2px 1px 2px black;
+    }
   }
 
   >img {
@@ -1178,10 +1184,12 @@ footer {
     flex-direction: column;
     color: white;
     padding: 1rem;
+    gap: 1rem;
 
-    >b {
+    >h3 {
+      width: 100%;
+      max-width: 300px;
       font-size: clamp(0.5rem, 1vw + 1rem, 5rem);
-      text-align: center;
       text-size-adjust: 1;
       font-weight: 100;
       letter-spacing: 5px;
@@ -1190,7 +1198,9 @@ footer {
 
     >p {
       font-weight: 900;
+      width: 100%;
       max-width: 300px;
+
     }
   }
 }
@@ -1255,7 +1265,7 @@ footer {
     align-items: center;
     justify-content: center;
 
-    >b {
+    >h3 {
       font-size: clamp(0.5rem, 1vw + 1rem, 5rem);
       text-align: center;
       color: rgb(62, 0, 88);
@@ -2109,7 +2119,7 @@ footer {
       margin-top: 0.2rem;
     }
 
-    >b {
+    >p b {
       font-size: clamp(1rem, 1vw + 1rem, 1.3rem);
       margin-top: 0.2rem;
     }
@@ -2713,7 +2723,7 @@ footer {
     align-items: center;
     border-bottom: 2px solid #00ffb2;
 
-    >b {
+    >p b {
       font-size: clamp(1.1rem, 1vw + 1rem, 1.2rem);
     }
   }
@@ -2775,10 +2785,6 @@ footer {
   >.game-about-bottom {
     border-top: 1px solid #ff00b8;
     padding: 0.35rem;
-
-    >b {
-      font-size: clamp(1.1rem, 1vw + 2rem, 1.4rem);
-    }
   }
 }
 
