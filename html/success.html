@@ -34,125 +34,81 @@
           src="../assets/images/thearena-Logo.png"
           alt="The Arena The Universe of Games"
         />
-
-        <button class="member-button-style" id="member">Become a member</button>
       </div>
       <nav>
-        <div id="hamburger-navbar">
-          <label for="hamburger" id="ham-size">|||</label>
-          <input type="checkbox" id="hamburger" name="hamburger" hidden />
-          <div class="hamburger-open">
-            <div>
-              <div>
-                <input type="checkbox" name="login" id="login" />
-                <label for="login">.</label>
-                <img
-                  class="pro-logo-grid-location"
-                  src="../assets/images/ta-login-logo.png"
-                  alt="The Arena tiny profile logo"
-                />
-                <img
-                  class="pro-logo-grid-location"
-                  id="active-logo"
-                  src="../assets/images/ta-logged.png"
-                  alt="The Arena tiny profile logo"
-                />
-
-                <p class="account-sign" id="not-signed">Not logged in</p>
-                <p class="account-sign" id="is-signed">Jaguar092</p>
-
-                <p id="sign-up">or <a href="#Sign-up">Sign up</a></p>
-
-                <a class="navlist hidden" href="#Jaguar092"
-                  ><i class="fa-solid fa-user-ninja"></i>Profile</a
-                >
-                <a class="navlist hidden" href="#Game-library"
-                  ><i class="fa-solid fa-gamepad"></i>Game library</a
-                >
-                <a class="navlist hidden" href="#User-settings"
-                  ><i class="fa-solid fa-gear"></i>User settings</a
-                >
-                <a class="navlist" href="#News"
-                  ><i class="fa-solid fa-newspaper"></i> News</a
-                >
-                <a class="navlist" href="#Coupon-codes"
-                  ><i class="fa-solid fa-ticket"></i>Coupon codes</a
-                >
-                <a class="navlist" href="./about.html"
-                  ><i class="fa-solid fa-user"></i>About us</a
-                >
-                <a class="navlist" href="./contact.html"
-                  ><i class="fa-solid fa-envelope-open-text"></i>Contact us</a
-                >
-                <a class="navlist" href="#Accessibility"
-                  ><i class="fa-solid fa-eye-low-vision"></i>Accessibility</a
-                >
-              </div>
-              <a
-                class="member-button-style membutton-position"
-                href="#joinmember"
-                >Become a member</a
-              >
-            </div>
-          </div>
-          <a href="./store.html"><i class="fa-solid fa-gamepad"></i>STORE</a>
-          <a href="./purchase.html"
-            ><i class="fa-solid fa-cart-shopping"></i>CART</a
-          >
-          <a href="#"><i class="fa-solid fa-magnifying-glass"></i>SEARCH</a>
-          <a href="../index.html"><i class="fa-solid fa-house"></i>HOME</a>
-        </div>
-
         <div id="desktop-navbar">
           <div>
-            <a class="desk-nav-stylebutton" href="../index.html">Home</a>
+            <a class="desk-nav-stylebutton on-page" href="../index.html"
+              >Home</a
+            >
             <a class="desk-nav-stylebutton on-page" href="./store.html"
               >Store</a
-            >
-            <a class="desk-nav-stylebutton" href="./not-built-yet-NEWS.html"
-              >News</a
             >
             <a class="desk-nav-stylebutton" href="./about.html">About</a>
             <a class="desk-nav-stylebutton" href="./contact.html">Contact</a>
           </div>
 
           <div class="desknav-prof-style">
-            <a href="#"
-              ><i class="fa-solid fa-magnifying-glass fa-lg"></i>search</a
-            >
-            <a href="./purchase.html"
-              ><i class="fa-solid fa-cart-shopping fa-lg"></i>cart</a
-            >
-
+            <a href="./purchase.html">
+              <i class="fa-solid fa-cart-shopping fa-lg"></i>cart
+            </a>
             <label for="profile-log">Profile</label>
             <input id="profile-log" name="profile-log" type="checkbox" />
             <div id="profile-pop-up">
               <div class="profile-window-popped">
-                <div>
-                  <img
-                    src="../assets/images/ta-logged.png"
-                    alt="The Arena tiny profile logo"
-                  />
-                  <p>Jaguar092</p>
-                </div>
-
-                <a class="navlist" href="#Jaguar092"
-                  ><i class="fa-solid fa-user-ninja"></i>Profile</a
-                >
-                <a class="navlist" href="#Game-library"
-                  ><i class="fa-solid fa-gamepad"></i>Game library</a
-                >
-                <a class="navlist" href="#User-settings"
-                  ><i class="fa-solid fa-gear"></i>User settings</a
-                >
-                <a class="navlist" href="#Coupon-codes"
-                  ><i class="fa-solid fa-ticket"></i>Coupon codes</a
-                >
+                <img
+                  src="../assets/images/ta-logged.png"
+                  alt="The Arena tiny profile logo"
+                />
+                <p>Jaguar092</p>
               </div>
             </div>
+          </div>
+        </div>
+
+        <div id="hamburger-navbar">
+          <label for="hamburger-open" id="ham-size"
+            ><i class="fa-solid fa-bars"></i>HAM</label
+          >
+          <input
+            type="checkbox"
+            id="hamburger-open"
+            name="hamburger-open"
+            hidden
+          />
+
+          <a href="./store.html"><i class="fa-solid fa-gamepad"></i>STORE</a>
+
+          <a href="./purchase.html"
+            ><i class="fa-solid fa-cart-shopping"></i>CART</a
+          >
+          <a href="../index.html"><i class="fa-solid fa-house"></i>HOME</a>
+
+          <div class="hamburger-open">
             <div>
-              <p>or</p>
-              <a id="sign-up-now" href="#SignUp">Sign Up</a>
+              <input type="checkbox" name="login" id="login" />
+              <label for="login">.</label>
+              <img
+                class="pro-logo-grid-location"
+                src="../assets/images/ta-login-logo.png"
+                alt="The Arena tiny profile logo"
+              />
+              <img
+                class="pro-logo-grid-location"
+                id="active-logo"
+                src="../assets/images/ta-logged.png"
+                alt="The Arena tiny profile logo"
+              />
+
+              <p class="account-sign" id="not-signed">Not logged in</p>
+              <p class="account-sign" id="is-signed">Jaguar092</p>
+
+              <a class="navlist" href="./about.html"
+                ><i class="fa-solid fa-user"></i>About us</a
+              >
+              <a class="navlist2" href="./contact.html"
+                ><i class="fa-solid fa-envelope-open-text"></i>Contact us</a
+              >
             </div>
           </div>
         </div>
@@ -166,8 +122,8 @@
         <p>Cart></p>
         <p>Success></p>
       </div>
-      <section class="success-body">
-        <h1 class="header-style1">Thank you for your purchase</h1>
+      <section class="success-body border-styling-mtop">
+        <h1 class="header-style1">Order complete!</h1>
         <div class="thank-you-box">
           <p>
             A confirmation e-mail has been sent to you, with receipt and details
@@ -200,33 +156,32 @@
     </main>
 
     <footer>
-      <div id="info-row">
-        <ul>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./not-built-yet.html">Accessibility</a></li>
-          <li><a href="./contact.html">Feedback</a></li>
-        </ul>
-        <ul>
-          <li><a href="./not-built-yet.html">Privacy policy</a></li>
-          <li><a href="./not-built-yet.html">Return policy</a></li>
-          <li><a href="./contact.html">Contact us</a></li>
-        </ul>
-      </div>
-
-      <div id="social-connect">
-        <p class="border-bg">Stay in touch!</p>
-        <div>
-          <i class="fa-brands fa-x-twitter"></i>
-          <i class="fa-brands fa-discord"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-facebook-f"></i>
+      <div>
+        <div id="info-row">
+          <ul>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact us</a></li>
+          </ul>
         </div>
-      </div>
 
-      <div id="logo-footer">
-        <a href="../index.html"
-          ><img src="../assets/images/ta-logo-bw.png" alt="The Arena Logo" />
-        </a>
+        <div id="social-connect">
+          <p class="border-bg">Stay in touch!</p>
+          <div>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-discord"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+        </div>
+
+        <div id="logo-footer">
+          <a href="../index.html"
+            ><img
+              src="../assets/images/ta-logo-bw.png"
+              alt="The Arena Logo black and white"
+            />
+          </a>
+        </div>
       </div>
     </footer>
   </body>

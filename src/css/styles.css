@@ -1890,8 +1890,6 @@ footer {
       min-width: 90px;
       max-width: 600px;
       border-radius: 2rem;
-      border: 3px solid #000;
-      border-top: 0;
       padding: 2rem;
       gap: 1.8rem;
 
@@ -1995,6 +1993,7 @@ footer {
         align-items: center;
         width: 100%;
         margin: 2rem;
+        padding: 1.7rem;
         background-color: rgba(95, 95, 95, 0.4);
         background-image: linear-gradient(to bottom,
             rgba(255, 255, 255, 0.55),
