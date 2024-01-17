@@ -13,21 +13,22 @@ body {
   background-color: rgb(95, 95, 95);
   background-image: linear-gradient(blue, purple);
   width: 100%;
+  font-family: 'zilla slab', serif;
+}
 
-  >main {
-    background-color: rgb(231, 231, 231);
-    width: 90%;
-    -webkit-box-flex: flex;
-    -moz-box-flex: flex;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 0 auto;
-    gap: 2rem;
-    min-height: 90vh;
-    padding: 3rem 0rem;
-  }
+main {
+  background-color: rgb(231, 231, 231);
+  width: 90%;
+  -webkit-box-flex: flex;
+  -moz-box-flex: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+  gap: 2rem;
+  min-height: 90vh;
+  padding: 3rem 0rem;
 }
 
 ul {
@@ -47,31 +48,11 @@ i,
 a,
 li {
   font-size: var(--p-font-shrink);
-  font-family: 'zilla slab', serif;
 
-}
-
-b {
-  font-family: 'zilla slab', serif;
-
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'zilla slab', serif;
-}
-
-label {
-  font-family: 'zilla slab', serif;
 }
 
 .header-store-sizer {
   font-size: var(--h-greenstyle-shrink);
-
 }
 
 .header-about-size {
@@ -81,7 +62,6 @@ label {
 /* ================== SIMILAR CSS STYLE AREA ==================*/
 
 .greenheader-bar {
-  font-family: "zilla slab", serif;
   font-weight: 700;
   border: 3px solid black;
   border-top: 0;
@@ -111,7 +91,6 @@ label {
   border-radius: 1rem;
   border: 3px solid #000;
   border-top: 0;
-  font-family: "zilla slab", serif;
   text-align: center;
 
 }
@@ -136,7 +115,7 @@ label {
   }
 }
 
-@media only screen and (max-width: 318px) {
+@media (max-width: 318px) {
   .breadcrumbs-line {
     flex-direction: column;
   }
@@ -948,7 +927,6 @@ footer {
 
   >h1 {
     font-size: clamp(2.2rem, 1vw + 1rem, 5rem);
-    font-family: 'zilla slab', serif;
     font-weight: 900;
     color: black;
   }
@@ -1179,7 +1157,7 @@ footer {
     border: 2px solid yellow;
   }
 
-  >div {
+  >article {
     display: flex;
     flex-direction: column;
     color: white;
@@ -1188,18 +1166,19 @@ footer {
 
     >h3 {
       width: 100%;
-      max-width: 300px;
-      font-size: clamp(0.5rem, 1vw + 1rem, 5rem);
-      text-size-adjust: 1;
-      font-weight: 100;
+      text-align: left;
+      font-size: clamp(1.5rem, 3vw + 1rem, 2.5rem);
+      font-weight: 900;
       letter-spacing: 5px;
-      margin: 1rem;
+      color: white;
     }
 
     >p {
-      font-weight: 900;
+      font-size: clamp(1rem, 1vw + 2rem, 1.5rem);
+      font-weight: 700;
       width: 100%;
       max-width: 300px;
+      color: white;
 
     }
   }
@@ -1566,7 +1545,6 @@ footer {
 
     >h1 {
       font-size: var(--font-shrinker);
-      font-family: 'zilla slab', serif;
       font-weight: 700;
       text-align: center;
     }
@@ -2183,7 +2161,7 @@ footer {
 
     >label {
       font-style: 400;
-      font-size: clamp(0.7rem, 0.6vw + 0.5rem, 0.85rem);
+      font-size: clamp(0.85rem, 0.8vw + 0.5rem, 1rem);
 
     }
   }
