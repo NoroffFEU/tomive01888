@@ -43,11 +43,15 @@ li {
 
 
 p,
-b,
 i,
 a,
 li {
   font-size: var(--p-font-shrink);
+  font-family: 'zilla slab', serif;
+
+}
+
+b {
   font-family: 'zilla slab', serif;
 
 }
