@@ -44,10 +44,21 @@ li {
 
 p {
   font-size: var(--p-font-shrink);
+  font-family: 'zilla slab', serif;
+
 }
 
 li {
   font-size: var(--li-font-shrink);
+  font-family: 'zilla slab', serif;
+}
+
+h1 {
+  font-family: 'zilla slab', serif;
+}
+
+li {
+  /* font-family: 'zilla slab', serif; */
 }
 
 .header-store-sizer {
@@ -1171,7 +1182,7 @@ footer {
     flex-direction: row;
   }
 
-  >img {
+  >a img {
     width: 100%;
     max-width: 250px;
     border-radius: 1rem;
@@ -2596,7 +2607,7 @@ footer {
     text-align: left;
     font-weight: 700;
     font-family: 'Arial, Helvetica', sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 }
 
