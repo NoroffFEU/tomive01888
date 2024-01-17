@@ -57,8 +57,12 @@ h1 {
   font-family: 'zilla slab', serif;
 }
 
-li {
-  /* font-family: 'zilla slab', serif; */
+a {
+  font-family: 'zilla slab', serif;
+}
+
+label {
+  font-family: 'zilla slab', serif;
 }
 
 .header-store-sizer {
@@ -115,12 +119,8 @@ li {
   width: 90%;
   margin-bottom: 2rem;
 
-  >p {
-    font-family: 'zilla slab', serif;
-  }
 
   >a {
-    font-family: 'zilla slab', serif;
     text-decoration: none;
     font-size: var(--p-font-shrink);
     color: black;
@@ -190,7 +190,6 @@ header {
     text-decoration: none;
     text-align: center;
     font-size: clamp(1rem, 0.5vw + 0.6rem, 1.5rem);
-    font-family: 'zilla slab', serif;
     font-weight: 700;
     color: #fff;
     padding: 0.3rem 0rem;
@@ -223,7 +222,6 @@ header {
     color: #00ffb2;
     text-decoration: none;
     font-size: 13px;
-    font-family: Arial, Helvetica, sans-serif;
   }
 
   >a i {
@@ -255,7 +253,6 @@ header {
     display: block;
     text-align: center;
     font-size: clamp(1rem, 0.5vw + 0.6rem, 1.5rem);
-    font-family: 'zilla slab', serif;
     font-weight: 700;
     background-color: #00ffb2;
     color: #000;
@@ -321,7 +318,6 @@ header {
         padding: 0;
         font-size: clamp(1.1rem, 1vw + 1rem, 2rem);
         font-weight: 700;
-        font-family: 'zilla slab', serif;
 
       }
     }
@@ -331,7 +327,6 @@ header {
       text-decoration: none;
       font-size: 19px;
       font-weight: 400;
-      font-family: 'zilla slab', serif;
       color: black;
       width: 280px;
 
@@ -363,7 +358,6 @@ header {
     align-items: center;
     font-size: 11px;
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
     color: #00ffb2;
 
     >.fa-solid {
@@ -379,7 +373,6 @@ header {
     color: #00ffb2;
     text-decoration: none;
     font-size: 11px;
-    font-family: Arial, Helvetica, sans-serif;
 
     >.fa-solid {
       font-size: 18px;
@@ -424,7 +417,6 @@ header {
     >.account-sign {
       font-size: clamp(1rem, 1vw + 1rem, 2.6rem);
       color: #fff;
-      font-family: 'zilla slab', serif;
       font-weight: 700;
       text-align: left;
       margin-left: 10px;
@@ -447,7 +439,6 @@ header {
     >label {
       color: black;
       background-color: grey;
-      font-family: 'zilla slab', serif;
       font-weight: 900;
       border-radius: 5px;
       border: 1px solid #00ffb2;
@@ -599,7 +590,6 @@ footer {
 
       >a {
         color: white;
-        font-family: "zilla slab", serif;
         font-weight: 900;
         text-decoration: none;
       }
@@ -619,7 +609,6 @@ footer {
   align-items: center;
 
   >p {
-    font-family: "zilla slab", serif;
     font-weight: 700;
     font-size: 1.2rem;
     color: #2a2a2a;
@@ -712,7 +701,6 @@ footer {
       background-color: rgba(0, 0, 0, 0.45);
       border-radius: 1.8rem;
       color: #fff;
-      font-family: "zilla slab", serif;
       font-weight: 700;
       width: 100%;
       max-width: 360px;
@@ -726,7 +714,6 @@ footer {
       background-color: #27ff57;
       border-top: 0px;
       color: #000;
-      font-family: "zilla slab", serif;
       font-weight: 700;
       font-size: clamp(1.5rem, 1vw + 1rem, 5rem);
       padding: 3px 40px;
@@ -776,7 +763,6 @@ footer {
     padding: 1rem;
     background-color: #fff;
     color: #000;
-    font-family: "zilla slab", serif;
     text-wrap: wrap;
     border-radius: 2rem;
     box-shadow: inset 2px 4px 10px #8c8c8c;
@@ -806,7 +792,6 @@ footer {
       background-image: linear-gradient(#ff98e8, #e6fa00);
       border-top: 0px;
       color: #000;
-      font-family: "zilla slab", serif;
       font-weight: 900;
       font-size: clamp(0.8rem, 0.5vw + 0.6rem, 1rem);
       padding: 3px 20px;
@@ -981,7 +966,6 @@ footer {
       min-width: 80px;
       max-width: 160px;
       padding: 0.3rem 0.5rem;
-      font-family: 'zilla slab', serif;
       font-weight: 700;
       font-size: clamp(0.9rem, 0.7vw + 0.7rem, 1.5rem);
       color: black;
@@ -1012,7 +996,6 @@ footer {
 
   >.retro-h4-header {
     font-size: var(--h-greenstyle-shrink);
-    font-family: "zilla slab", serif;
     font-weight: 700;
     border: 3px solid black;
     border-top: 0;
@@ -1049,7 +1032,6 @@ footer {
       >b {
         text-align: center;
         font-size: clamp(1rem, 1vw + 0.6rem, 1.1rem);
-        font-family: 'zilla slab', serif;
         color: white;
         padding: 1rem 0.2rem;
         text-shadow: 2px 2px 2px black;
@@ -1088,7 +1070,6 @@ footer {
         >p {
           font-size: clamp(1.2rem, 1vw + 0.6rem, 2.8rem);
           font-weight: 700;
-          font-family: Arial, Helvetica, sans-serif;
           color: white;
           margin: 0;
         }
@@ -1121,7 +1102,6 @@ footer {
   >b {
     text-align: center;
     font-size: clamp(1rem, 1vw + 0.6rem, 1.1rem);
-    font-family: 'zilla slab', serif;
     color: white;
     padding: 1rem 0rem;
     text-decoration: none;
@@ -1158,7 +1138,6 @@ footer {
     >p {
       font-size: clamp(1.2rem, 1vw + 0.6rem, 2.8rem);
       font-weight: 700;
-      font-family: Arial, Helvetica, sans-serif;
       color: white;
       margin: 0;
     }
@@ -1198,7 +1177,6 @@ footer {
 
     >b {
       font-size: clamp(0.5rem, 1vw + 1rem, 5rem);
-      font-family: 'Impact', serif;
       text-align: center;
       text-size-adjust: 1;
       font-weight: 100;
@@ -1207,7 +1185,6 @@ footer {
     }
 
     >p {
-      font-family: Arial, Helvetica, sans-serif;
       font-weight: 900;
       max-width: 300px;
     }
@@ -1276,7 +1253,6 @@ footer {
 
     >b {
       font-size: clamp(0.5rem, 1vw + 1rem, 5rem);
-      font-family: 'zilla slab', serif;
       text-align: center;
       color: rgb(62, 0, 88);
       letter-spacing: 5px;
@@ -1284,7 +1260,6 @@ footer {
     }
 
     >p {
-      font-family: 'zilla slab', serif;
       font-weight: 900;
       max-width: 300px;
       color: rgb(62, 0, 88);
@@ -1318,7 +1293,6 @@ footer {
   justify-content: center;
   background-color: #fff;
   color: #000;
-  font-family: "zilla slab", serif;
   height: clamp(140px, 340px);
   width: clamp(100px, 100%, 500px);
   border-radius: 2rem;
@@ -1569,7 +1543,6 @@ footer {
     padding: 1rem;
     margin: 1rem;
     color: #000;
-    font-family: "zilla slab", serif;
     background-color: #fff;
     border: 3px solid #000;
     border-radius: 30px;
@@ -1609,7 +1582,6 @@ footer {
       color: white;
       margin: 0.8rem;
       font-size: clamp(1rem, 1vw + 0.8rem, 2rem);
-      font-family: "arial", serif;
       font-weight: 900;
     }
   }
@@ -1646,7 +1618,6 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: "arial", serif;
     color: white;
     width: 100%;
     padding: 2.5rem;
@@ -1677,13 +1648,11 @@ footer {
         justify-content: flex-start;
         align-items: flex-start;
         color: white;
-        font-family: "arial", sans-serif;
         font-style: 8px;
         margin: 1rem;
 
         >textarea {
           font-size: 14px;
-          font-family: "arial", sans-serif;
           border-radius: 7px;
           resize: vertical;
           min-height: 100px;
@@ -1716,7 +1685,6 @@ footer {
           color: white;
           align-self: flex-end;
           margin-top: 2px;
-          font-family: "arial", sans-serif;
           padding-top: 0.1rem;
         }
 
@@ -1728,7 +1696,6 @@ footer {
 
         >input:last-child {
           background-color: #fff;
-          font-family: "arial", sans-serif;
           font-weight: 900;
           color: #000;
           width: 120px;
@@ -1798,7 +1765,6 @@ footer {
   font-size: var(--h-contact-shrink);
   font-weight: 700;
   text-align: center;
-  font-family: 'zilla slab', serif;
 
 }
 
@@ -1860,9 +1826,7 @@ footer {
       padding-bottom: 3rem;
     }
 
-    >.thank-you-box>* {
-      font-family: "arial", sans-serif;
-    }
+    >.thank-you-box>* {}
 
     >.thank-you-box {
       display: flex;
@@ -1927,7 +1891,6 @@ footer {
       min-width: 90px;
       max-width: 20rem;
       padding: 0.4rem 2rem;
-      font-family: "arial", sans-serif;
       font-size: clamp(0.85rem, 1vw + 0.6rem, 1.1rem);
       font-weight: 900;
       box-shadow: 4px 4px 10px #767676;
@@ -1990,7 +1953,6 @@ footer {
 
         >b {
           font-size: clamp(1.5rem, 2vw + 1rem, 3rem);
-          font-family: "zilla slab", serif;
           text-align: center;
         }
 
@@ -2032,7 +1994,6 @@ footer {
         }
 
         >.contact-row p {
-          font-family: "arial", sans-serif;
           font-size: 0.85rem;
           width: 40ch;
           margin: 0;
@@ -2095,7 +2056,6 @@ footer {
 
     >label {
       font-size: clamp(0.65rem, 1vw + 1rem, 0.88rem);
-      font-family: 'Zilla slab', serif;
       text-align: center;
     }
 
@@ -2128,7 +2088,6 @@ footer {
     color: black;
     font-size: clamp(1rem, 1vw + 1rem, 1.5rem);
     font-weight: 900;
-    font-family: 'zilla slab', serif;
   }
 }
 
@@ -2144,13 +2103,11 @@ footer {
     >p {
       font-size: clamp(1rem, 1vw + 1rem, 1.3rem);
       margin-top: 0.2rem;
-      font-family: Arial, Helvetica, sans-serif;
     }
 
     >b {
       font-size: clamp(1rem, 1vw + 1rem, 1.3rem);
       margin-top: 0.2rem;
-      font-family: Arial, Helvetica, sans-serif;
     }
 
     >.buy-underline {
@@ -2191,7 +2148,6 @@ footer {
 
     >p {
       font-size: clamp(1.1rem, 1vw + 1rem, 1.5rem);
-      font-family: Arial, Helvetica, sans-serif;
       font-weight: 700;
       margin: 0;
     }
@@ -2212,7 +2168,6 @@ footer {
     background-color: #fff;
 
     >label {
-      font-family: Arial, Helvetica, sans-serif;
       font-style: 400;
       font-size: clamp(0.7rem, 0.6vw + 0.5rem, 0.85rem);
 
@@ -2226,7 +2181,6 @@ footer {
       grid-column: 2 /span 8;
       font-size: 18px;
       align-self: center;
-      font-family: Arial, Helvetica, sans-serif;
       font-weight: 700;
     }
 
@@ -2244,7 +2198,6 @@ footer {
       align-self: center;
       font-size: 18px;
       align-self: center;
-      font-family: Arial, Helvetica, sans-serif;
       font-weight: 700;
     }
 
@@ -2363,7 +2316,6 @@ footer {
     background-color: #fff;
 
     >label {
-      font-family: Arial, Helvetica, sans-serif;
       font-style: 400;
       font-size: clamp(0.7rem, 0.6vw + 0.5rem, 0.85rem);
 
@@ -2377,7 +2329,6 @@ footer {
       grid-column: 2 /span 8;
       font-size: 18px;
       align-self: center;
-      font-family: Arial, Helvetica, sans-serif;
       font-weight: 700;
     }
 
@@ -2395,7 +2346,6 @@ footer {
       align-self: center;
       font-size: 18px;
       align-self: center;
-      font-family: Arial, Helvetica, sans-serif;
       font-weight: 700;
 
     }
@@ -2545,7 +2495,6 @@ footer {
 
     >p {
       font-size: clamp(1.1rem, 1vw + 1rem, 1.5rem);
-      font-family: Arial, Helvetica, sans-serif;
       font-weight: 700;
       margin: 0.5rem 0rem;
       text-align: left;
@@ -2570,7 +2519,6 @@ footer {
 
   >.cart-position-1 {
     grid-column: 1 /span 7;
-    font-family: 'Arial, Helvetica', sans-serif;
     border-bottom: 1px solid #00ffb2;
     text-align: end;
   }
@@ -2581,7 +2529,6 @@ footer {
     margin: 0;
     text-align: left;
     text-wrap: wrap;
-    font-family: 'zilla slab', serif;
     font-size: 19px;
     font-weight: 700;
     align-self: center;
@@ -2597,7 +2544,6 @@ footer {
     grid-column: 6;
     grid-row: 8;
     align-self: left;
-    font-family: 'Arial, Helvetica', sans-serif;
     font-size: var(--p-font-shrink);
   }
 
@@ -2606,7 +2552,6 @@ footer {
     grid-row: 9;
     text-align: left;
     font-weight: 700;
-    font-family: 'Arial, Helvetica', sans-serif;
     font-size: 1.25rem;
   }
 }
@@ -2720,7 +2665,6 @@ footer {
     }
 
     >p {
-      font-family: Arial, Helvetica, sans-serif;
       font-size: clamp(0.85rem, 1vw + 0.6rem, 1.1rem);
       margin: 0;
       color: white;
@@ -2753,7 +2697,6 @@ footer {
   justify-content: space-between;
   gap: 0.4rem;
   height: 200px;
-  font-family: Arial, Helvetica, sans-serif;
 
   >p {
     border-bottom: 2px solid #00ffb2;
@@ -2765,7 +2708,6 @@ footer {
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid #00ffb2;
-    font-family: Arial, Helvetica, sans-serif;
 
     >b {
       font-size: clamp(1.1rem, 1vw + 1rem, 1.2rem);
@@ -2803,7 +2745,6 @@ footer {
   border: 3px solid #00ffb2;
   border-top: 0;
   color: white;
-  font-family: "arial", sans-serif;
 
   >.game-about-top {
     width: 100%;
@@ -2875,7 +2816,6 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 0.2rem 1rem;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
     font-size: clamp(0.8rem, 0.5vw + 0.6rem, 1.4rem);
     background-color: rgb(95, 95, 95);
@@ -2896,7 +2836,6 @@ footer {
     >p {
       padding: 1rem;
       font-size: clamp(0.8rem, 0.5vw + 0.6rem, 1.1rem);
-      font-family: Arial, Helvetica, sans-serif;
     }
   }
 
@@ -2925,7 +2864,6 @@ footer {
 
     >.drop-content {
       font-size: clamp(0.8rem, 0.5vw + 0.6rem, 1.2rem);
-      font-family: Arial, Helvetica, sans-serif;
       font-weight: 900;
       float: left;
       font-weight: 700;
@@ -2933,7 +2871,6 @@ footer {
 
     >li {
       font-size: clamp(0.8rem, 0.5vw + 0.6rem, 1.1rem);
-      font-family: Arial, Helvetica, sans-serif;
     }
   }
 }
