@@ -6,9 +6,9 @@
   --color-secondary: #2a2a2a;
 
 
-  --font-shrinker: clamp(0.5rem, 1vw + 1.5rem, 5rem);
+  --font-shrinker: clamp(0.85rem, 1vw + 1.5rem, 5rem);
 
-  --p-font-shrink: clamp(0.85rem, 1vw + 0.6rem, 1.1rem);
+  --p-font-shrink: clamp(0.85rem, 1vw + 0.8rem, 1.1rem);
 
   --li-font-shrink: clamp(0.8rem, 0.5vw + 0.6rem, 1rem);
 

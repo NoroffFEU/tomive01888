@@ -1815,10 +1815,8 @@ footer {
     width: 100%;
 
     >.thank-you-box :nth-child(3) {
-      padding-bottom: 3rem;
+      padding-bottom: 2rem;
     }
-
-    >.thank-you-box>* {}
 
     >.thank-you-box {
       display: flex;
@@ -1833,14 +1831,10 @@ footer {
       gap: 1.8rem;
 
       >.bold-order {
-        font-size: clamp(0.8rem, 1vw + 0.6rem, 1.5rem);
         font-weight: 700;
       }
 
-      >p {
 
-        font-size: clamp(0.8rem, 1vw + 0.6rem, 1.2rem);
-      }
 
       >.contact-row {
         display: flex;
@@ -1851,7 +1845,7 @@ footer {
           border: 2px solid #000;
           border-top: 0;
           border-radius: 0.7rem;
-          font-size: clamp(0.8rem, 0.5vw + 0.6rem, 1rem);
+          font-size: clamp(0.85rem, 1vw + 0.8rem, 1rem);
           height: fit-content;
           align-self: center;
           text-decoration: none;
@@ -1877,13 +1871,12 @@ footer {
     >a {
       display: flex;
       justify-content: flex-start;
-      align-content: center;
+      align-items: center;
       background-color: #00ffb2;
       width: 90%;
-      min-width: 90px;
-      max-width: 20rem;
+      max-width: 320px;
       padding: 0.4rem 2rem;
-      font-size: clamp(0.85rem, 1vw + 0.6rem, 1.1rem);
+      font-size: clamp(1rem, 1vw + 0.6rem, 1.225rem);
       font-weight: 900;
       box-shadow: 4px 4px 10px #767676;
       border: 3px solid #ff00b8;
@@ -1943,9 +1936,10 @@ footer {
         box-shadow: inset 2px 2px 10px #000;
         height: 350px;
 
-        >b {
+        >p {
           font-size: clamp(1.5rem, 2vw + 1rem, 3rem);
           text-align: center;
+          font-weight: 900;
         }
 
         >i {
@@ -2161,7 +2155,7 @@ footer {
 
     >label {
       font-style: 400;
-      font-size: clamp(0.85rem, 0.8vw + 0.5rem, 1rem);
+      font-size: clamp(0.85rem, 1vw + 0.8rem, 1rem);
 
     }
   }
@@ -2309,7 +2303,7 @@ footer {
 
     >label {
       font-style: 400;
-      font-size: clamp(0.7rem, 0.6vw + 0.5rem, 0.85rem);
+      font-size: clamp(0.85rem, 1vw + 2rem, 1rem);
 
     }
   }
