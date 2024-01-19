@@ -1,5 +1,5 @@
 /* Use import to split up your CSS into manageable chunks */
-@import url("./_reset.css");
+@import url("./reset.css");
 /* Files that are only needed to be imported are called partials */
 /* These are marked with an underscore: */
 @import url("./variables.css");
@@ -8,6 +8,19 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* *,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+} */
 
 body {
   background-color: rgb(95, 95, 95);
