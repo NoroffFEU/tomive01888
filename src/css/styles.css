@@ -361,7 +361,7 @@ nav {
   }
 }
 
-#hamburger-navbar {
+.hamburger-navbar {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
@@ -546,15 +546,15 @@ nav {
 }
 
 @media (min-width: 670px) {
-  #hamburger-navbar {
+  .hamburger-navbar {
     display: none;
   }
 
-  #desktop-navbar {
+  /* .desktop-navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+  } */
 }
 
 /* ====================== BODY CONTENT ======================== */
