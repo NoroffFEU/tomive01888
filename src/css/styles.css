@@ -594,79 +594,68 @@ footer {
   width: 100%;
   max-width: 201px;
   column-gap: 1rem;
+  display: flex;
+  justify-content: center;
 
-  >ul {
-    display: flex;
-    justify-content: center;
-    width: 200px;
-
-    >li {
-      font-size: clamp(0.85rem, 1vw + 0.6rem, 1rem);
-      text-align: center;
-      width: 100%;
-
-      >a {
-        color: white;
-        font-weight: 900;
-        text-decoration: none;
-      }
-
-      >a:hover {
-        color: grey;
-        border-bottom: 1px solid red;
-      }
-    }
-  }
 }
 
-#social-connect {
+.footer-links {
+  color: white;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.footer-links:hover {
+  color: grey;
+  border-bottom: 1px solid red;
+}
+
+.social-connect {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+}
 
-  >p {
-    font-weight: 700;
-    font-size: 1.2rem;
-    color: #2a2a2a;
-    background-color: #1ec7de;
-    padding: 2px 30px;
-    border-radius: 999px;
-    margin: 10px;
-    text-shadow: 0 0 21px #1ec7de, 0 0 42px #1ec7de;
-  }
+.in-touch {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #2a2a2a;
+  background-color: #1ec7de;
+  padding: 2px 30px;
+  border-radius: 999px;
+  margin: 10px;
+  text-shadow: 0 0 21px #1ec7de, 0 0 42px #1ec7de;
+}
 
-  >div {
-    >i {
-      color: #80dbff;
-      font-size: 1.9rem;
-      margin: 0.6rem;
-      text-shadow: 0 0 11px #1ec7de;
-    }
+.fa-brands {
+  color: #80dbff;
+  font-size: 1.9rem;
+  margin: 0.6rem;
+  text-shadow: 0 0 11px #1ec7de;
+}
 
-    >i:hover {
-      color: #f7ff17;
-      text-shadow: 0 0 11px #f7ff17;
-    }
-  }
+.fa-brands:hover {
+  color: #f7ff17;
+  text-shadow: 0 0 11px #f7ff17;
 }
 
 @media only screen and (min-width: 1000px) {
-  footer div {
+  .footer-limiter {
     display: flex;
     flex-direction: row;
     height: auto;
   }
 
-  footer div :nth-child(1) {
+  .footer-limiter :nth-child(1) {
     order: 2;
   }
 
-  footer div :nth-child(2) {
+  .footer-limiter :nth-child(2) {
     order: 3;
   }
 
-  footer div:nth-child(3) {
+  .footer-limiter:nth-child(3) {
     order: 1;
   }
 }
