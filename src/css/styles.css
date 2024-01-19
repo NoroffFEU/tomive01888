@@ -204,6 +204,31 @@ nav {
   border-bottom: 2px solid #00ffb2;
 }
 
+.cart-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #00ffb2;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.fa-cart-shopping {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #00ffb2;
+  text-decoration: none;
+  font-size: 16px;
+  color: #00ffb2;
+  font-size: 1.3rem;
+  margin: 0.7rem;
+}
+
+.fa-cart-shopping:hover {
+  color: #00ae7a;
+}
+
 .desknav-prof-style {
   display: flex;
   flex-direction: row;
@@ -212,75 +237,50 @@ nav {
   width: 100%;
   max-width: 220px;
   gap: 0.8rem;
-
-  a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #00ffb2;
-    text-decoration: none;
-    font-size: 13px;
-  }
-
-  .fa-cart-shopping {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #00ffb2;
-    text-decoration: none;
-    font-size: 16px;
-    color: #00ffb2;
-    font-size: 1.3rem;
-    margin: 0.7rem;
-  }
-
-  .fa-cart-shopping:hover {
-    color: #00ae7a;
-  }
-
-  input[type="checkbox"] {
-    display: none;
-  }
-
-  >.profile-pop-up {
-    display: none;
-    overflow: hidden;
-  }
-
-  >label {
-    display: block;
-    text-align: center;
-    font-size: clamp(1rem, 0.5vw + 0.6rem, 1.5rem);
-    font-weight: 700;
-    background-color: #00ffb2;
-    color: #000;
-    padding: 0.5rem 1rem;
-    margin: 1rem;
-    width: 100%;
-    max-width: 100px;
-  }
-
-  >label:hover {
-    background-color: #00ae7a;
-  }
-
-  >div {
-    width: 100px;
-
-    >p {
-      color: white;
-    }
-
-    >a {
-      color: #54b5ff;
-      font-weight: 600;
-      text-decoration: underline;
-      width: 66px;
-    }
-  }
 }
 
-#profile-log[type="checkbox"]:checked~.profile-pop-up {
+/* input[type="checkbox"] {
+  display: none;
+}
+
+.profile-pop-up {
+  display: none;
+  overflow: hidden;
+}
+
+label {
+  display: block;
+  text-align: center;
+  font-size: clamp(1rem, 0.5vw + 0.6rem, 1.5rem);
+  font-weight: 700;
+  background-color: #00ffb2;
+  color: #000;
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+  width: 100%;
+  max-width: 100px;
+}
+
+label:hover {
+  background-color: #00ae7a;
+}
+
+div {
+  width: 100px;
+
+  >p {
+    color: white;
+  }
+
+  >a {
+    color: #54b5ff;
+    font-weight: 600;
+    text-decoration: underline;
+    width: 66px;
+  }
+} */
+
+/* #profile-log[type="checkbox"]:checked~.profile-pop-up {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -364,7 +364,7 @@ nav {
 
 
   }
-}
+} */
 
 .hamburger-navbar {
   list-style: none;
