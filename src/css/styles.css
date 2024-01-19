@@ -214,6 +214,10 @@ nav {
   width: 100%;
   max-width: 220px;
   gap: 0.8rem;
+
+  input[type="checkbox"] {
+    display: none;
+  }
 }
 
 .cart-button {
@@ -241,7 +245,7 @@ nav {
   color: #00ae7a;
 }
 
-label.profile-button {
+.profile-button {
   display: block;
   text-align: center;
   font-size: clamp(1rem, 0.5vw + 0.6rem, 1.5rem);
@@ -254,16 +258,12 @@ label.profile-button {
   max-width: 100px;
 }
 
-input[type="checkbox"] {
-  display: none;
-}
-
 .profile-pop-up {
   display: none;
   overflow: hidden;
 }
 
-label:hover {
+.profile-button:hover {
   background-color: #00ae7a;
 }
 
