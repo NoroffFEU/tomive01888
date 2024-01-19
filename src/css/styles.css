@@ -628,14 +628,14 @@ footer {
   text-shadow: 0 0 21px #1ec7de, 0 0 42px #1ec7de;
 }
 
-.fa-brands {
+.socials-icons {
   color: #80dbff;
   font-size: 1.9rem;
   margin: 0.6rem;
   text-shadow: 0 0 11px #1ec7de;
 }
 
-.fa-brands:hover {
+.socials-icons:hover {
   color: #f7ff17;
   text-shadow: 0 0 11px #f7ff17;
 }
@@ -1065,54 +1065,50 @@ footer {
   height: min-content;
   margin: 0 auto;
   text-decoration: none;
+}
 
-  >p {
-    text-align: center;
-    padding: 0.4rem 0.1rem;
+.gametitle {
+  text-align: center;
+  padding: 0.4rem 0.1rem;
+}
 
-    >b {
-      width: 100%;
-      font-size: clamp(1rem, 1vw + 0.6rem, 1.1rem);
-      color: white;
-      text-shadow: 2px 1px 2px black;
-    }
-  }
+.gametitle-bold {
+  width: 100%;
+  font-size: clamp(1rem, 1vw + 0.6rem, 1.1rem);
+  color: white;
+  text-shadow: 2px 1px 2px black;
+}
 
-  >img {
-    height: auto;
-    width: 95%;
-    max-width: 220px;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    align-self: center;
-  }
+.game-cover {
+  height: auto;
+  width: 95%;
+  max-width: 220px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  align-self: center;
+}
 
-  >div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem;
+.bottom-separator-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
 
-    >span {
+.console-icons {
+  border: 1px solid white;
+  border-radius: 0.2rem;
+  padding: 3px;
+  color: white;
+  font-size: clamp(1rem, 0.5vw + 0.6rem, 1.1rem);
+  text-align: center;
+}
 
-      >i {
-        border: 1px solid white;
-        border-radius: 0.2rem;
-        padding: 3px;
-        color: white;
-        font-size: clamp(1rem, 0.5vw + 0.6rem, 1.1rem);
-        text-align: center;
-      }
-    }
-
-    >p {
-      font-size: clamp(1.2rem, 1vw + 0.6rem, 2.8rem);
-      font-weight: 700;
-      color: white;
-      margin: 0;
-    }
-
-  }
+.price-tag {
+  font-size: clamp(1.2rem, 1vw + 0.6rem, 2.8rem);
+  font-weight: 700;
+  color: white;
+  margin: 0;
 }
 
 #marathon-commercial {
