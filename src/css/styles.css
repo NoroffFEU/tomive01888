@@ -1,5 +1,5 @@
 /* Use import to split up your CSS into manageable chunks */
-@import url("./reset.css");
+@import url("_/reset.css");
 /* Files that are only needed to be imported are called partials */
 /* These are marked with an underscore: */
 @import url("./variables.css");
