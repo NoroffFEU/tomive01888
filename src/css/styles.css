@@ -172,6 +172,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background-color: red;
 
   >div {
     width: 380px;
