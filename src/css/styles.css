@@ -1981,7 +1981,7 @@ footer {
 /* ====================== BODY CONTENT ======================== */
 /* ====================== PURCHASE PROCESS ======================== */
 
-.column-row-adjuster {
+/* .column-row-adjuster {
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
@@ -2109,7 +2109,7 @@ footer {
   }
 } */
 
-.cc-personal-info {
+/* .cc-personal-info {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -2155,7 +2155,7 @@ footer {
     }
   }
 
-  /* GRID SYSTEM POSITIONS */
+  
   >#cc-info #credit-card-inputs {
     >.option-1-1 {
       grid-row: 1;
@@ -2241,7 +2241,7 @@ footer {
     }
   }
 
-  /*^^^^ GRID SYSTEM POSITIONS ^^^^*/
+  
 
   >#cc-info #credit-card-inputs {
 
@@ -2303,7 +2303,7 @@ footer {
     }
   }
 
-  /* GRID SYSTEM POSITIONS */
+  
   >#personal-info #billing-info-inputs {
     >.option-1-1 {
       grid-row: 1;
@@ -2408,8 +2408,6 @@ footer {
       padding: 0.2rem;
     }
   }
-
-  /*^^^^ GRID SYSTEM POSITIONS ^^^^*/
 
   >#personal-info #billing-info-inputs {
     >.red-outline {
@@ -2581,7 +2579,9 @@ footer {
       }
     }
   }
-}
+} 
+
+*/
 
 /* ====================== BODY CONTENT ======================== */
 /* ====================== PRODUCT INFORMATION ================== */
