@@ -1410,7 +1410,7 @@ footer {
       rgba(228, 255, 24, 0.6)),
     url(../../assets/images/vintage-items.webp);
 
-  article {
+  /* article {
     gap: 1rem;
 
     .row-list {
@@ -1433,14 +1433,14 @@ footer {
         }
       }
     }
-  }
+  } */
 }
 
 
 
 
 
-/* .core-team-list {
+.core-team-list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1475,7 +1475,7 @@ footer {
   padding: 0.2rem;
   border: 0px;
   color: black;
-} */
+}
 
 
 
