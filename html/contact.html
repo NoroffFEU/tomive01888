@@ -126,18 +126,20 @@
       <h1 class="header-about-size greenheader-bar">Contact us</h1>
       <div class="contact-1stbox container-size border-styling-mtop">
         <div class="box1">
-          <p>
+          <p class="contact-text">
             You can contact us via, email, telephone or using the webform below.
           </p>
           <ul class="contact-alignment">
-            <li>
+            <li class="contact-info">
               <i class="fa-solid fa-envelope"></i> E-mail: thearena@fmail.com
             </li>
-            <li><i class="fa-solid fa-phone"></i> Phone: (+47) X99 00 X99</li>
+            <li class="contact-info">
+              <i class="fa-solid fa-phone"></i> Phone: (+47) X99 00 X99
+            </li>
           </ul>
         </div>
         <div class="discord-frame">
-          <p>Join our Discord</p>
+          <p class="white-text">Join our Discord</p>
         </div>
       </div>
 
@@ -146,15 +148,17 @@
           <h2 class="contact-header-style">Use our webform</h2>
           <p>We will get in touch within 2-3 workdays!</p>
           <img
+            class="webform-envelope"
             src="../assets/images/envelope-img1.png"
             alt="a yellow vector envelope as an icon"
           />
         </section>
-        <div class="webform-webform">
-          <div>
-            <form action="POST" novalidate>
-              <label for="fullname">Full name:</label>
+        <div class="webform-container">
+          <div class="webform-limiter">
+            <form novalidate class="webform">
+              <label for="fullname" class="webform-label">Full name:</label>
               <input
+                class="webform-input"
                 type="text"
                 name="fullname"
                 id="fullname"
@@ -163,6 +167,7 @@
               />
               <label for="email">E-mail:</label>
               <input
+                class="webform-input"
                 type="email"
                 name="email"
                 id="email"
@@ -171,6 +176,7 @@
               />
               <label for="topic">Topic:</label>
               <input
+                class="webform-input"
                 type="text"
                 name="message"
                 id="topic"
@@ -179,6 +185,7 @@
               />
               <label for="message">Message:</label>
               <textarea
+                class="webform-textarea"
                 id="message"
                 name="message"
                 placeholder="Your message..."
@@ -187,8 +194,9 @@
                 maxlength="1000"
               ></textarea>
 
-              <p>Max 1000 words</p>
+              <p class="restriction">Max 1000 words</p>
               <input
+                class="webform-input-submit"
                 type="button"
                 name="button"
                 onclick="alert('Thank you for your message')"
@@ -201,7 +209,9 @@
 
       <div class="container-size border-styling-mtop" id="facebook-box">
         <section class="textbox-padding">
-          <h3 class="contact-header-style">Reach us in other ways!</h3>
+          <h3 class="contact-header-style white-text reach-us">
+            Reach us in other ways!
+          </h3>
           <h4 class="contact-header-style">Facebook</h4>
           <p class="contact-header-style">@TheArena</p>
         </section>
@@ -214,8 +224,8 @@
 
       <div class="container-size border-styling-mtop" id="instagram-box">
         <section class="textbox-padding">
-          <h5 class="contact-header-style text-black">Instagram</h5>
-          <p class="contact-header-style text-black">@TheArena</p>
+          <h5 class="contact-header-style">Instagram</h5>
+          <p class="contact-header-style">@TheArena</p>
         </section>
         <img
           class="social-image"
@@ -226,8 +236,8 @@
 
       <div class="container-size border-styling-mtop" id="twitx-box">
         <section class="textbox-padding">
-          <h6 class="contact-header-style text-white">Twitter X</h6>
-          <p class="contact-header-style text-white">@TheArena</p>
+          <h6 class="contact-header-style white-text">Twitter X</h6>
+          <p class="contact-header-style white-text">@TheArena</p>
         </section>
         <img
           class="social-image"
