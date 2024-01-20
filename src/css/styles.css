@@ -1838,11 +1838,9 @@ footer {
   box-shadow: 0px 1px #003cff;
 }
 
-
 .reach-contact-text {
   width: 32ch;
 }
-
 
 .continue-shop-btn {
   display: flex;
@@ -1866,7 +1864,6 @@ footer {
   font-size: 1.4rem;
   font-weight: bold;
 }
-
 
 .continue-shop-btn:hover {
   border: 3px solid #414141;
@@ -1912,7 +1909,6 @@ footer {
   border: 3px solid rgb(255, 0, 255);
   border-top: 0;
   box-shadow: inset 2px 2px 10px #000;
-  height: 350px;
 }
 
 .you-a-winner {
@@ -1929,7 +1925,7 @@ footer {
   text-shadow: 3px 7px 6px grey;
 }
 
-@media only screen and (min-width: 501px) {
+/* @media only screen and (min-width: 501px) {
   .success {
     display: flex;
     flex-direction: column;
@@ -1980,7 +1976,7 @@ footer {
       }
     }
   }
-}
+} */
 
 /* ====================== BODY CONTENT ======================== */
 /* ====================== PURCHASE PROCESS ======================== */
@@ -1994,7 +1990,7 @@ footer {
   width: 95%;
 }
 
-.buy-container {
+.purchase-container {
   background-color: rgb(95, 95, 95);
   background-image: linear-gradient(to bottom, #000000, #003719);
   border-radius: 2rem;
@@ -2010,49 +2006,73 @@ footer {
   width: 100%;
   max-width: 400px;
   margin-bottom: 2rem;
+}
 
-  >form {
-    text-align: center;
-    width: 100%;
+.coupon-enter {
+  text-align: center;
+  width: 100%;
+}
 
-    >label {
-      font-size: clamp(0.65rem, 1vw + 1rem, 0.88rem);
-      text-align: center;
-    }
+.coupon-label {
+  font-size: clamp(0.65rem, 1vw + 1rem, 0.88rem);
+  text-align: center;
+}
 
-    >input {
-      width: 120px;
-      padding: 0.2rem 0.6rem;
-      text-align: center;
-      border-radius: 2rem;
-      border-color: #00ffb2;
-    }
+.coupon-input {
+  width: 120px;
+  padding: 0.2rem 0.6rem;
+  text-align: center;
+  border-radius: 2rem;
+  border-color: #00ffb2;
+}
 
-    >#submit-code {
-      width: 60px;
-      background-color: #00ffb2;
-      color: #000;
-      font-weight: 700;
-    }
-  }
+#submit-code {
+  width: 60px;
+  background-color: #00ffb2;
+  color: #000;
+  font-weight: 700;
+}
 
-  >a {
-    width: 100%;
-    max-width: 180px;
-    background-color: #00ffb2;
-    border: 2px solid #ff42f6;
-    border-radius: 2rem;
-    border-top: 0;
-    padding: 0.3rem 1rem;
-    text-decoration: none;
-    text-align: center;
-    color: black;
-    font-size: clamp(1rem, 1vw + 1rem, 1.5rem);
-    font-weight: 900;
-  }
+.purchase-button {
+  width: 100%;
+  max-width: 180px;
+  background-color: #00ffb2;
+  border: 2px solid #ff42f6;
+  border-radius: 2rem;
+  border-top: 0;
+  padding: 0.3rem 1rem;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  font-size: clamp(1rem, 1vw + 1rem, 1.5rem);
+  font-weight: 900;
 }
 
 #buy-text-split {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 90%;
+  gap: 10px
+}
+
+.buy-underline {
+  border-bottom: 1px solid #00ffb2;
+}
+
+.left-align-box {
+  width: max-content;
+  text-align: right;
+  gap: 5px;
+}
+
+.right-align-box {
+  width: 40%;
+  text-align: center;
+  gap: 5px;
+}
+
+/* #buy-text-split {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -2087,7 +2107,7 @@ footer {
     text-align: center;
     gap: 5px;
   }
-}
+} */
 
 .cc-personal-info {
   display: flex;
