@@ -395,7 +395,7 @@ nav {
     text-decoration: none;
     font-size: 11px;
 
-    >.fa-solid {
+    & .fa-solid {
       font-size: 18px;
     }
   }
@@ -1468,12 +1468,12 @@ footer {
 .about-4thbox {
   gap: 1rem;
 
-  >.positioning-giant-img {
+  & .positioning-giant-img {
     object-position: center;
 
   }
 
-  >.background-bg {
+  & .background-bg {
     width: 100%;
     border-radius: 2rem;
     background-color: grey;
