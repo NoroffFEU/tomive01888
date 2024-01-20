@@ -1281,6 +1281,34 @@ footer {
 
 /* ====================== BODY CONTENT ======================== */
 /* ====================== ABOUT US ======================== */
+
+.about-borders {
+  border-radius: 2rem;
+  border: 3px solid #000;
+  border-top: 0px;
+  padding: 1rem;
+}
+
+.about-containers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+
+
+
+.about-1stbox {
+  background-color: grey;
+  background-image: linear-gradient(to right,
+      rgba(243, 255, 113, 0.6),
+      rgba(200, 59, 191, 0.6),
+      rgb(0, 255, 179, 0.6)),
+    url(../../assets/images/our-room.webp);
+}
+
 .about-text-frame {
   display: flex;
   flex-direction: column;
@@ -1297,29 +1325,58 @@ footer {
   border: 3px solid #000;
   border-top: 0px;
   box-shadow: inset 2px 4px 10px #8c8c8c;
-
-  & .about-title {
-    font-size: var(--h-about-shrink);
-  }
-
-  & p {
-    padding: 0.5rem;
-  }
 }
 
-.about-containers {
+.about-title {
+  font-size: var(--h-about-shrink);
+}
+
+.about-textfill {
+  padding: 0.5rem;
+}
+
+.image-frame {
+  margin: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   width: 100%;
+  max-width: 502px;
 }
 
-.about-borders {
+.about-img-in-box {
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+  max-height: 340px;
   border-radius: 2rem;
-  border: 3px solid #000;
+  border: 3px solid #fff;
   border-top: 0px;
-  padding: 1rem;
+}
+
+.type-1-frame {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-size: cover;
+  background-position: center;
+  border-radius: 2rem;
+}
+
+
+
+.about-2ndbox {
+  gap: 1rem;
+}
+
+.background-bg {
+  width: 100%;
+  border-radius: 2rem;
+  background-color: grey;
+  background-image: linear-gradient(to bottom right,
+      rgba(251, 40, 156, 0.6),
+      rgba(0, 174, 183, 0.6),
+      rgba(0, 21, 255, 0.6));
 }
 
 .round-giant-img {
@@ -1332,75 +1389,9 @@ footer {
   object-position: top;
 }
 
-.type-1-frame {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  background-size: cover;
-  background-position: center;
-  border-radius: 2rem;
-
-  & div {
-    margin: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 502px;
-
-    & img {
-      width: 100%;
-      height: 100%;
-      max-width: 500px;
-      max-height: 340px;
-      border-radius: 2rem;
-      border: 3px solid #fff;
-      border-top: 0px;
-    }
-  }
-
-  >.frame1 {
-    width: 100%;
-    height: 100%;
-
-    & .row-list {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      margin: 0;
-      height: 100%;
-      width: 100%;
-
-      & ul {
-        list-style: none;
-        padding: 0;
-        width: 100%;
-
-
-        & li:nth-child(1) {
-          font-size: 0.9rem;
-          font-weight: 700;
-          text-decoration: underline;
-          border: 0px;
-          color: black;
-        }
-
-        & li:nth-child(3) {
-          font-size: 0.9rem;
-          font-weight: 700;
-          text-decoration: underline;
-          border: 0px;
-          color: black;
-        }
-
-        & li {
-          padding: 0.2rem;
-          border: 0px;
-          color: black;
-        }
-      }
-    }
-  }
+.about-text-frame {
+  width: 100%;
+  height: 100%;
 }
 
 .type-2-frame {
@@ -1410,28 +1401,52 @@ footer {
   max-width: 800px;
 }
 
-.about-1stbox {
-  background-color: grey;
-  background-image: linear-gradient(to right,
-      rgba(243, 255, 113, 0.6),
-      rgba(200, 59, 191, 0.6),
-      rgb(0, 255, 179, 0.6)),
-    url(../../assets/images/our-room.webp);
+
+
+
+
+.core-team-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  height: 100%;
+  width: 100%;
 }
 
-.about-2ndbox {
-  gap: 1rem;
-
-  & .background-bg {
-    width: 100%;
-    border-radius: 2rem;
-    background-color: grey;
-    background-image: linear-gradient(to bottom right,
-        rgba(251, 40, 156, 0.6),
-        rgba(0, 174, 183, 0.6),
-        rgba(0, 21, 255, 0.6));
-  }
+.coreteam-adjuster {
+  list-style: none;
+  padding: 0;
+  width: 100%;
 }
+
+.coreteam-list:nth-child(1) {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: underline;
+  border: 0px;
+  color: black;
+}
+
+.coreteam-list:nth-child(3) {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: underline;
+  border: 0px;
+  color: black;
+}
+
+.coreteam-list {
+  padding: 0.2rem;
+  border: 0px;
+  color: black;
+}
+
+
+
+
+
+
 
 .about-3rdbox {
   background-color: grey;
