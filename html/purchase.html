@@ -18,6 +18,7 @@
       content="video games, games, buy games, buy video games, The Arena"
     />
     <link rel="stylesheet" href="../src/css/styles.css" />
+    <link rel="stylesheet" href="../src/css/purchase-styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -175,11 +176,11 @@
           <div class="cc-personal-info bg-border-style-purchase">
             <div id="cc-info">
               <div class="payment-options">
-                <p>Credit Card:</p>
+                <p class="cc-pi-info">Credit Card:</p>
                 <span>
-                  <i class="fa-brands fa-cc-visa"></i>
-                  <i class="fa-brands fa-cc-mastercard"></i>
-                  <i class="fa-brands fa-cc-paypal"></i>
+                  <i class="fa-brands fa-cc-visa payment-opt"></i>
+                  <i class="fa-brands fa-cc-mastercard payment-opt"></i>
+                  <i class="fa-brands fa-cc-paypal payment-opt"></i>
                 </span>
               </div>
 
@@ -201,7 +202,7 @@
                   name="cc-card"
                 />
 
-                <label class="option-3-1" for="fullname">Name on card:</label>
+                <label class="option-3-1" for="fullname">Name on card</label>
                 <input
                   class="option-3-2 red-outline"
                   type="text"
@@ -210,7 +211,7 @@
                   placeholder="Ola Nordmann"
                   readonly
                 />
-                <label class="option-3-1" for="fullname2">Name on card:</label>
+                <label class="option-3-1" for="fullname2">Name on card</label>
                 <input
                   class="option-3-2 display-opt-3"
                   type="text"
@@ -219,7 +220,7 @@
                   placeholder="Full name..."
                 />
 
-                <label class="option-4-1" for="creditcard">Credit card:</label>
+                <label class="option-4-1" for="creditcard">Credit card</label>
                 <input
                   class="option-4-2 red-outline"
                   type="text"
@@ -228,7 +229,7 @@
                   placeholder="XXXX-1234"
                   readonly
                 />
-                <label class="option-4-1" for="creditcard2">Credit card:</label>
+                <label class="option-4-1" for="creditcard2">Credit card</label>
                 <input
                   class="option-4-2 display-opt-4"
                   type="text"
@@ -237,7 +238,7 @@
                   placeholder="XXXX-XXXX-XXXX-XXXX"
                 />
 
-                <label class="option-5-1" for="date">Expire date:</label>
+                <label class="option-5-1" for="date">Expire date</label>
                 <input
                   class="option-5-2 red-outline"
                   type="text"
@@ -247,7 +248,7 @@
                   size="7"
                   readonly
                 />
-                <label class="option-5-1" for="date2">Expire date:</label>
+                <label class="option-5-1" for="date2">Expire date</label>
                 <input
                   class="option-5-2 display-opt-5"
                   type="text"
@@ -257,9 +258,9 @@
                   size="7"
                 />
 
-                <label class="option-6-1" for="CVV">CVV/CVC:</label>
+                <label class="option-6b-1" for="CVV">CVV/CVC</label>
                 <input
-                  class="option-6-2 red-outline"
+                  class="option-6b-2 red-outline"
                   type="text"
                   id="CVV"
                   name="CVV"
@@ -268,9 +269,9 @@
                   maxlength="3"
                   readonly
                 />
-                <label class="option-6-1" for="CVV2">CVV/CVC:</label>
+                <label class="option-6b-1" for="CVV2">CVV/CVC</label>
                 <input
-                  class="option-6-2 display-opt-6"
+                  class="option-6b-2 display-opt-6"
                   type="text"
                   id="CVV2"
                   name="CVV2"
@@ -282,7 +283,7 @@
             </div>
 
             <div id="personal-info">
-              <p>Personal information:</p>
+              <p class="cc-pi-info">Personal information:</p>
               <form id="billing-info-inputs">
                 <label class="option-1-1" for="this-info">Current info</label>
                 <input
