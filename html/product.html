@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Arena</title>
+    <title>The Arena - Game</title>
     <link
       rel="icon"
       type="image/x-icon"
@@ -134,7 +134,7 @@
 
       <div class="prod-section-divider">
         <div class="game-product">
-          <div>
+          <div class="in-cart">
             <img
               src="../assets/images/Blank-game-cover.png"
               alt="blank grey game cover"
@@ -142,18 +142,18 @@
             <p>placeholder for game</p>
             <b>"INSERT GAME COVER HERE"</b>
           </div>
-          <p>
+          <p class="star-rating">
             Rating:
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star-half-stroke"></i>
+            <i class="fa-solid fa-star star-rating"></i>
+            <i class="fa-solid fa-star star-rating"></i>
+            <i class="fa-solid fa-star star-rating"></i>
+            <i class="fa-solid fa-star star-rating"></i>
+            <i class="fa-solid fa-star-half-stroke star-rating"></i>
           </p>
         </div>
 
-        <div id="double-section">
-          <div id="add-cart">
+        <div class="double-section">
+          <div class="add-cart">
             <p>DIGITAL PURCHASE</p>
 
             <div>
@@ -166,15 +166,15 @@
 
           <div id="game-about">
             <div class="game-about-top">
-              <i class="fa-brands fa-xbox"></i>
-              <i class="fa-brands fa-playstation"></i>
-              <i class="fa-solid fa-desktop"></i>
-              <p>Pre order</p>
+              <i class="fa-brands fa-xbox console-float"></i>
+              <i class="fa-brands fa-playstation console-float"></i>
+              <i class="fa-solid fa-desktop console-float"></i>
+              <p class="preorder-text">Pre order</p>
             </div>
 
             <div class="game-about-bottom">
               <p><b>Game's about:</b></p>
-              <p>
+              <p class="about-text">
                 Marathon: Istoria is an RPG scenario set in the Marathon
                 universe and designed for the Aleph One engine. It pushes the
                 engine to its limits by using advanced character progression,
@@ -188,7 +188,7 @@
               </p>
             </div>
 
-            <div id="row-list">
+            <div class="about-row-list">
               <ul>
                 <li>Release date:</li>
                 <li>Age:</li>
@@ -206,7 +206,13 @@
 
       <div class="drop-buttons">
         <div class="drop-down">
-          <input type="checkbox" id="dropdown" hidden />
+          <input
+            type="checkbox"
+            id="dropdown"
+            name="dropdown"
+            class="drop-it-menu"
+            hidden
+          />
           <label for="dropdown"
             >Game features <i class="fa-solid fa-chevron-down"></i
           ></label>
@@ -225,7 +231,13 @@
         </div>
 
         <div class="drop-down">
-          <input type="checkbox" id="dropdown2" hidden />
+          <input
+            type="checkbox"
+            id="dropdown2"
+            name="dropdown2"
+            class="drop-it-menu"
+            hidden
+          />
           <label for="dropdown2"
             >System requirements <i class="fa-solid fa-chevron-down"></i
           ></label>
