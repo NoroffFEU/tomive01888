@@ -1953,7 +1953,6 @@ footer {
   font-size: clamp(0.85rem, 1vw + 0.6rem, 1.1rem);
   margin: 0;
   color: white;
-  width: 100%;
   text-align: center;
 }
 
@@ -2102,7 +2101,6 @@ footer {
   align-items: center;
   padding: 0.2rem 1rem;
   font-weight: 900;
-  font-size: clamp(0.8rem, 0.5vw + 0.6rem, 1.4rem);
   background-color: rgb(95, 95, 95);
   background-image: linear-gradient(to right, #00ffb2, #99008a);
   border-radius: 0.2rem;
@@ -2117,9 +2115,33 @@ footer {
 
 .drop-content p {
   padding: 1rem;
-  font-size: clamp(0.8rem, 0.5vw + 0.6rem, 1.1rem);
 }
 
+
+.drop-content ul {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  height: 100%;
+}
+
+.drop-content ul li {
+  font-weight: 400;
+}
+
+.drop-content ul li:first-child {
+  font-weight: 700;
+}
+
+.drop-title {
+  font-size: 24px;
+}
+
+.drop-content p {
+  font-weight: 400;
+
+}
 
 .drop-it-menu[type="checkbox"]:checked~.drop-content {
   height: auto;
@@ -2133,53 +2155,31 @@ footer {
 }
 
 
-.drop-content ul {
-  display: flex;
-  flex-direction: column;
-  margin: 1rem;
-}
-
-.list-title {
-  font-weight: 900;
-
-}
-
-.drop-content {
-  font-weight: 900;
-  float: left;
-  font-weight: 700;
-}
-
 @media only screen and (min-width: 1000px) {
 
-  #product-page {
-    >.prod-section-divider {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: flex-start;
-      max-width: 1250px;
-
-      >.game-product {
-        width: 100%;
-        max-width: 587px;
-      }
-
-      >#double-section {
-        max-width: 350px;
-        gap: 2rem;
-      }
-    }
+  .prod-section-divider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1250px;
   }
 
-  .drop-buttons {
-    >.drop-down {
-      >.drop-content {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-      }
-    }
+  .game-product {
+    width: 100%;
+    max-width: 587px;
+  }
+
+  .double-section {
+    max-width: 350px;
+    gap: 2rem;
+
+  }
+
+  .drop-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
   }
 }
