@@ -1404,8 +1404,43 @@ footer {
 
 
 
+.about-3rdbox {
+  background-color: grey;
+  background-image: linear-gradient(rgba(26, 255, 18, 0.6),
+      rgba(228, 255, 24, 0.6)),
+    url(../../assets/images/vintage-items.webp);
 
-.core-team-list {
+  article {
+    gap: 1rem;
+
+    .row-list {
+      display: flex;
+      column-gap: 1rem;
+
+      ul {
+
+        li {
+          font-size: clamp(0.85rem, 1vw + 0.6rem, 1.1rem);
+          margin: 0.25rem;
+        }
+
+        li:first-child {
+          font-weight: 700;
+        }
+
+        li:nth-child(3) {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+/* .core-team-list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1440,7 +1475,7 @@ footer {
   padding: 0.2rem;
   border: 0px;
   color: black;
-}
+} */
 
 
 
@@ -1448,37 +1483,9 @@ footer {
 
 
 
-.about-3rdbox {
-  background-color: grey;
-  background-image: linear-gradient(rgba(26, 255, 18, 0.6),
-      rgba(228, 255, 24, 0.6)),
-    url(../../assets/images/vintage-items.webp);
 
-  article {
-    gap: 1rem;
 
-    .row-list {
-      display: flex;
-      column-gap: 1rem;
 
-      ul {
-
-        li {
-          font-size: clamp(0.85rem, 1vw + 0.6rem, 1.1rem);
-          margin: 0.25rem;
-        }
-
-        li:first-child {
-          font-weight: 700;
-        }
-
-        li:nth-child(3) {
-          font-weight: 700;
-        }
-      }
-    }
-  }
-}
 
 .about-4thbox {
   gap: 1rem;
