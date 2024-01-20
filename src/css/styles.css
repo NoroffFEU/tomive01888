@@ -363,154 +363,155 @@ nav {
   }
 }
 
+
+
 .hamburger-navbar {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 1.5rem 0rem;
-}
 
-#ham-size {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 11px;
-  text-decoration: none;
-  color: #00ffb2;
-}
+  & #ham-size {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    text-decoration: none;
+    color: #00ffb2;
 
-.le-burger {
-  font-size: 18px;
-}
+    & .fa-solid {
+      font-size: 18px;
+    }
 
-.mobile-navlinks {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #00ffb2;
-  text-decoration: none;
-  font-size: 11px;
+  }
 
-}
+  & a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #00ffb2;
+    text-decoration: none;
+    font-size: 11px;
 
-.mobile-icon {
-  font-size: 18px;
+    >.fa-solid {
+      font-size: 18px;
+    }
+  }
+
+  & .hamburger-open {
+    display: none;
+    max-height: 0px;
+    overflow: hidden;
+  }
+
+  & input {
+    display: none;
+  }
+
+  & input[type="checkbox"]:checked~.hamburger-open {
+    display: block;
+    max-height: fit-content;
+    margin: 0 auto;
+  }
 }
 
 .hamburger-open {
-  display: none;
-  max-height: 0px;
-  overflow: hidden;
-}
-
-#hamburger-open {
-  display: none;
-}
-
-#hamburger-open[type="checkbox"]:checked~.mobile-prfl-window {
-  display: block;
-  max-height: fit-content;
-  margin: 0 auto;
-}
-
-.mobile-prfl-window {
   position: absolute;
   top: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
   height: 1000px;
   margin: 1rem 0rem;
+
+  & div {
+    padding: 1rem;
+    height: 250px;
+    width: 100%;
+    background-color: rgb(95, 95, 95);
+    background-image: linear-gradient(rgb(40, 21, 37), rgb(144, 28, 164), rgb(72, 0, 81));
+    display: grid;
+    grid-template-columns: 78px 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(6, 30px);
+
+    & .account-sign {
+      font-size: clamp(1rem, 1vw + 1rem, 2.6rem);
+      color: #fff;
+      font-weight: 700;
+      text-align: left;
+      margin-left: 10px;
+      text-decoration: none;
+    }
+
+    & img {
+      width: 100%;
+      max-width: 72px;
+    }
+
+    & input {
+      display: none;
+    }
+
+    & input:after {
+      display: none;
+    }
+
+    & label {
+      color: black;
+      background-color: grey;
+      font-weight: 900;
+      border-radius: 5px;
+      border: 1px solid #00ffb2;
+      border-top: 0px;
+      padding: 0.3rem 1.1rem;
+      width: 100px;
+      text-align: center;
+      grid-column: 4 /span 2;
+      grid-row: 3;
+
+    }
+
+    & a {
+      color: white;
+      text-decoration: none;
+      border-bottom: 1px solid #27ff57;
+
+      & i {
+        margin-right: 10px;
+      }
+    }
+
+    & label::after {
+      content: "Login";
+    }
+
+    & #login[type="checkbox"]:checked~label::after {
+      content: "Logout";
+    }
+
+    & #login[type="checkbox"]:checked~#active-logo {
+      display: block;
+    }
+
+    & #login[type="checkbox"]:checked~#log-in {
+      display: none;
+    }
+
+    & #login[type="checkbox"]:checked~#is-signed {
+      display: block;
+    }
+
+    & #login[type="checkbox"]:checked~#not-signed {
+      display: none;
+    }
+  }
 }
-
-.mobile-prfl-open {
-  padding: 1rem;
-  height: 250px;
-  width: 100%;
-  background-color: rgb(95, 95, 95);
-  background-image: linear-gradient(rgb(40, 21, 37), rgb(144, 28, 164), rgb(72, 0, 81));
-  display: grid;
-  grid-template-columns: 78px 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: repeat(6, 30px);
-}
-
-.account-sign {
-  font-size: clamp(1rem, 1vw + 1rem, 2.6rem);
-  color: #fff;
-  font-weight: 700;
-  text-align: left;
-  margin-left: 10px;
-  text-decoration: none;
-}
-
-#login-mobile {
-  display: none;
-}
-
-#login-mobile:after {
-  display: none;
-}
-
-.mob-login-btn {
-  color: black;
-  background-color: grey;
-  font-weight: 900;
-  border-radius: 5px;
-  border: 1px solid #00ffb2;
-  border-top: 0px;
-  padding: 0.3rem 1.1rem;
-  width: 100px;
-  text-align: center;
-  grid-column: 4 /span 2;
-  grid-row: 3;
-
-}
-
-.navlist,
-.navlist2 {
-  color: white;
-  text-decoration: none;
-  border-bottom: 1px solid #27ff57;
-}
-
-.mob-prfl-icon {
-  margin-right: 10px;
-}
-
-
-.mob-login-btn::after {
-  content: "Login";
-}
-
->#login-mobile[type="checkbox"]:checked~label::after {
-  content: "Logout";
-}
-
->#login-mobile[type="checkbox"]:checked~#active-logo {
-  display: block;
-}
-
->#login-mobile[type="checkbox"]:checked~#log-in {
-  display: none;
-}
-
->#login-mobile[type="checkbox"]:checked~#is-signed {
-  display: block;
-}
-
->#login-mobile[type="checkbox"]:checked~#not-signed {
-  display: none;
-}
-
-
 
 /* ****grid layout for hamburger **** */
 .pro-logo-grid-location {
   grid-column: 1;
   grid-row: 1 /span 2;
-  width: 100%;
-  max-width: 72px;
 }
 
 #active-logo {
