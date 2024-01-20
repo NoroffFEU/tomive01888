@@ -54,11 +54,13 @@
   border-color: #00ffb2;
 }
 
-#submit-code {
+.submit-code {
   width: 60px;
   background-color: #00ffb2;
   color: #000;
   font-weight: 700;
+  border: 6px;
+
 }
 
 .purchase-button {
@@ -292,7 +294,6 @@
   text-align: center;
 }
 
-
 /* ______________ cc and personal information display feature______________ */
 
 .red-outline {
@@ -347,7 +348,6 @@
   display: block;
 }
 
-
 /* ______________ gridbox for cart item ______________ */
 
 .cart-gridbox {
@@ -400,7 +400,6 @@
   font-size: 1.25rem;
 }
 
-
 .bg-border-style-purchase {
   border: 3px solid #000;
   border-top: 0;
@@ -418,31 +417,31 @@
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
+  }
 
-    >.purchase-divider1 {
-      width: 100%;
-      max-width: 720px;
+  .purchase-divider1 {
+    width: 100%;
+    max-width: 720px;
+  }
 
-      >.buy-container {
-        width: 100%;
-        max-width: 720px;
-      }
+  .buy-container {
+    width: 100%;
+    max-width: 720px;
+  }
 
-      >.cc-personal-info {
-        width: 100%;
-        max-width: 720px;
+  .cc-personal-info {
+    width: 100%;
+    max-width: 720px;
+  }
 
-        >#cc-info {
-          width: 100%;
-          max-width: 400px;
-        }
+  #cc-info {
+    width: 100%;
+    max-width: 400px;
+  }
 
-        >#personal-info {
-          width: 100%;
-          max-width: 400px;
+  #personal-info {
+    width: 100%;
+    max-width: 400px;
 
-        }
-      }
-    }
   }
 }
