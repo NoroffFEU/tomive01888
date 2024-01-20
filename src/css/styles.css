@@ -6,7 +6,7 @@
 /* @import url("./reset.css"); */
 /* Files that are only needed to be imported are called partials */
 /* These are marked with an underscore: */
-@import url("variables.css");
+@import url("./variables.css");
 /* Feel free to add as many of these imports as you need */
 
 html {
@@ -59,19 +59,36 @@ li {
 
 
 p,
+b,
 i,
 a,
 li {
-  font-size: var(--p-font-shrink);
+  font-size: clamp(0.85rem, 1vw + 0.8rem, 1.1rem);
 
 }
 
-.header-store-sizer {
+h1 {
+  font-size: clamp(1.1rem, 1vw + 1rem, 2rem);
+}
+
+/* h1 {
+  font-size: 2rem;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1.75rem;
+} */
+
+/* .header-store-sizer {
   font-size: var(--h-greenstyle-shrink);
-}
+} */
 
 .header-about-size {
-  font-size: var(--h-about-shrink);
+  font-size: clamp(1.1rem, 1vw + 1rem, 2rem);
 }
 
 /* ================== SIMILAR CSS STYLE AREA ==================*/
@@ -363,8 +380,6 @@ nav {
   }
 }
 
-
-
 .hamburger-navbar {
   list-style: none;
   display: flex;
@@ -640,7 +655,7 @@ footer {
   text-shadow: 0 0 11px #f7ff17;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1100px) {
   .footer-limiter {
     display: flex;
     flex-direction: row;
@@ -1315,9 +1330,8 @@ footer {
   align-items: center;
   justify-content: center;
   background-color: #fff;
-  color: #000;
-  height: clamp(140px, 340px);
-  width: clamp(100px, 100%, 500px);
+  width: 100%;
+  max-width: 500px;
   border-radius: 2rem;
   padding: 1rem;
   text-wrap: wrap;
@@ -1325,14 +1339,13 @@ footer {
   border: 3px solid #000;
   border-top: 0px;
   box-shadow: inset 2px 4px 10px #8c8c8c;
-}
-
-.about-title {
-  font-size: var(--h-about-shrink);
+  gap: 1rem;
 }
 
 .about-textfill {
   padding: 0.5rem;
+  width: 100%;
+  max-width: 400px;
 }
 
 .image-frame {
@@ -1354,14 +1367,14 @@ footer {
   border-top: 0px;
 }
 
-.type-1-frame {
+/* .type-1-frame {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   background-size: cover;
   background-position: center;
   border-radius: 2rem;
-}
+} */
 
 
 
@@ -1410,50 +1423,37 @@ footer {
       rgba(228, 255, 24, 0.6)),
     url(../../assets/images/vintage-items.webp);
 
-  /* article {
-    gap: 1rem;
-
-    .row-list {
-      display: flex;
-      column-gap: 1rem;
-
-      ul {
-
-        li {
-          font-size: clamp(0.85rem, 1vw + 0.6rem, 1.1rem);
-          margin: 0.25rem;
-        }
-
-        li:first-child {
-          font-weight: 700;
-        }
-
-        li:nth-child(3) {
-          font-weight: 700;
-        }
-      }
-    }
-  } */
 }
-
-
-
-
 
 .core-team-list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0;
-  height: 100%;
-  width: 100%;
 }
 
 .coreteam-adjuster {
   list-style: none;
-  padding: 0;
   width: 100%;
+  max-width: 50%;
+
 }
+
+.coreteam-list {
+  width: 140px;
+  padding: 0.2rem;
+  border: 0px;
+  color: black;
+}
+
+.coreteam-list:first-child {
+  font-weight: 700;
+}
+
+.coreteam-list:nth-child(3) {
+  font-weight: 700;
+}
+
+
 
 .coreteam-list:nth-child(1) {
   font-size: 0.9rem;
@@ -1471,11 +1471,7 @@ footer {
   color: black;
 }
 
-.coreteam-list {
-  padding: 0.2rem;
-  border: 0px;
-  color: black;
-}
+
 
 
 
@@ -1561,11 +1557,11 @@ footer {
     max-height: 350px;
     height: 60vh;
 
-    >h1 {
+    /* >h1 {
       font-size: var(--font-shrinker);
       font-weight: 700;
       text-align: center;
-    }
+    } */
 
   }
 
