@@ -126,17 +126,17 @@ h1 {
   width: 90%;
   margin-bottom: 2rem;
 
+}
 
-  >a {
-    text-decoration: none;
-    font-size: clamp(0.85rem, 1vw + 0.8rem, 1.1rem);
-    color: black;
-  }
+.breadbite {
+  text-decoration: none;
+  font-size: clamp(0.85rem, 1vw + 0.8rem, 1.1rem);
+  color: black;
+}
 
-  >a:hover {
-    color: blue;
-    font-weight: 700;
-  }
+.breadbite:hover {
+  color: blue;
+  font-weight: 700;
 }
 
 .white-text {
