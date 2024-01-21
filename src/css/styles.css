@@ -60,10 +60,8 @@ li {
 
 p,
 b,
-a,
 li {
   font-size: clamp(0.85rem, 1vw + 0.8rem, 1.1rem);
-
 }
 
 h1 {
@@ -382,148 +380,150 @@ nav {
   }
 }
 
+/* ______________MOBILE NAVBAR______________ */
+
 .hamburger-navbar {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 1.5rem 0rem;
+}
 
-  & #ham-size {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 11px;
-    text-decoration: none;
-    color: #00ffb2;
+.burger-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+  text-decoration: none;
+  color: #00ffb2;
+}
 
-    & .fa-solid {
-      font-size: 18px;
-    }
+.burger-button .fa-solid {
+  font-size: 18px;
+}
 
-  }
+.burger-navlink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #00ffb2;
+  text-decoration: none;
+  font-size: 11px;
+}
 
-  & a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #00ffb2;
-    text-decoration: none;
-    font-size: 11px;
-
-    & .fa-solid {
-      font-size: 18px;
-    }
-  }
-
-  & .hamburger-open {
-    display: none;
-    max-height: 0px;
-    overflow: hidden;
-  }
-
-  & input {
-    display: none;
-  }
-
-  & input[type="checkbox"]:checked~.hamburger-open {
-    display: block;
-    max-height: fit-content;
-    margin: 0 auto;
-  }
+.burger-navlink .fa-solid {
+  font-size: 18px;
 }
 
 .hamburger-open {
+  display: none;
+  max-height: 0px;
+  overflow: hidden;
+}
+
+.hidden-burger {
+  display: none;
+}
+
+.burger-content {
   position: absolute;
-  top: 100%;
+  top: 88%;
   background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
   height: 1000px;
   margin: 1rem 0rem;
+}
 
-  & div {
-    padding: 1rem;
-    height: 250px;
-    width: 100%;
-    background-color: rgb(95, 95, 95);
-    background-image: linear-gradient(rgb(40, 21, 37), rgb(144, 28, 164), rgb(72, 0, 81));
-    display: grid;
-    grid-template-columns: 78px 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(6, 30px);
+.hidden-burger[type="checkbox"]:checked~.burger-content {
+  display: block;
+  max-height: fit-content;
+  margin: 0 auto;
+}
 
-    & .account-sign {
-      font-size: clamp(1rem, 1vw + 1rem, 2.6rem);
-      color: #fff;
-      font-weight: 700;
-      text-align: left;
-      margin-left: 10px;
-      text-decoration: none;
-    }
+.burger-extra {
+  padding: 1rem;
+  height: 250px;
+  width: 100%;
+  background-color: rgb(95, 95, 95);
+  background-image: linear-gradient(rgb(40, 21, 37), rgb(144, 28, 164), rgb(72, 0, 81));
+  display: grid;
+  grid-template-columns: 78px 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(6, 30px);
+}
 
-    & img {
-      width: 100%;
-      max-width: 72px;
-    }
+.burger-extra .account-sign {
+  font-size: clamp(1rem, 1vw + 1rem, 2.6rem);
+  color: #fff;
+  font-weight: 700;
+  text-align: left;
+  margin-left: 10px;
+  text-decoration: none;
+}
 
-    & input {
-      display: none;
-    }
+.burger-extra img {
+  width: 100%;
+  max-width: 72px;
+}
 
-    & input:after {
-      display: none;
-    }
+.burger-extra input {
+  display: none;
+}
 
-    & label {
-      color: black;
-      background-color: grey;
-      font-weight: 900;
-      border-radius: 5px;
-      border: 1px solid #00ffb2;
-      border-top: 0px;
-      padding: 0.3rem 1.1rem;
-      width: 100px;
-      text-align: center;
-      grid-column: 4 /span 2;
-      grid-row: 3;
+.burger-extra input:after {
+  display: none;
+}
 
-    }
+.burger-extra label {
+  color: black;
+  background-color: grey;
+  font-weight: 900;
+  border-radius: 5px;
+  border: 1px solid #00ffb2;
+  border-top: 0px;
+  padding: 0.3rem 1.1rem;
+  width: 100px;
+  text-align: center;
+  grid-column: 4 /span 2;
+  grid-row: 3;
 
-    & a {
-      color: white;
-      text-decoration: none;
-      border-bottom: 1px solid #27ff57;
+}
 
-      & i {
-        margin-right: 10px;
-      }
-    }
+.burger-extra a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid #27ff57;
 
-    & label::after {
-      content: "Login";
-    }
-
-    & #login[type="checkbox"]:checked~label::after {
-      content: "Logout";
-    }
-
-    & #login[type="checkbox"]:checked~#active-logo {
-      display: block;
-    }
-
-    & #login[type="checkbox"]:checked~#log-in {
-      display: none;
-    }
-
-    & #login[type="checkbox"]:checked~#is-signed {
-      display: block;
-    }
-
-    & #login[type="checkbox"]:checked~#not-signed {
-      display: none;
-    }
+  .burger-extra a i {
+    margin-right: 10px;
   }
 }
+
+.burger-extra label::after {
+  content: "Login";
+}
+
+#login[type="checkbox"]:checked~label::after {
+  content: "Logout";
+}
+
+#login[type="checkbox"]:checked~#active-logo {
+  display: block;
+}
+
+#login[type="checkbox"]:checked~#log-in {
+  display: none;
+}
+
+#login[type="checkbox"]:checked~#is-signed {
+  display: block;
+}
+
+#login[type="checkbox"]:checked~#not-signed {
+  display: none;
+}
+
 
 /* ****grid layout for hamburger **** */
 .pro-logo-grid-location {
@@ -1381,10 +1381,6 @@ footer {
 }
 
 .coreteam-list:first-child {
-  font-weight: 700;
-}
-
-.coreteam-list:nth-child(3) {
   font-weight: 700;
 }
 

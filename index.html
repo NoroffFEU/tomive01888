@@ -73,27 +73,30 @@
         </div>
 
         <div class="hamburger-navbar">
-          <label for="hamburger-open" id="ham-size"
+          <label for="hamburger-open" class="burger-button"
             ><i class="fa-solid fa-bars"></i>HAM</label
           >
           <input
+            class="hidden-burger"
             type="checkbox"
             id="hamburger-open"
             name="hamburger-open"
             hidden
           />
 
-          <a href="./html/store.html"
+          <a class="burger-navlink" href="./html/store.html"
             ><i class="fa-solid fa-gamepad"></i>STORE</a
           >
 
-          <a href="./html/purchase.html"
+          <a class="burger-navlink" href="./html/purchase.html"
             ><i class="fa-solid fa-cart-shopping"></i>CART</a
           >
-          <a href="./index.html"><i class="fa-solid fa-house"></i>HOME</a>
+          <a class="burger-navlink" href="./index.html"
+            ><i class="fa-solid fa-house"></i>HOME</a
+          >
 
-          <div class="hamburger-open">
-            <div>
+          <div class="burger-content">
+            <div class="burger-extra">
               <input type="checkbox" name="login" id="login" />
               <label for="login">.</label>
               <img
