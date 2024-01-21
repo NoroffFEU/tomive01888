@@ -129,6 +129,7 @@ h1 {
 
   >a {
     text-decoration: none;
+    font-size: clamp(0.85rem, 1vw + 0.8rem, 1.1rem);
     color: black;
   }
 
