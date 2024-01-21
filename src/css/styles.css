@@ -187,6 +187,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 1rem 0rem;
 }
 
 /* //navlinksstyles// */
@@ -224,11 +225,10 @@ nav {
 .desknav-prof-style {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
   align-items: center;
-  width: 100%;
-  max-width: 220px;
-  gap: 0.8rem;
+  justify-content: space-between;
+  width: 160px;
+  gap: 1rem;
 }
 
 #profile-log {
@@ -239,21 +239,15 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #00ffb2;
+  gap: 5px;
   text-decoration: none;
-  font-size: 13px;
+  height: 4px;
+  color: #00ffb2;
 }
 
-.nav-main-cart {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.cart-button i {
+  font-size: 26px;
   color: #00ffb2;
-  text-decoration: none;
-  font-size: 16px;
-  color: #00ffb2;
-  font-size: 1.3rem;
-  margin: 0.7rem;
 }
 
 .fa-cart-shopping:hover {
@@ -268,9 +262,9 @@ nav {
   background-color: #00ffb2;
   color: #000;
   padding: 0.5rem 1rem;
-  margin: 1rem;
   width: 100%;
   max-width: 100px;
+  max-height: 33px;
 }
 
 .profile-pop-up {
@@ -391,13 +385,11 @@ nav {
   padding: 1rem 0rem;
 }
 
-.hamburger-open {
+.hidden-burger,
+.burger-extra,
+.burger-content {
   display: none;
   overflow: hidden;
-}
-
-.hidden-burger {
-  display: none;
 }
 
 .hidden-burger[type="checkbox"]:checked~.burger-content {
@@ -405,52 +397,38 @@ nav {
   position: absolute;
   max-height: fit-content;
   margin: 0 auto;
-  top: 88%;
+  top: 87%;
   background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
   height: 1000px;
   margin: 1rem 0rem;
 
-  .burger-button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 11px;
-    text-decoration: none;
-    color: #00ffb2;
-  }
-
-  .burger-button .fa-solid {
-    font-size: 18px;
-  }
-
-  .burger-navlink {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #00ffb2;
-    text-decoration: none;
-    font-size: 11px;
-  }
-
-  .burger-navlink .fa-solid {
-    font-size: 18px;
-  }
-
-  .burger-extra {
-    padding: 1rem;
-    height: 250px;
-    width: 100%;
-    background-color: rgb(95, 95, 95);
-    background-image: linear-gradient(rgb(40, 21, 37), rgb(144, 28, 164), rgb(72, 0, 81));
-    display: grid;
-    grid-template-columns: 78px 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(6, 30px);
-  }
 }
 
+.burger-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+  text-decoration: none;
+  color: #00ffb2;
+}
 
+.burger-button .fa-solid {
+  font-size: 22px;
+}
+
+.burger-extra {
+  padding: 1rem;
+  height: 250px;
+  width: 100%;
+  background-color: rgb(95, 95, 95);
+  background-image: linear-gradient(rgb(40, 21, 37), rgb(144, 28, 164), rgb(72, 0, 81));
+  display: grid;
+  grid-template-columns: 78px 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(6, 30px);
+}
 
 .burger-extra .account-sign {
   font-size: clamp(1rem, 1vw + 1rem, 2.6rem);
@@ -494,9 +472,10 @@ nav {
   text-decoration: none;
   border-bottom: 1px solid #27ff57;
 
-  .burger-extra a i {
-    margin-right: 10px;
-  }
+}
+
+.burger-extra a i {
+  margin-right: 10px;
 }
 
 .burger-extra label::after {
@@ -521,6 +500,19 @@ nav {
 
 #login[type="checkbox"]:checked~#not-signed {
   display: none;
+}
+
+.burger-navlink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #00ffb2;
+  text-decoration: none;
+  font-size: 11px;
+}
+
+.burger-navlink .fa-solid {
+  font-size: 22px;
 }
 
 
@@ -570,11 +562,6 @@ nav {
     display: none;
   }
 
-  /* .desktop-navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  } */
 }
 
 /* ====================== BODY CONTENT ======================== */
