@@ -39,21 +39,21 @@
             src="../assets/images/thearena-Logo.png"
             alt="The Arena The Universe of Games"
         /></a>
+
         <div class="desktop-navbar">
           <div class="desktop-navbar-links">
-            <a class="desk-nav-stylebutton" href="../index.html">Home</a>
-            <a class="desk-nav-stylebutton on-page" href="./store.html"
-              >Store</a
+            <a class="desk-nav-stylebutton on-page" href="../index.html"
+              >Home</a
             >
+            <a class="desk-nav-stylebutton" href="./store.html">Store</a>
             <a class="desk-nav-stylebutton" href="./about.html">About</a>
             <a class="desk-nav-stylebutton" href="./contact.html">Contact</a>
           </div>
 
           <div class="desknav-prof-style">
-            <a class="cart-button" href="./purchase.html"
-              ><i class="nav-main-cart fa-solid fa-cart-shopping fa-lg"></i
-              >cart</a
-            >
+            <a class="cart-button" href="./purchase.html">
+              <i class="fa-solid fa-cart-shopping fa-lg"></i>cart
+            </a>
 
             <label class="profile-button" for="profile-log">Profile</label>
             <input id="profile-log" name="profile-log" type="checkbox" />
@@ -76,25 +76,19 @@
         </div>
 
         <div class="hamburger-navbar">
-          <label for="hamburger-open" id="ham-size"
+          <label for="hamburger-open" class="burger-button"
             ><i class="fa-solid fa-bars"></i>HAM</label
           >
           <input
+            class="hidden-burger"
             type="checkbox"
             id="hamburger-open"
             name="hamburger-open"
             hidden
           />
 
-          <a href="./store.html"><i class="fa-solid fa-gamepad"></i>STORE</a>
-
-          <a href="./purchase.html"
-            ><i class="fa-solid fa-cart-shopping"></i>CART</a
-          >
-          <a href="../index.html"><i class="fa-solid fa-house"></i>HOME</a>
-
-          <div class="hamburger-open">
-            <div>
+          <div class="burger-content">
+            <div class="burger-extra">
               <input type="checkbox" name="login" id="login" />
               <label for="login">.</label>
               <img
@@ -120,6 +114,17 @@
               >
             </div>
           </div>
+
+          <a class="burger-navlink" href="./store.html"
+            ><i class="fa-solid fa-gamepad"></i>STORE</a
+          >
+
+          <a class="burger-navlink" href="./purchase.html"
+            ><i class="fa-solid fa-cart-shopping"></i>CART</a
+          >
+          <a class="burger-navlink" href="../index.html"
+            ><i class="fa-solid fa-house"></i>HOME</a
+          >
         </div>
       </nav>
     </header>
