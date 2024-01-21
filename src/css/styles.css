@@ -431,9 +431,6 @@ nav {
   display: block;
   max-height: fit-content;
   margin: 0 auto;
-}
-
-.burger-content {
   position: absolute;
   top: 88%;
   background-color: rgba(0, 0, 0, 0.7);
@@ -441,6 +438,8 @@ nav {
   height: 1000px;
   margin: 1rem 0rem;
 }
+
+.burger-content {}
 
 .burger-extra {
   padding: 1rem;
