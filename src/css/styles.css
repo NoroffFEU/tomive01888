@@ -411,7 +411,7 @@ nav {
   height: 1000px;
   margin: 1rem 0rem;
 
-  &.burger-button {
+  :is(burger-button) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -421,11 +421,11 @@ nav {
     color: #00ffb2;
   }
 
-  &.burger-button .fa-solid {
+  :is(.burger-button .fa-solid) {
     font-size: 18px;
   }
 
-  &.burger-navlink {
+  :is(.burger-navlink) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -434,7 +434,7 @@ nav {
     font-size: 11px;
   }
 
-  &.burger-navlink .fa-solid {
+  :is(.burger-navlink .fa-solid) {
     font-size: 18px;
   }
 
